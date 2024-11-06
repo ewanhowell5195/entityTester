@@ -1,0 +1,1 @@
+execute as @e[type=!minecraft:player] run data merge entity @s {NoAI:1}

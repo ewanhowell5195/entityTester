@@ -1,0 +1,36 @@
+function entitytester:clear_entities_39x69
+setblock -7 -60 -52 oak_sign
+setblock -5 -60 -52 oak_wall_sign[facing=south]
+setblock -3 319 -52 tinted_glass
+setblock -1 319 -52 tinted_glass
+setblock 5 -60 -52 chest[facing=south]
+setblock 7 -60 -52 chest[facing=west,type=left]
+setblock 7 -60 -53 chest[facing=west,type=right]
+setblock -7 -60 -46 red_bed
+setblock -7 -60 -47 red_bed[part=head]
+setblock 13 -60 -46 enchanting_table
+setblock -11 -60 -40 ender_chest[facing=south]
+setblock -9 319 -40 tinted_glass
+setblock -5 -60 -40 creeper_head[rotation=8]
+setblock -3 -60 -40 player_head[rotation=8]
+setblock -1 -60 -40 skeleton_skull[rotation=8]
+setblock 1 -60 -40 wither_skeleton_skull[rotation=8]
+setblock 3 -60 -40 zombie_head[rotation=8]
+setblock 11 -60 -40 trapped_chest[facing=south]
+setblock 13 -60 -40 trapped_chest[facing=west,type=left]
+setblock 13 -60 -41 trapped_chest[facing=west,type=right]
+setblock -7 -60 -34 oak_fence
+setblock 9 -60 -34 white_banner
+setblock 13 -60 -34 dragon_head[rotation=8]
+setblock -15 -60 -28 shulker_box
+setblock -3 319 -28 tinted_glass
+setblock 15 319 -28 tinted_glass
+setblock 3 319 -22 tinted_glass
+setblock 5 -60 -22 conduit[waterlogged=false]
+setblock 15 -60 -22 bell
+setblock -13 -60 -16 lectern[facing=south,has_book=true]
+setblock -1 -60 -10 decorated_pot
+setblock 1 -60 -10 oak_wall_hanging_sign[facing=south]
+setblock 3 -60 -10 piglin_head[rotation=8]
+setblock 15 319 -10 tinted_glass
+schedule function entitytester:spawn_normal_releasedate_entities_2 1t

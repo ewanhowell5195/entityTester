@@ -1,0 +1,9 @@
+execute if score global entitytester_mode matches 0 run execute if score global entitytester_sort matches 0 run execute if score global entitytester_variants matches 0 run function entitytester:spawn_normal_alphabetical_entities
+execute if score global entitytester_mode matches 0 run execute if score global entitytester_sort matches 0 run execute if score global entitytester_variants matches 1 run function entitytester:spawn_normal_alphabetical_variants_entities
+execute if score global entitytester_mode matches 0 run execute if score global entitytester_sort matches 1 run execute if score global entitytester_variants matches 0 run function entitytester:spawn_normal_releasedate_entities
+execute if score global entitytester_mode matches 0 run execute if score global entitytester_sort matches 1 run execute if score global entitytester_variants matches 1 run function entitytester:spawn_normal_releasedate_variants_entities
+execute if score global entitytester_mode matches 1 run execute if score global entitytester_sort matches 0 run execute if score global entitytester_variants matches 0 run function entitytester:spawn_baby_alphabetical_entities
+execute if score global entitytester_mode matches 1 run execute if score global entitytester_sort matches 0 run execute if score global entitytester_variants matches 1 run function entitytester:spawn_baby_alphabetical_variants_entities
+execute if score global entitytester_mode matches 1 run execute if score global entitytester_sort matches 1 run execute if score global entitytester_variants matches 0 run function entitytester:spawn_baby_releasedate_entities
+execute if score global entitytester_mode matches 1 run execute if score global entitytester_sort matches 1 run execute if score global entitytester_variants matches 1 run function entitytester:spawn_baby_releasedate_variants_entities
+scoreboard players set global entitytester_entities_loaded 1
