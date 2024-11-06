@@ -485,6 +485,8 @@ summon dark_oak_chest_boat -13 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceR
 summon mangrove_chest_boat -11 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon cherry_chest_boat -9 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon pale_oak_chest_boat -7 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
-summon bogged 15 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
-summon bogged 17 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,sheared:1}
+summon armadillo 13 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
+summon armadillo 15 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,state:scared}
+summon bogged 17 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
+summon bogged 19 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,sheared:1}
 schedule function entitytester:update_delayed_ai 4t

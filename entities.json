@@ -1553,7 +1553,13 @@
     },
     {
       "id": "armadillo",
-      "baby": true
+      "baby": true,
+      "variants": {
+        "state": [
+          null,
+          "scared"
+        ]
+      }
     },
     {
       "id": "breeze"

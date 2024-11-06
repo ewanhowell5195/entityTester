@@ -190,12 +190,14 @@ summon strider 9 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invu
 summon strider 11 -60 -10 {NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,}
 summon strider 13 -60 -10 {NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,Saddle:1}
 summon axolotl 15 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
-summon axolotl -7 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,Variant:1}
-summon axolotl -5 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,Variant:2}
-summon axolotl -3 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,Variant:3}
-summon axolotl -1 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,Variant:4}
-summon goat 1 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
-summon goat 3 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,HasRightHorn:1}
-summon goat 5 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,HasLeftHorn:1}
-summon goat 7 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,HasLeftHorn:1,HasRightHorn:1}
+summon axolotl -9 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,Variant:1}
+summon axolotl -7 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,Variant:2}
+summon axolotl -5 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,Variant:3}
+summon axolotl -3 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,Variant:4}
+summon goat -1 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
+summon goat 1 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,HasRightHorn:1}
+summon goat 3 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,HasLeftHorn:1}
+summon goat 5 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,HasLeftHorn:1,HasRightHorn:1}
+summon armadillo 7 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
+summon armadillo 9 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,state:scared}
 schedule function entitytester:update_delayed_ai 4t
