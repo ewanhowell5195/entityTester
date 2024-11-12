@@ -15,5 +15,8 @@ execute if score global entitytester_temp matches 0 run scoreboard players set g
 scoreboard players set global entitytester_temp 0
 execute if score global entitytester_variants matches 0..1 run scoreboard players set global entitytester_temp 1
 execute if score global entitytester_temp matches 0 run scoreboard players set global entitytester_variants 0
+scoreboard players set global entitytester_temp 0
+execute if score global entitytester_wither matches 0..1 run scoreboard players set global entitytester_temp 1
+execute if score global entitytester_temp matches 0 run scoreboard players set global entitytester_wither 0
 function entitytester:spawn_evoker_fangs
 tellraw @a "Entity Tester has loaded"
