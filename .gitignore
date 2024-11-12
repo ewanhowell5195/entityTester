@@ -1,5 +1,6 @@
 Entity Tester/advancements/
-Entity Tester/data/
+Entity Tester/data/*
+!Entity Tester/data/scoreboard.dat
 Entity Tester/DIM1/
 Entity Tester/DIM-1/
 Entity Tester/playerdata/
