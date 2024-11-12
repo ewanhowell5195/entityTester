@@ -23,14 +23,14 @@ setblock -7 -60 -34 oak_fence
 setblock 9 -60 -34 white_banner
 setblock 13 -60 -34 dragon_head[rotation=8]
 setblock -15 -60 -28 shulker_box
-setblock -3 319 -28 tinted_glass
-setblock 15 319 -28 tinted_glass
-setblock 3 319 -22 tinted_glass
-setblock 5 -60 -22 conduit[waterlogged=false]
-setblock 15 -60 -22 bell
-setblock -13 -60 -16 lectern[facing=south,has_book=true]
-setblock -1 -60 -10 decorated_pot
-setblock 1 -60 -10 oak_wall_hanging_sign[facing=south]
-setblock 3 -60 -10 piglin_head[rotation=8]
-setblock 15 319 -10 tinted_glass
+setblock -1 319 -28 tinted_glass
+setblock -15 319 -22 tinted_glass
+setblock 5 319 -22 tinted_glass
+setblock 7 -60 -22 conduit[waterlogged=false]
+setblock -15 -60 -16 bell
+setblock -11 -60 -16 lectern[facing=south,has_book=true]
+setblock 1 -60 -10 decorated_pot
+setblock 3 -60 -10 oak_wall_hanging_sign[facing=south]
+setblock 5 -60 -10 piglin_head[rotation=8]
+setblock -1 319 -4 tinted_glass
 schedule function entitytester:spawn_normal_releasedate_entities_2 1t

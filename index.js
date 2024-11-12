@@ -265,7 +265,13 @@ function spawnEntity(name, commands, commands2, entity, x, z, baby) {
       }
     }
     nbt += `}`
-    commands2.push(`${entity.id === "wither" ? "execute if score global entitytester_wither matches 1 run " : ""}summon ${entity.id} ${x + (entity.offset?.[0] ?? 0)} ${yValue + 1 + (entity.offset?.[1] ?? 0)} ${z + (entity.offset?.[2] ?? 0)} ${nbt}`)
+    let offset = [0, 0, 0]
+    if (baby && entity.babyOffset) {
+      offset = entity.babyOffset
+    } else if (entity.offset) {
+      offset = entity.offset
+    }
+    commands2.push(`${entity.id === "wither" ? "execute if score global entitytester_wither matches 1 run " : ""}summon ${entity.id} ${x + offset[0]} ${yValue + 1 + offset[1]} ${z + offset[2]} ${nbt}`)
   }
 }
 

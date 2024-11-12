@@ -927,6 +927,26 @@
       ]
     },
     {
+      "name": "shield",
+      "id": "armor_stand",
+      "baby": true,
+      "nbt": {
+        "HandItems": "[{id:shield}]",
+        "Pose": "{RightArm:[-90f,-90f,0f]}",
+        "Invisible": 1
+      },
+      "offset": [
+        0.438,
+        -0.4,
+        0.41
+      ],
+      "babyOffset": [
+        0.469,
+        -0.2,
+        0.454
+      ]
+    },
+    {
       "name": "elytra",
       "id": "armor_stand",
       "baby": true,

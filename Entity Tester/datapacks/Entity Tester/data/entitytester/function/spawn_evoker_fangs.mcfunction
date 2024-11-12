@@ -1,3 +1,3 @@
 execute if score global entitytester_entities_loaded matches 1 run execute if score global entitytester_mode matches 0 run execute if score global entitytester_variants matches 0 run execute if score global entitytester_sort matches 0 run summon evoker_fangs 5 -59.75 -40 {Silent:1}
-execute if score global entitytester_entities_loaded matches 1 run execute if score global entitytester_mode matches 0 run execute if score global entitytester_variants matches 0 run execute if score global entitytester_sort matches 1 run summon evoker_fangs 1 -59.75 -28 {Silent:1}
+execute if score global entitytester_entities_loaded matches 1 run execute if score global entitytester_mode matches 0 run execute if score global entitytester_variants matches 0 run execute if score global entitytester_sort matches 1 run summon evoker_fangs 3 -59.75 -28 {Silent:1}
 schedule function entitytester:spawn_evoker_fangs 24t
