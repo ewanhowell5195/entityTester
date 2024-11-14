@@ -6,7 +6,7 @@ execute if score global entitytester_wither matches 1 run summon wither 12 -59.5
 summon armor_stand -15 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,ArmorItems:[{id:diamond_boots},{id:diamond_leggings},{id:diamond_chestplate},{id:diamond_helmet}],Invisible:1}
 summon arrow -13 -59.5 -51.275 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon creeper -11 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,powered:1}
-summon pig -9 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
+summon pig -9 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Saddle:1}
 summon skeleton -3 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon zombie -1 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon spider 1 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}

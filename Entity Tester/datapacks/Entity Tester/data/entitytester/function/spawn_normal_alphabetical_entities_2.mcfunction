@@ -61,7 +61,7 @@ summon ocelot -7 -60 -28 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invu
 summon panda -5 -60 -28 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon parrot -3 -60 -28 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,OnGround:1}
 summon phantom -1 -59.5 -28 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
-summon pig 1 -60 -28 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
+summon pig 1 -60 -28 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Saddle:1}
 summon piglin 3 -60 -28 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon piglin_brute 5 -60 -28 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon pillager 9 -60 -28 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}

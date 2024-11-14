@@ -117,7 +117,16 @@
     },
     {
       "id": "pig",
-      "baby": true
+      "baby": true,
+      "nbt": {
+        "Saddle": 1
+      },
+      "variants": {
+        "Saddle": [
+          null,
+          1
+        ]
+      }
     },
     {
       "name": "sign",

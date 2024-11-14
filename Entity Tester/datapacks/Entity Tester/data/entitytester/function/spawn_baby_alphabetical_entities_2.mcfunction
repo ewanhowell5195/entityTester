@@ -22,7 +22,7 @@ summon mooshroom -9 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,I
 summon mule -7 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,Tame:1,SaddleItem:{id:saddle},ChestedHorse:1}
 summon ocelot -5 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
 summon panda -3 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
-summon pig -1 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
+summon pig -1 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,Saddle:1}
 summon piglin 1 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
 summon polar_bear 3 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
 summon rabbit 5 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}

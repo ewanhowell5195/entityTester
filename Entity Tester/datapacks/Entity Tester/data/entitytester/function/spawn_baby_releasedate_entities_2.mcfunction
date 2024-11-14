@@ -1,5 +1,5 @@
 summon armor_stand -9 -60 -28 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Small:1,ArmorItems:[{id:diamond_boots},{id:diamond_leggings},{id:diamond_chestplate},{id:diamond_helmet}],Invisible:1}
-summon pig -7 -60 -28 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
+summon pig -7 -60 -28 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,Saddle:1}
 summon zombie -5 -60 -28 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
 summon sheep -3 -60 -28 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
 summon cow -1 -60 -28 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
