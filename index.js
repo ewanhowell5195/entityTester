@@ -71,13 +71,13 @@ function createStructure(rectangleWidth, rectangleLength) {
     `setblock ${edgeMaxX + 1} ${yValue + 4} ${edgeMaxZ + 1} dark_oak_slab`,
     `function entitytester:create_controls`,
     `place template entitytester:floor_blocks -4 ${yValue + 1} ${edgeMinZ - 1}`,
-    `setblock -4 ${yValue + 2} ${edgeMinZ} oak_wall_sign[facing="south"]{front_text:{messages:['""','"Border"','"Corners"','""']},is_waxed:true}`,
-    `setblock -2 ${yValue + 2} ${edgeMinZ} oak_wall_sign[facing="south"]{front_text:{messages:['""','"West -> East"','"Borders"','""']},is_waxed:true}`,
-    `setblock 0 ${yValue + 2} ${edgeMinZ} oak_wall_sign[facing="south"]{front_text:{messages:['""','"Main"','"Floor"','""']},is_waxed:true}`,
-    `setblock 2 ${yValue + 2} ${edgeMinZ} oak_wall_sign[facing="south"]{front_text:{messages:['""','"North -> South"','"Borders"','""']},is_waxed:true}`,
-    `setblock 4 ${yValue + 2} ${edgeMinZ} oak_wall_sign[facing="south"]{front_text:{messages:['""','"Entity"','"Platforms"','""']},is_waxed:true}`,
-    `setblock -2 ${yValue + 3} ${edgeMinZ} oak_wall_sign[facing="south"]{front_text:{messages:['""','"Load"','"Floor"','""']},is_waxed:true}`,
-    `setblock 2 ${yValue + 3} ${edgeMinZ} oak_wall_sign[facing="south"]{front_text:{messages:['""','"Reset"','"Floor"','""']},is_waxed:true}`,
+    `setblock -4 ${yValue + 2} ${edgeMinZ} oak_wall_sign[facing="south"]{front_text:{messages:["","Border","Corners",""]},is_waxed:true}`,
+    `setblock -2 ${yValue + 2} ${edgeMinZ} oak_wall_sign[facing="south"]{front_text:{messages:["","West -> East","Borders",""]},is_waxed:true}`,
+    `setblock 0 ${yValue + 2} ${edgeMinZ} oak_wall_sign[facing="south"]{front_text:{messages:["","Main","Floor",""]},is_waxed:true}`,
+    `setblock 2 ${yValue + 2} ${edgeMinZ} oak_wall_sign[facing="south"]{front_text:{messages:["","North -> South","Borders",""]},is_waxed:true}`,
+    `setblock 4 ${yValue + 2} ${edgeMinZ} oak_wall_sign[facing="south"]{front_text:{messages:["","Entity","Platforms",""]},is_waxed:true}`,
+    `setblock -2 ${yValue + 3} ${edgeMinZ} oak_wall_sign[facing="south"]{front_text:{messages:["","Load","Floor",""]},is_waxed:true}`,
+    `setblock 2 ${yValue + 3} ${edgeMinZ} oak_wall_sign[facing="south"]{front_text:{messages:["","Reset","Floor",""]},is_waxed:true}`,
     `setblock -1 ${yValue + 3} ${edgeMinZ - 1} spruce_log[axis=z]`,
     `setblock 1 ${yValue + 3} ${edgeMinZ - 1} spruce_log[axis=z]`,
     `setblock -1 ${yValue + 3} ${edgeMinZ} stone_button[facing=south]`,
@@ -364,13 +364,13 @@ fs.writeFileSync(path.join(functions, "spawn_entities.mcfunction"), [
   const edgeMaxZ = 5
 
   const commands = [
-    `setblock -2 ${yValue + 3} ${edgeMaxZ} oak_wall_sign{front_text:{messages:['{"text":"Instagram","underlined":true,"bold":true}','""','"@ewan.howell"','""']},is_waxed:true}`,
-    `setblock -1 ${yValue + 3} ${edgeMaxZ} oak_wall_sign{front_text:{messages:['{"text":"Website","underlined":true,"bold":true}','""','"ewanhowell.com"','""']},is_waxed:true}`,
-    `setblock 0 ${yValue + 3} ${edgeMaxZ} oak_wall_sign{front_text:{messages:['{"text":"Map By","underlined":true,"bold":true}','""','"Ewan Howell"','""']},is_waxed:true}`,
-    `setblock 1 ${yValue + 3} ${edgeMaxZ} oak_wall_sign{front_text:{messages:['{"text":"YouTube","underlined":true,"bold":true}','""','"Ewan Howell"','""']},is_waxed:true}`,
-    `setblock 2 ${yValue + 3} ${edgeMaxZ} oak_wall_sign{front_text:{messages:['{"text":"Twitter","underlined":true,"bold":true}','""','"@ewanhowell5195"','""']},is_waxed:true}`,
-    `setblock 3 ${yValue + 1} ${edgeMaxZ} oak_wall_sign{front_text:{messages:['""','"Spawn"','"Entities"','""']},is_waxed:true}`,
-    `setblock 2 ${yValue + 1} ${edgeMaxZ} oak_wall_sign{front_text:{messages:['""','"Clear"','"Entities"','""']},is_waxed:true}`,
+    `setblock -2 ${yValue + 3} ${edgeMaxZ} oak_wall_sign{front_text:{messages:[{"text":"Instagram","underlined":true,"bold":true},"","@ewan.howell",""]},is_waxed:true}`,
+    `setblock -1 ${yValue + 3} ${edgeMaxZ} oak_wall_sign{front_text:{messages:[{"text":"Website","underlined":true,"bold":true},"","ewanhowell.com",""]},is_waxed:true}`,
+    `setblock 0 ${yValue + 3} ${edgeMaxZ} oak_wall_sign{front_text:{messages:[{"text":"Map By","underlined":true,"bold":true},"","Ewan Howell",""]},is_waxed:true}`,
+    `setblock 1 ${yValue + 3} ${edgeMaxZ} oak_wall_sign{front_text:{messages:[{"text":"YouTube","underlined":true,"bold":true},"","Ewan Howell",""]},is_waxed:true}`,
+    `setblock 2 ${yValue + 3} ${edgeMaxZ} oak_wall_sign{front_text:{messages:[{"text":"Twitter","underlined":true,"bold":true},"","@ewanhowell5195",""]},is_waxed:true}`,
+    `setblock 3 ${yValue + 1} ${edgeMaxZ} oak_wall_sign{front_text:{messages:["","Spawn","Entities",""]},is_waxed:true}`,
+    `setblock 2 ${yValue + 1} ${edgeMaxZ} oak_wall_sign{front_text:{messages:["","Clear","Entities",""]},is_waxed:true}`,
     "function entitytester:update_controls"
   ]
 
@@ -399,8 +399,8 @@ fs.writeFileSync(path.join(functions, "spawn_entities.mcfunction"), [
 
   function addControl(variable, name, option1, option2, x) {
     commands.push(
-      `execute if score global entitytester_${variable} matches 0 run setblock ${x} ${yValue + 1} ${edgeMaxZ} oak_wall_sign{front_text:{messages:['{"text":"${name}","underlined":true,"bold":true}','""','{"text":"${option1}","bold":true,"color":"white"}','{"text":"${option2}"}']},is_waxed:true}`,
-      `execute if score global entitytester_${variable} matches 1 run setblock ${x} ${yValue + 1} ${edgeMaxZ} oak_wall_sign{front_text:{messages:['{"text":"${name}","underlined":true,"bold":true}','""','{"text":"${option1}"}','{"text":"${option2}","bold":true,"color":"white"}']},is_waxed:true}`,
+      `execute if score global entitytester_${variable} matches 0 run setblock ${x} ${yValue + 1} ${edgeMaxZ} oak_wall_sign{front_text:{messages:[{"text":"${name}","underlined":true,"bold":true},"",{"text":"${option1}","bold":true,"color":"white"},{"text":"${option2}"}]},is_waxed:true}`,
+      `execute if score global entitytester_${variable} matches 1 run setblock ${x} ${yValue + 1} ${edgeMaxZ} oak_wall_sign{front_text:{messages:[{"text":"${name}","underlined":true,"bold":true},"",{"text":"${option1}"},{"text":"${option2}","bold":true,"color":"white"}]},is_waxed:true}`,
     )
   }
 

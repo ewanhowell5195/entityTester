@@ -1,5 +1,5 @@
 scoreboard players set global entitytester_entities_loaded 0
-execute if score global entitytester_last_structure matches 40005 run function entitytester:clear_entities_39x69
+execute if score global entitytester_last_structure matches 39999 run function entitytester:clear_entities_39x63
 execute if score global entitytester_last_structure matches 27681 run function entitytester:clear_entities_27x33
-execute if score global entitytester_last_structure matches 76923 run function entitytester:clear_entities_75x123
-execute if score global entitytester_last_structure matches 40017 run function entitytester:clear_entities_39x81
+execute if score global entitytester_last_structure matches 76929 run function entitytester:clear_entities_75x129
+execute if score global entitytester_last_structure matches 40035 run function entitytester:clear_entities_39x99

@@ -27,13 +27,13 @@ setblock -19 -57 6 dark_oak_slab
 setblock 19 -57 6 dark_oak_slab
 function entitytester:create_controls
 place template entitytester:floor_blocks -4 -60 -38
-setblock -4 -59 -37 oak_wall_sign[facing="south"]{front_text:{messages:['""','"Border"','"Corners"','""']},is_waxed:true}
-setblock -2 -59 -37 oak_wall_sign[facing="south"]{front_text:{messages:['""','"West -> East"','"Borders"','""']},is_waxed:true}
-setblock 0 -59 -37 oak_wall_sign[facing="south"]{front_text:{messages:['""','"Main"','"Floor"','""']},is_waxed:true}
-setblock 2 -59 -37 oak_wall_sign[facing="south"]{front_text:{messages:['""','"North -> South"','"Borders"','""']},is_waxed:true}
-setblock 4 -59 -37 oak_wall_sign[facing="south"]{front_text:{messages:['""','"Entity"','"Platforms"','""']},is_waxed:true}
-setblock -2 -58 -37 oak_wall_sign[facing="south"]{front_text:{messages:['""','"Load"','"Floor"','""']},is_waxed:true}
-setblock 2 -58 -37 oak_wall_sign[facing="south"]{front_text:{messages:['""','"Reset"','"Floor"','""']},is_waxed:true}
+setblock -4 -59 -37 oak_wall_sign[facing="south"]{front_text:{messages:["","Border","Corners",""]},is_waxed:true}
+setblock -2 -59 -37 oak_wall_sign[facing="south"]{front_text:{messages:["","West -> East","Borders",""]},is_waxed:true}
+setblock 0 -59 -37 oak_wall_sign[facing="south"]{front_text:{messages:["","Main","Floor",""]},is_waxed:true}
+setblock 2 -59 -37 oak_wall_sign[facing="south"]{front_text:{messages:["","North -> South","Borders",""]},is_waxed:true}
+setblock 4 -59 -37 oak_wall_sign[facing="south"]{front_text:{messages:["","Entity","Platforms",""]},is_waxed:true}
+setblock -2 -58 -37 oak_wall_sign[facing="south"]{front_text:{messages:["","Load","Floor",""]},is_waxed:true}
+setblock 2 -58 -37 oak_wall_sign[facing="south"]{front_text:{messages:["","Reset","Floor",""]},is_waxed:true}
 setblock -1 -58 -38 spruce_log[axis=z]
 setblock 1 -58 -38 spruce_log[axis=z]
 setblock -1 -58 -37 stone_button[facing=south]

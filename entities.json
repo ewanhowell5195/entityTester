@@ -54,7 +54,7 @@
       "id": "armor_stand",
       "baby": true,
       "nbt": {
-        "ArmorItems": "[{id:diamond_boots},{id:diamond_leggings},{id:diamond_chestplate},{id:diamond_helmet}]",
+        "equipment": "{feet:{id:\"diamond_boots\"},legs:{id:\"diamond_leggings\"},head:{id:\"diamond_helmet\"},chest:{id:\"diamond_chestplate\"}}",
         "Invisible": 1
       },
       "variant_nbt": {
@@ -62,35 +62,35 @@
       },
       "variants": [
         {
-          "ArmorItems": [
-            "[{id:leather_boots},{id:leather_leggings},{id:leather_chestplate},{id:leather_helmet}]",
-            "[{id:chainmail_boots},{id:chainmail_leggings},{id:chainmail_chestplate},{id:chainmail_helmet}]",
-            "[{id:iron_boots},{id:iron_leggings},{id:iron_chestplate},{id:iron_helmet}]",
-            "[{id:golden_boots},{id:golden_leggings},{id:golden_chestplate},{id:golden_helmet}]",
-            "[{id:diamond_boots},{id:diamond_leggings},{id:diamond_chestplate},{id:diamond_helmet}]",
-            "[{id:netherite_boots},{id:netherite_leggings},{id:netherite_chestplate},{id:netherite_helmet}]"
+          "equipment": [
+            "{feet:{id:\"leather_boots\"},legs:{id:\"leather_leggings\"},chest:{id:\"leather_chestplate\"},head:{id:\"leather_helmet\"}}",
+            "{feet:{id:\"chainmail_boots\"},legs:{id:\"chainmail_leggings\"},chest:{id:\"chainmail_chestplate\"},head:{id:\"chainmail_helmet\"}}",
+            "{feet:{id:\"iron_boots\"},legs:{id:\"iron_leggings\"},chest:{id:\"iron_chestplate\"},head:{id:\"iron_helmet\"}}",
+            "{feet:{id:\"golden_boots\"},legs:{id:\"golden_leggings\"},chest:{id:\"golden_chestplate\"},head:{id:\"golden_helmet\"}}",
+            "{feet:{id:\"diamond_boots\"},legs:{id:\"diamond_leggings\"},chest:{id:\"diamond_chestplate\"},head:{id:\"diamond_helmet\"}}",
+            "{feet:{id:\"netherite_boots\"},legs:{id:\"netherite_leggings\"},chest:{id:\"netherite_chestplate\"},head:{id:\"netherite_helmet\"}}"
           ]
         },
         {
-          "ArmorItems": [
-            "[{id:diamond_boots,components:{trim:{material:redstone,pattern:bolt}}},{id:diamond_leggings,components:{trim:{material:redstone,pattern:bolt}}},{id:diamond_chestplate,components:{trim:{material:redstone,pattern:bolt}}},{id:diamond_helmet,components:{trim:{material:redstone,pattern:bolt}}}]",
-            "[{id:diamond_boots,components:{trim:{material:redstone,pattern:coast}}},{id:diamond_leggings,components:{trim:{material:redstone,pattern:coast}}},{id:diamond_chestplate,components:{trim:{material:redstone,pattern:coast}}},{id:diamond_helmet,components:{trim:{material:redstone,pattern:coast}}}]",
-            "[{id:diamond_boots,components:{trim:{material:redstone,pattern:dune}}},{id:diamond_leggings,components:{trim:{material:redstone,pattern:dune}}},{id:diamond_chestplate,components:{trim:{material:redstone,pattern:dune}}},{id:diamond_helmet,components:{trim:{material:redstone,pattern:dune}}}]",
-            "[{id:diamond_boots,components:{trim:{material:redstone,pattern:eye}}},{id:diamond_leggings,components:{trim:{material:redstone,pattern:eye}}},{id:diamond_chestplate,components:{trim:{material:redstone,pattern:eye}}},{id:diamond_helmet,components:{trim:{material:redstone,pattern:eye}}}]",
-            "[{id:diamond_boots,components:{trim:{material:redstone,pattern:flow}}},{id:diamond_leggings,components:{trim:{material:redstone,pattern:flow}}},{id:diamond_chestplate,components:{trim:{material:redstone,pattern:flow}}},{id:diamond_helmet,components:{trim:{material:redstone,pattern:flow}}}]",
-            "[{id:diamond_boots,components:{trim:{material:redstone,pattern:host}}},{id:diamond_leggings,components:{trim:{material:redstone,pattern:host}}},{id:diamond_chestplate,components:{trim:{material:redstone,pattern:host}}},{id:diamond_helmet,components:{trim:{material:redstone,pattern:host}}}]",
-            "[{id:diamond_boots,components:{trim:{material:redstone,pattern:raiser}}},{id:diamond_leggings,components:{trim:{material:redstone,pattern:raiser}}},{id:diamond_chestplate,components:{trim:{material:redstone,pattern:raiser}}},{id:diamond_helmet,components:{trim:{material:redstone,pattern:raiser}}}]",
-            "[{id:diamond_boots,components:{trim:{material:redstone,pattern:rib}}},{id:diamond_leggings,components:{trim:{material:redstone,pattern:rib}}},{id:diamond_chestplate,components:{trim:{material:redstone,pattern:rib}}},{id:diamond_helmet,components:{trim:{material:redstone,pattern:rib}}}]",
-            "[{id:diamond_boots,components:{trim:{material:redstone,pattern:sentry}}},{id:diamond_leggings,components:{trim:{material:redstone,pattern:sentry}}},{id:diamond_chestplate,components:{trim:{material:redstone,pattern:sentry}}},{id:diamond_helmet,components:{trim:{material:redstone,pattern:sentry}}}]",
-            "[{id:diamond_boots,components:{trim:{material:redstone,pattern:shaper}}},{id:diamond_leggings,components:{trim:{material:redstone,pattern:shaper}}},{id:diamond_chestplate,components:{trim:{material:redstone,pattern:shaper}}},{id:diamond_helmet,components:{trim:{material:redstone,pattern:shaper}}}]",
-            "[{id:diamond_boots,components:{trim:{material:redstone,pattern:silence}}},{id:diamond_leggings,components:{trim:{material:redstone,pattern:silence}}},{id:diamond_chestplate,components:{trim:{material:redstone,pattern:silence}}},{id:diamond_helmet,components:{trim:{material:redstone,pattern:silence}}}]",
-            "[{id:diamond_boots,components:{trim:{material:redstone,pattern:snout}}},{id:diamond_leggings,components:{trim:{material:redstone,pattern:snout}}},{id:diamond_chestplate,components:{trim:{material:redstone,pattern:snout}}},{id:diamond_helmet,components:{trim:{material:redstone,pattern:snout}}}]",
-            "[{id:diamond_boots,components:{trim:{material:redstone,pattern:spire}}},{id:diamond_leggings,components:{trim:{material:redstone,pattern:spire}}},{id:diamond_chestplate,components:{trim:{material:redstone,pattern:spire}}},{id:diamond_helmet,components:{trim:{material:redstone,pattern:spire}}}]",
-            "[{id:diamond_boots,components:{trim:{material:redstone,pattern:tide}}},{id:diamond_leggings,components:{trim:{material:redstone,pattern:tide}}},{id:diamond_chestplate,components:{trim:{material:redstone,pattern:tide}}},{id:diamond_helmet,components:{trim:{material:redstone,pattern:tide}}}]",
-            "[{id:diamond_boots,components:{trim:{material:redstone,pattern:vex}}},{id:diamond_leggings,components:{trim:{material:redstone,pattern:vex}}},{id:diamond_chestplate,components:{trim:{material:redstone,pattern:vex}}},{id:diamond_helmet,components:{trim:{material:redstone,pattern:vex}}}]",
-            "[{id:diamond_boots,components:{trim:{material:redstone,pattern:ward}}},{id:diamond_leggings,components:{trim:{material:redstone,pattern:ward}}},{id:diamond_chestplate,components:{trim:{material:redstone,pattern:ward}}},{id:diamond_helmet,components:{trim:{material:redstone,pattern:ward}}}]",
-            "[{id:diamond_boots,components:{trim:{material:redstone,pattern:wayfinder}}},{id:diamond_leggings,components:{trim:{material:redstone,pattern:wayfinder}}},{id:diamond_chestplate,components:{trim:{material:redstone,pattern:wayfinder}}},{id:diamond_helmet,components:{trim:{material:redstone,pattern:wayfinder}}}]",
-            "[{id:diamond_boots,components:{trim:{material:redstone,pattern:wild}}},{id:diamond_leggings,components:{trim:{material:redstone,pattern:wild}}},{id:diamond_chestplate,components:{trim:{material:redstone,pattern:wild}}},{id:diamond_helmet,components:{trim:{material:redstone,pattern:wild}}}]"
+          "equipment": [
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"bolt\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"bolt\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"bolt\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"bolt\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"coast\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"coast\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"coast\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"coast\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"dune\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"dune\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"dune\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"dune\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"eye\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"eye\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"eye\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"eye\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"flow\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"flow\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"flow\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"flow\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"host\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"host\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"host\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"host\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"raiser\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"raiser\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"raiser\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"raiser\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"rib\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"rib\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"rib\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"rib\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"sentry\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"sentry\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"sentry\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"sentry\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"shaper\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"shaper\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"shaper\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"shaper\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"silence\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"silence\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"silence\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"silence\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"snout\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"snout\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"snout\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"snout\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"spire\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"spire\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"spire\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"spire\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"tide\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"tide\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"tide\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"tide\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"vex\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"vex\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"vex\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"vex\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"ward\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"ward\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"ward\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"ward\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"wayfinder\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"wayfinder\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"wayfinder\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"wayfinder\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"wild\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"wild\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"wild\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"wild\"}}}}"
           ]
         }
       ]
@@ -119,12 +119,17 @@
       "id": "pig",
       "baby": true,
       "nbt": {
-        "Saddle": 1
+        "equipment": "{saddle:{id:\"saddle\"}}"
       },
       "variants": {
-        "Saddle": [
+        "variant": [
+          "temperate",
+          "warm",
+          "cold"
+        ],
+        "equipment": [
           null,
-          1
+          "{saddle:{id:\"saddle\"}}"
         ]
       }
     },
@@ -288,11 +293,30 @@
       }
     },
     {
-      "id": "minecart"
+      "name": "minecart",
+      "id": "minecart",
+      "variants": {
+        "id": [
+          "minecart",
+          "chest_minecart",
+          "command_block_minecart",
+          "furnace_minecart",
+          "hopper_minecart",
+          "spawner_minecart",
+          "tnt_minecart"
+        ]
+      }
     },
     {
       "id": "cow",
-      "baby": true
+      "baby": true,
+      "variants": {
+        "variant": [
+          "temperate",
+          "warm",
+          "cold"
+        ]
+      }
     },
     {
       "name": "boat",
@@ -323,15 +347,14 @@
     },
     {
       "id": "chicken",
-      "baby": true
-    },
-    {
-      "name": "minecart_with_chest",
-      "id": "chest_minecart"
-    },
-    {
-      "name": "minecart_with_furnace",
-      "id": "furnace_minecart"
+      "baby": true,
+      "variants": {
+        "variant": [
+          "temperate",
+          "warm",
+          "cold"
+        ]
+      }
     },
     {
       "id": "squid",
@@ -375,8 +398,8 @@
       "id": "wolf",
       "baby": true,
       "nbt": {
-        "Owner": "dummy",
-        "body_armor_item": "{id:wolf_armor}"
+        "Owner": "[I;110787060,1156138790,-1514210135,238594805]",
+        "equipment": "{body:{id:wolf_armor}}"
       },
       "variant_nbt": [
         {},
@@ -399,7 +422,7 @@
           ],
           "Owner": [
             null,
-            "dummy"
+            "[I;110787060,1156138790,-1514210135,238594805]"
           ],
           "AngerTime": [
             null,
@@ -407,18 +430,18 @@
           ]
         },
         {
-          "body_armor_item": [
-            "{id:wolf_armor}",
-            "{id:wolf_armor,components:{damage:20}}",
-            "{id:wolf_armor,components:{damage:44}}",
-            "{id:wolf_armor,components:{damage:60}}"
+          "equipment": [
+            "{body:{id:\"wolf_armor\"}}",
+            "{body:{id:\"wolf_armor\",components:{damage:20}}}",
+            "{body:{id:\"wolf_armor\",components:{damage:44}}}",
+            "{body:{id:\"wolf_armor\",components:{damage:60}}}"
           ]
         }
       ],
       "constraints": [
         {
           "AngerTime": 2147483647,
-          "Owner": "dummy"
+          "Owner": "[I;110787060,1156138790,-1514210135,238594805]"
         }
       ]
     },
@@ -695,23 +718,11 @@
       }
     },
     {
-      "name": "minecart_with_tnt",
-      "id": "tnt_minecart"
-    },
-    {
-      "name": "minecart_with_hopper",
-      "id": "hopper_minecart"
-    },
-    {
-      "name": "minecart_with_spawner",
-      "id": "spawner_minecart"
-    },
-    {
       "id": "donkey",
       "baby": true,
       "nbt": {
         "Tame": 1,
-        "SaddleItem": "{id:saddle}",
+        "equipment": "{saddle:{id:\"saddle\"}}",
         "ChestedHorse": 1
       }
     },
@@ -720,13 +731,12 @@
       "baby": true,
       "nbt": {
         "Tame": 1,
-        "SaddleItem": "{id:saddle}",
-        "body_armor_item": "{id:diamond_horse_armor}"
+        "equipment": "{saddle:{id:\"saddle\"},body:{id:\"diamond_horse_armor\"}}"
       },
       "variant_nbt": [
         {
           "Tame": 1,
-          "SaddleItem": "{id:saddle}"
+          "equipment": "{saddle:{id:\"saddle\"}}"
         },
         {
           "Tame": 1,
@@ -774,11 +784,11 @@
           ]
         },
         {
-          "body_armor_item": [
-            "{id:leather_horse_armor}",
-            "{id:iron_horse_armor}",
-            "{id:golden_horse_armor}",
-            "{id:diamond_horse_armor}"
+          "equipment": [
+            "{body:{id:\"leather_horse_armor\"}}",
+            "{body:{id:\"iron_horse_armor\"}}",
+            "{body:{id:\"golden_horse_armor\"}}",
+            "{body:{id:\"diamond_horse_armor\"}}"
           ]
         }
       ]
@@ -794,7 +804,7 @@
       "baby": true,
       "nbt": {
         "Tame": 1,
-        "SaddleItem": "{id:saddle}",
+        "equipment": "{saddle:{id:\"saddle\"}}",
         "ChestedHorse": 1
       }
     },
@@ -803,7 +813,7 @@
       "baby": true,
       "nbt": {
         "Tame": 1,
-        "SaddleItem": "{id:saddle}"
+        "equipment": "{saddle:{id:\"saddle\"}}"
       }
     },
     {
@@ -811,13 +821,10 @@
       "baby": true,
       "nbt": {
         "Tame": 1,
-        "SaddleItem": "{id:saddle}"
+        "equipment": "{saddle:{id:\"saddle\"}}"
       }
     },
-    {
-      "name": "minecart_with_command_block",
-      "id": "command_block_minecart"
-    },
+
     {
       "id": "endermite"
     },
@@ -940,7 +947,7 @@
       "id": "armor_stand",
       "baby": true,
       "nbt": {
-        "HandItems": "[{id:shield}]",
+        "equipment": "{mainhand:{id:\"shield\"}}",
         "Pose": "{RightArm:[-90f,-90f,0f]}",
         "Invisible": 1
       },
@@ -960,7 +967,7 @@
       "id": "armor_stand",
       "baby": true,
       "nbt": {
-        "ArmorItems": "[{},{},{id:elytra},{}]",
+        "equipment": "{chest:{id:\"elytra\"}}",
         "Invisible": 1
       }
     },
@@ -988,7 +995,7 @@
       "nbt": {
         "Tame": 1,
         "ChestedHorse": 1,
-        "body_armor_item": "{id:red_carpet}"
+        "equipment": "{body:{id:\"red_carpet\"}}"
       },
       "variant_nbt": [
         {
@@ -1011,23 +1018,23 @@
           ]
         },
         {
-          "body_armor_item": [
-            "{id:white_carpet}",
-            "{id:light_gray_carpet}",
-            "{id:gray_carpet}",
-            "{id:black_carpet}",
-            "{id:brown_carpet}",
-            "{id:red_carpet}",
-            "{id:orange_carpet}",
-            "{id:yellow_carpet}",
-            "{id:lime_carpet}",
-            "{id:green_carpet}",
-            "{id:cyan_carpet}",
-            "{id:light_blue_carpet}",
-            "{id:blue_carpet}",
-            "{id:purple_carpet}",
-            "{id:magenta_carpet}",
-            "{id:pink_carpet}"
+          "equipment": [
+            "{body:{id:\"white_carpet\"}}",
+            "{body:{id:\"light_gray_carpet\"}}",
+            "{body:{id:\"gray_carpet\"}}",
+            "{body:{id:\"black_carpet\"}}",
+            "{body:{id:\"brown_carpet\"}}",
+            "{body:{id:\"red_carpet\"}}",
+            "{body:{id:\"orange_carpet\"}}",
+            "{body:{id:\"yellow_carpet\"}}",
+            "{body:{id:\"lime_carpet\"}}",
+            "{body:{id:\"green_carpet\"}}",
+            "{body:{id:\"cyan_carpet\"}}",
+            "{body:{id:\"light_blue_carpet\"}}",
+            "{body:{id:\"blue_carpet\"}}",
+            "{body:{id:\"purple_carpet\"}}",
+            "{body:{id:\"magenta_carpet\"}}",
+            "{body:{id:\"pink_carpet\"}}"
           ]
         }
       ]
@@ -1205,7 +1212,7 @@
       "id": "cat",
       "baby": true,
       "nbt": {
-        "Owner": "dummy"
+        "Owner": "[I;110787060,1156138790,-1514210135,238594805]"
       },
       "variants": {
         "variant": [
@@ -1220,6 +1227,10 @@
           "siamese",
           "tabby",
           "white"
+        ],
+        "Owner": [
+          null,
+          "[I;110787060,1156138790,-1514210135,238594805]"
         ]
       }
     },
@@ -1238,18 +1249,47 @@
         "Tame": 1,
         "ChestedHorse": 1
       },
-      "variant_nbt": {
-        "Tame": 1,
-        "ChestedHorse": 1
-      },
-      "variants": {
-        "Variant": [
-          null,
-          1,
-          2,
-          3
-        ]
-      }
+      "variant_nbt": [
+        {
+          "Tame": 1,
+          "ChestedHorse": 1
+        },
+        {
+          "Tame": 1,
+          "ChestedHorse": 1,
+          "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
+        }
+      ],
+      "variants": [
+        {
+          "Variant": [
+            null,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "equipment": [
+            "{body:{id:\"white_carpet\"}}",
+            "{body:{id:\"light_gray_carpet\"}}",
+            "{body:{id:\"gray_carpet\"}}",
+            "{body:{id:\"black_carpet\"}}",
+            "{body:{id:\"brown_carpet\"}}",
+            "{body:{id:\"red_carpet\"}}",
+            "{body:{id:\"orange_carpet\"}}",
+            "{body:{id:\"yellow_carpet\"}}",
+            "{body:{id:\"lime_carpet\"}}",
+            "{body:{id:\"green_carpet\"}}",
+            "{body:{id:\"cyan_carpet\"}}",
+            "{body:{id:\"light_blue_carpet\"}}",
+            "{body:{id:\"blue_carpet\"}}",
+            "{body:{id:\"purple_carpet\"}}",
+            "{body:{id:\"magenta_carpet\"}}",
+            "{body:{id:\"pink_carpet\"}}"
+          ]
+        }
+      ]
     },
     {
       "id": "wandering_trader"
@@ -1352,18 +1392,14 @@
     {
       "id": "goat",
       "baby": true,
-      "nbt": {
-        "HasLeftHorn": 1,
-        "HasRightHorn": 1
-      },
       "variants": {
         "HasLeftHorn": [
-          null,
-          1
+          0,
+          null
         ],
         "HasRightHorn": [
-          null,
-          1
+          0,
+          null
         ]
       }
     },
@@ -1412,7 +1448,7 @@
       "id": "camel",
       "baby": true,
       "nbt": {
-        "SaddleItem": "{id:saddle}"
+        "equipment": "{saddle:{id:\"saddle\"}}"
       }
     },
     {
@@ -1594,20 +1630,19 @@
       "id": "breeze"
     },
     {
-      "id": "breeze_wind_charge",
-      "offset": [
-        0,
-        0.5,
-        0
-      ]
-    },
-    {
+      "name": "wind_charge",
       "id": "wind_charge",
       "offset": [
         0,
         0.5,
         0
-      ]
+      ],
+      "variants": {
+        "id": [
+          "wind_charge",
+          "breeze_wind_charge"
+        ]
+      }
     },
     {
       "id": "bogged",
