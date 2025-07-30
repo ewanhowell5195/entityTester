@@ -21,6 +21,11 @@ function expStep(step, start, length, func) {
   }
 }
 
+function getLargeEntitiesPerRow(normalEntityWidth) {
+  const maxRowWidth = (normalEntityWidth * 2) + 1
+  return Math.floor((maxRowWidth + 1) / 6)
+}
+
 const structures = []
 function createStructure(rectangleWidth, rectangleLength) {
   const name = `${rectangleWidth}x${rectangleLength}`
@@ -161,34 +166,55 @@ function createFloor(width, rectangleWidth, rectangleLength, entities, large = [
 
   commands.push(`clone ${minX - 1} ${yValue} ${minZ - 1} ${maxX + 1} ${yValue} ${minZ - 1} ${minX - 1} ${yValue} ${maxZ + 1}`)
 
-  const offset = large.length ? 15 : 3
+  const largePerRow = getLargeEntitiesPerRow(width)
+
+  let offset
+  if (large.length) {
+    const largeRowCount = Math.ceil(large.length / largePerRow)
+    offset = largeRowCount * 11 + 4
+  } else {
+    offset = 3
+  }
 
   if (large.length) {
-    const startX = minX + ((rectangleWidth + 2) - (large.length * 6 + 1)) / 2
-    const startZ = minZ + 5
+    const largeRowCount = Math.ceil(large.length / largePerRow)
 
-    commands.push(
-      `clone 4 ${yValue + 1} ${edgeMinZ} 4 ${yValue + 1} ${edgeMinZ} ${startX} ${yValue} ${startZ}`,
-      `clone -2 ${yValue + 1} ${edgeMinZ} -2 ${yValue + 1} ${edgeMinZ} ${startX} ${yValue} ${startZ - 1}`,
-      `clone 2 ${yValue + 1} ${edgeMinZ} 2 ${yValue + 1} ${edgeMinZ} ${startX - 1} ${yValue} ${startZ}`,
-      `clone 2 ${yValue + 1} ${edgeMinZ} 2 ${yValue + 1} ${edgeMinZ} ${startX + 5} ${yValue} ${startZ}`,
-      `clone -4 ${yValue + 1} ${edgeMinZ} -4 ${yValue + 1} ${edgeMinZ} ${startX - 1} ${yValue} ${startZ - 1}`,
-      `clone -4 ${yValue + 1} ${edgeMinZ} -4 ${yValue + 1} ${edgeMinZ} ${startX + 5} ${yValue} ${startZ - 1}`
-    )
+    const largeStartX = minX + (rectangleWidth - (largePerRow * 6 - 1)) / 2
+    const largeStartZ = minZ + 5
 
-    expStep(1, startX, 5, (start, end, pos) => {
-      commands.push(`clone ${start} ${yValue} ${startZ} ${end} ${yValue} ${startZ - 1} ${pos} ${yValue} ${startZ - 1}`)
-    })
+    for (let row = 0; row < largeRowCount; row++) {
+      const rowZ = largeStartZ + row * 11
+      const rowStart = row * largePerRow
+      const rowLength = Math.min(largePerRow, large.length - rowStart)
 
-    expStep(1, startZ, 5, (start, end, pos) => {
-      commands.push(`clone ${startX - 1} ${yValue} ${start} ${startX + 5} ${yValue} ${end} ${startX - 1} ${yValue} ${pos}`)
-    })
+      let rowX = largeStartX
+      if (row === largeRowCount - 1 && rowLength < largePerRow) {
+        rowX += (largePerRow * 6 - rowLength * 6) / 2
+      }
 
-    commands.push(`clone ${startX - 1} ${yValue} ${startZ - 1} ${startX + 5} ${yValue} ${startZ - 1} ${startX - 1} ${yValue} ${startZ + 5}`)
+      commands.push(
+        `clone 4 ${yValue + 1} ${edgeMinZ} 4 ${yValue + 1} ${edgeMinZ} ${rowX} ${yValue} ${rowZ}`,
+        `clone -2 ${yValue + 1} ${edgeMinZ} -2 ${yValue + 1} ${edgeMinZ} ${rowX} ${yValue} ${rowZ - 1}`,
+        `clone 2 ${yValue + 1} ${edgeMinZ} 2 ${yValue + 1} ${edgeMinZ} ${rowX - 1} ${yValue} ${rowZ}`,
+        `clone 2 ${yValue + 1} ${edgeMinZ} 2 ${yValue + 1} ${edgeMinZ} ${rowX + 5} ${yValue} ${rowZ}`,
+        `clone -4 ${yValue + 1} ${edgeMinZ} -4 ${yValue + 1} ${edgeMinZ} ${rowX - 1} ${yValue} ${rowZ - 1}`,
+        `clone -4 ${yValue + 1} ${edgeMinZ} -4 ${yValue + 1} ${edgeMinZ} ${rowX + 5} ${yValue} ${rowZ - 1}`
+      )
 
-    expStep(6, startX, large.length * 6, (start, end, pos) => {
-      commands.push(`clone ${start} ${yValue} ${startZ - 1} ${end} ${yValue} ${startZ + 5} ${pos} ${yValue} ${startZ - 1}`)
-    })
+      expStep(1, rowX, 5, (start, end, pos) => {
+        commands.push(`clone ${start} ${yValue} ${rowZ} ${end} ${yValue} ${rowZ - 1} ${pos} ${yValue} ${rowZ - 1}`)
+      })
+
+      expStep(1, rowZ, 5, (start, end, pos) => {
+        commands.push(`clone ${rowX - 1} ${yValue} ${start} ${rowX + 5} ${yValue} ${end} ${rowX - 1} ${yValue} ${pos}`)
+      })
+
+      commands.push(`clone ${rowX - 1} ${yValue} ${rowZ - 1} ${rowX + 5} ${yValue} ${rowZ - 1} ${rowX - 1} ${yValue} ${rowZ + 5}`)
+
+      expStep(6, rowX, rowLength * 6, (start, end, pos) => {
+        commands.push(`clone ${start} ${yValue} ${rowZ - 1} ${end} ${yValue} ${rowZ + 5} ${pos} ${yValue} ${rowZ - 1}`)
+      })
+    }
   }
 
   const startX = minX + (rectangleWidth - (width * 2 + 1)) / 2
@@ -227,9 +253,10 @@ function setBlock(commands, block, x, z) {
       blockstates.push(`${key}=${value}`)
     }
   }
-  commands.push(`setblock ${x} ${yValue + 1} ${z} ${block.id}${blockstates.length ? `[${blockstates.join(",")}]` : ""}`)
-  if (block.behind) {
-    setBlock(commands, block.behind, x, z - 1)
+  if (block.fill) {
+    commands.push(`fill ${x + block.fill[0]} ${yValue + 1 + block.fill[1]} ${z + block.fill[2]} ${x + block.fill[3]} ${yValue + 1 + block.fill[4]} ${z + block.fill[5]} ${block.id}${blockstates.length ? `[${blockstates.join(",")}]` : ""}`)
+  } else {
+    commands.push(`setblock ${x} ${yValue + 1} ${z} ${block.id}${blockstates.length ? `[${blockstates.join(",")}]` : ""}`)
   }
 }
 
@@ -266,12 +293,20 @@ function spawnEntity(name, commands, commands2, entity, x, z, baby) {
     }
     nbt += `}`
     let offset = [0, 0, 0]
-    if (baby && entity.babyOffset) {
-      offset = entity.babyOffset
+    if (baby && entity.baby_offset) {
+      offset = entity.baby_offset
     } else if (entity.offset) {
       offset = entity.offset
     }
     commands2.push(`${entity.id === "wither" ? "execute if score global entitytester_wither matches 1 run " : ""}summon ${entity.id} ${x + offset[0]} ${yValue + 1 + offset[1]} ${z + offset[2]} ${nbt}`)
+  }
+  if (entity.behind) {
+    const behind = {
+      ...entity.behind,
+      id: entity.behind.id ?? entity.id,
+      type: entity.behind.type ?? entity.type
+    }
+    spawnEntity(name, commands, commands2, behind, x, z - 1, baby)
   }
 }
 
@@ -279,16 +314,32 @@ function spawnEntities(name, width, rectangleWidth, rectangleLength, entities, l
   const commands = [`function entitytester:clear_entities_${rectangleWidth}x${rectangleLength}`]
   const commands2 = []
 
-  if (large.length) {
-    const startX = -Math.floor(rectangleWidth / 2) + ((rectangleWidth + 2) - (large.length * 6 + 1)) / 2 + 2
+  const largePerRow = getLargeEntitiesPerRow(width)
+  const largeRowCount = Math.ceil(large.length / largePerRow)
+
+  if (largeRowCount) {
+    const largeStartX = -Math.floor(rectangleWidth / 2) + (rectangleWidth - (largePerRow * 6 - 1)) / 2 + 2
+    const largeStartZ = -rectangleLength + 1 + 7
 
     for (let [i, entity] of large.entries()) {
-      spawnEntity(name, commands, commands2, entity, startX + i * 6, -rectangleLength + 1 + 7, baby)
+      let x = largeStartX + (i % largePerRow) * 6
+      const z = largeStartZ + Math.floor(i / largePerRow) * 11
+
+      if (Math.ceil((i + 1) / largePerRow) === largeRowCount && large.length % largePerRow) {
+        x += (largePerRow * 6 - (large.length % largePerRow) * 6) / 2
+      }
+
+      spawnEntity(name, commands, commands2, entity, x, z, baby)
     }
   }
 
   const startX = -Math.floor(rectangleWidth / 2) + (rectangleWidth - (width * 2 + 1)) / 2 + 1
-  const startZ = -rectangleLength + 1 + (large.length ? 16 : 4)
+
+  let startZ = -rectangleLength + 5
+  if (largeRowCount) {
+    startZ += largeRowCount * 11 + 1
+  }
+
   for (let [i, entity] of entities.entries()) {
     let x = startX + (i % width) * 2
     const z = startZ + Math.floor(i / width) * 6
@@ -309,7 +360,7 @@ function clearEntities(rectangleWidth, rectangleLength) {
   fs.writeFileSync(path.join(functions, `clear_entities_${rectangleWidth}x${rectangleLength}.mcfunction`), [
     "function entitytester:kill",
     `fill ${-Math.floor(rectangleWidth / 2)} 319 ${-rectangleLength + 1} ${Math.ceil(rectangleWidth / 2) - 1} 319 0 air`,
-    `fill ${-Math.floor(rectangleWidth / 2)} ${yValue + 1} ${-rectangleLength + 1} ${Math.ceil(rectangleWidth / 2) - 1} ${yValue + 1} 0 air`
+    `fill ${-Math.floor(rectangleWidth / 2)} ${yValue + 1} ${-rectangleLength + 1} ${Math.ceil(rectangleWidth / 2) - 1} ${yValue + 4} 0 air`
   ].join("\n"))
 }
 
@@ -349,13 +400,13 @@ fs.writeFileSync(path.join(functions, "delete_structure.mcfunction"), [
 // Spawn Entities
 fs.writeFileSync(path.join(functions, "spawn_entities.mcfunction"), [
   "execute if score global entitytester_mode matches 0 run execute if score global entitytester_sort matches 0 run execute if score global entitytester_variants matches 0 run function entitytester:spawn_normal_alphabetical_entities",
-  "execute if score global entitytester_mode matches 0 run execute if score global entitytester_sort matches 0 run execute if score global entitytester_variants matches 1 run function entitytester:spawn_normal_alphabetical_variants_entities",
+  "execute if score global entitytester_mode matches 0 run execute if score global entitytester_sort matches 0 run execute if score global entitytester_variants matches 1 run function entitytester:spawn_normal_variants_alphabetical_entities",
   "execute if score global entitytester_mode matches 0 run execute if score global entitytester_sort matches 1 run execute if score global entitytester_variants matches 0 run function entitytester:spawn_normal_releasedate_entities",
-  "execute if score global entitytester_mode matches 0 run execute if score global entitytester_sort matches 1 run execute if score global entitytester_variants matches 1 run function entitytester:spawn_normal_releasedate_variants_entities",
+  "execute if score global entitytester_mode matches 0 run execute if score global entitytester_sort matches 1 run execute if score global entitytester_variants matches 1 run function entitytester:spawn_normal_variants_releasedate_entities",
   "execute if score global entitytester_mode matches 1 run execute if score global entitytester_sort matches 0 run execute if score global entitytester_variants matches 0 run function entitytester:spawn_baby_alphabetical_entities",
-  "execute if score global entitytester_mode matches 1 run execute if score global entitytester_sort matches 0 run execute if score global entitytester_variants matches 1 run function entitytester:spawn_baby_alphabetical_variants_entities",
+  "execute if score global entitytester_mode matches 1 run execute if score global entitytester_sort matches 0 run execute if score global entitytester_variants matches 1 run function entitytester:spawn_baby_variants_alphabetical_entities",
   "execute if score global entitytester_mode matches 1 run execute if score global entitytester_sort matches 1 run execute if score global entitytester_variants matches 0 run function entitytester:spawn_baby_releasedate_entities",
-  "execute if score global entitytester_mode matches 1 run execute if score global entitytester_sort matches 1 run execute if score global entitytester_variants matches 1 run function entitytester:spawn_baby_releasedate_variants_entities",
+  "execute if score global entitytester_mode matches 1 run execute if score global entitytester_sort matches 1 run execute if score global entitytester_variants matches 1 run function entitytester:spawn_baby_variants_releasedate_entities",
   "scoreboard players set global entitytester_entities_loaded 1"
 ].join("\n"))
 
@@ -415,34 +466,6 @@ fs.writeFileSync(path.join(functions, "spawn_entities.mcfunction"), [
 // Update Delayed AI
 fs.writeFileSync(path.join(functions, "update_delayed_ai.mcfunction"), "execute as @e[type=!minecraft:player] run data merge entity @s {NoAI:1}")
 
-// Normal
-const normalEntityWidth = 16
-
-const normalWidth = Math.max((normalEntityWidth * 2) + 7, entities.large.length * 6 + 9)
-const normalLength = Math.ceil(entities.normal.length / normalEntityWidth) * 6 + 15
-
-createStructure(normalWidth, normalLength)
-clearStructure(normalWidth, normalLength)
-createFloor(normalEntityWidth, normalWidth, normalLength, entities.normal, entities.large)
-spawnEntities("normal_alphabetical", normalEntityWidth, normalWidth, normalLength, entities.normal.slice().sort((a, b) => (a.name ?? a.id).localeCompare(b.name ?? b.id)), entities.large)
-spawnEntities("normal_releasedate", normalEntityWidth, normalWidth, normalLength, entities.normal, entities.large)
-clearEntities(normalWidth, normalLength)
-
-// Baby
-const babyEntityWidth = 10
-
-const babies = entities.normal.filter(e => e.baby)
-
-const babyWidth = babyEntityWidth * 2 + 7
-const babyLength = Math.ceil(babies.length / babyEntityWidth) * 6 + 3
-
-createStructure(babyWidth, babyLength)
-clearStructure(babyWidth, babyLength)
-createFloor(babyEntityWidth, babyWidth, babyLength, babies)
-spawnEntities("baby_alphabetical", babyEntityWidth, babyWidth, babyLength, babies.slice().sort((a, b) => (a.name ?? a.id).localeCompare(b.name ?? b.id)), [], true)
-spawnEntities("baby_releasedate", babyEntityWidth, babyWidth, babyLength, babies, [], true)
-clearEntities(babyWidth, babyLength)
-
 // Variants
 function generateVariants(entity) {
   if (entity.type === "block") {
@@ -451,9 +474,6 @@ function generateVariants(entity) {
       const block = structuredClone(entity)
       delete block.variants
       block.id = variant.id ?? variant
-      if (block.behind) {
-        block.behind.id = variant
-      }
       if (variant.blockstate) {
         block.blockstate = variant.blockstate
       }
@@ -481,13 +501,21 @@ function generateVariants(entity) {
 
       const newEntity = structuredClone(entity)
 
+      const override = entity.variant_data ??= {}
+
+      const { nbt: overrideNbt = {}, ...otherOverrides } = override
+
+      for (const key in otherOverrides) {
+        newEntity[key] = otherOverrides[key]
+      }
+
       newEntity.nbt = Object.fromEntries(
         Object.entries({
-          ...(entity.variant_nbt ?? {}),
+          ...overrideNbt,
           ...currentCombination
         }).filter(([k, v]) => v !== null)
       )
-      
+
       if (entity.id === "panda") {
         if (newEntity.nbt.MainGene === "weak") {
           newEntity.nbt.HiddenGene = "weak"
@@ -505,7 +533,6 @@ function generateVariants(entity) {
         delete newEntity.nbt.id
       }
 
-
       combinations.push(newEntity)
       return
     }
@@ -520,9 +547,6 @@ function generateVariants(entity) {
   return combinations
 }
 
-// Normal Variants
-const normalEntityVariantsWidth = 34
-
 function getVariants(entities) {
   const list = []
   for (const entity of entities) {
@@ -534,8 +558,8 @@ function getVariants(entities) {
       for (const [i, v] of entity.variants.entries()) {
         const newEntity = structuredClone(entity)
         newEntity.variants = v
-        if (Array.isArray(entity.variant_nbt)) {
-          newEntity.variant_nbt = entity.variant_nbt[i]
+        if (Array.isArray(entity.variant_data)) {
+          newEntity.variant_data = entity.variant_data[i]
         }
         entities.push(newEntity)
       }
@@ -550,36 +574,51 @@ function getVariants(entities) {
   return list
 }
 
-const normalVariants = getVariants(entities.normal)
-const largeVariants = getVariants(entities.large)
+// Add Types
+function addType(type, width, normal, large, baby) {
+  const normalWidth = (width * 2) + 7
 
-const normalVariantsWidth = Math.max((normalEntityVariantsWidth * 2) + 7, largeVariants.length * 6 + 9)
-const normalVariantsLength = Math.ceil(normalVariants.length / normalEntityVariantsWidth) * 6 + 15
+  const largePerRow = getLargeEntitiesPerRow(width)
+  const largeRowCount = Math.ceil(large.length / largePerRow)
+  const largeHeight = largeRowCount > 0 ? largeRowCount * 11 + 4 : 3
 
-createStructure(normalVariantsWidth, normalVariantsLength)
-clearStructure(normalVariantsWidth, normalVariantsLength)
-createFloor(normalEntityVariantsWidth, normalVariantsWidth, normalVariantsLength, normalVariants, largeVariants)
-spawnEntities("normal_alphabetical_variants", normalEntityVariantsWidth, normalVariantsWidth, normalVariantsLength, normalVariants.slice().sort((a, b) => (a.name ?? a.id).localeCompare(b.name ?? b.id)), largeVariants)
-spawnEntities("normal_releasedate_variants", normalEntityVariantsWidth, normalVariantsWidth, normalVariantsLength, normalVariants, largeVariants)
-clearEntities(normalVariantsWidth, normalVariantsLength)
+  const normalLength = Math.ceil(normal.length / width) * 6 + largeHeight
+
+  createStructure(normalWidth, normalLength)
+  clearStructure(normalWidth, normalLength)
+  createFloor(width, normalWidth, normalLength, normal, large)
+  spawnEntities(`${type}_alphabetical`, width, normalWidth, normalLength, normal.slice().sort((a, b) => (a.name ?? a.id).localeCompare(b.name ?? b.id)), large, baby)
+  spawnEntities(`${type}_releasedate`, width, normalWidth, normalLength, normal, large)
+  clearEntities(normalWidth, normalLength)
+
+  return [normalWidth, normalLength]
+}
+
+// Normal
+const normal = entities.normal.filter(e => !e.variants_only && !e.baby_only)
+const large = entities.large.filter(e => !e.variants_only && !e.baby_only)
+const [normalWidth, normalLength] = addType("normal", 16, normal, large)
+
+// Baby
+const baby = entities.normal.filter(e => !e.variants_only && e.baby)
+const babyLarge = entities.large.filter(e => !e.variants_only && e.baby)
+const [babyWidth, babyLength] = addType("baby", 10, baby, babyLarge, true)
+
+// Normal Variants
+const normalVariants = getVariants(entities.normal.filter(e => !e.baby_only))
+const largeVariants = getVariants(entities.large.filter(e => !e.baby_only))
+const [normalVariantsWidth, normalVariantsLength] = addType("normal_variants", 48, normalVariants, largeVariants)
 
 // Baby Variants
-const babyEntityVariantsWidth = 16
-
-const babyVariants = normalVariants.filter(e => {
+const babyVariants = getVariants(entities.normal).filter(e => {
   if (e.root === "VillagerData" && e.nbt.profession !== "none") return
   return e.baby
 })
-
-const babyVariantsWidth = babyEntityVariantsWidth * 2 + 7
-const babyVariantsLength = Math.ceil(babyVariants.length / babyEntityVariantsWidth) * 6 + 3
-
-createStructure(babyVariantsWidth, babyVariantsLength)
-clearStructure(babyVariantsWidth, babyVariantsLength)
-createFloor(babyEntityVariantsWidth, babyVariantsWidth, babyVariantsLength, babyVariants)
-spawnEntities("baby_alphabetical_variants", babyEntityVariantsWidth, babyVariantsWidth, babyVariantsLength, babyVariants.slice().sort((a, b) => (a.name ?? a.id).localeCompare(b.name ?? b.id)), [], true)
-spawnEntities("baby_releasedate_variants", babyEntityVariantsWidth, babyVariantsWidth, babyVariantsLength, babyVariants, [], true)
-clearEntities(babyVariantsWidth, babyVariantsLength)
+const babyVariantsLarge = getVariants(entities.large).filter(e => {
+  if (e.root === "VillagerData" && e.nbt.profession !== "none") return
+  return e.baby
+})
+const [babyVariantsWidth, babyVariantsLength] = addType("baby_variants", 24, babyVariants, babyVariantsLarge)
 
 // Clear Structure
 {
@@ -655,10 +694,10 @@ fs.writeFileSync(path.join(functions, "create_structure.mcfunction"), [
 
 // Create Floor
 fs.writeFileSync(path.join(functions, "create_floor.mcfunction"), [
-  `execute if score global entitytester_mode matches 0 run execute if score global entitytester_variants matches 0 run function entitytester:create_floor_${normalWidth}x${normalLength}_${entities.normal.length}_${entities.large.length}`,
-  `execute if score global entitytester_mode matches 1 run execute if score global entitytester_variants matches 0 run function entitytester:create_floor_${babyWidth}x${babyLength}_${babies.length}_0`,
+  `execute if score global entitytester_mode matches 0 run execute if score global entitytester_variants matches 0 run function entitytester:create_floor_${normalWidth}x${normalLength}_${normal.length}_${large.length}`,
+  `execute if score global entitytester_mode matches 1 run execute if score global entitytester_variants matches 0 run function entitytester:create_floor_${babyWidth}x${babyLength}_${baby.length}_${babyLarge.length}`,
   `execute if score global entitytester_mode matches 0 run execute if score global entitytester_variants matches 1 run function entitytester:create_floor_${normalVariantsWidth}x${normalVariantsLength}_${normalVariants.length}_${largeVariants.length}`,
-  `execute if score global entitytester_mode matches 1 run execute if score global entitytester_variants matches 1 run function entitytester:create_floor_${babyVariantsWidth}x${babyVariantsLength}_${babyVariants.length}_0`,
+  `execute if score global entitytester_mode matches 1 run execute if score global entitytester_variants matches 1 run function entitytester:create_floor_${babyVariantsWidth}x${babyVariantsLength}_${babyVariants.length}_${babyVariantsLarge.length}`,
   "function entitytester:spawn_entities"
 ].join("\n"))
 

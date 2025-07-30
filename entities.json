@@ -2,42 +2,157 @@
   "large": [
     {
       "id": "elder_guardian",
-      "offset": [
-        0,
-        1,
-        0
-      ]
+      "offset": [0, 1, 0]
     },
     {
       "id": "ghast",
-      "offset": [
-        -3,
-        10.5,
-        0
-      ]
+      "offset": [-3, 10.5, 0]
     },
     {
-      "id": "giant"
-    },
-    {
-      "id": "ender_dragon",
-      "offset": [
-        3,
-        9.5,
-        0
-      ],
-      "nbt": {
-        "Rotation": "[180f,0f]",
-        "DelayedAI": true
+      "id": "giant",
+      "behind": {
+        "id": "ender_dragon",
+        "offset": [0, 15, 0],
+        "nbt": {
+          "Rotation": "[180f,0f]",
+          "DelayedAI": true
+        }
       }
     },
     {
-      "id": "wither",
-      "offset": [
-        0,
-        0.5,
-        0
+      "id": "happy_ghast",
+      "offset": [3, 10.25, 0],
+      "nbt": {
+        "equipment": "{body:{id:\"blue_harness\"}}"
+      },
+      "variant_data": [
+        {
+          "offset": [0, 1.5, 0]
+        },
+        {
+          "offset": [0, 1.5, 0],
+          "nbt": {
+            "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
+          }
+        }
       ],
+      "variants": [
+        {
+          "equipment": [null]
+        },
+        {
+          "equipment": [
+            "{body:{id:\"white_harness\"}}",
+            "{body:{id:\"light_gray_harness\"}}",
+            "{body:{id:\"gray_harness\"}}",
+            "{body:{id:\"black_harness\"}}",
+            "{body:{id:\"brown_harness\"}}",
+            "{body:{id:\"red_harness\"}}",
+            "{body:{id:\"orange_harness\"}}",
+            "{body:{id:\"yellow_harness\"}}",
+            "{body:{id:\"lime_harness\"}}",
+            "{body:{id:\"green_harness\"}}",
+            "{body:{id:\"cyan_harness\"}}",
+            "{body:{id:\"light_blue_harness\"}}",
+            "{body:{id:\"blue_harness\"}}",
+            "{body:{id:\"purple_harness\"}}",
+            "{body:{id:\"magenta_harness\"}}",
+            "{body:{id:\"pink_harness\"}}"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "painting",
+      "offset": [0, 1, 0],
+      "variants_only": true,
+      "variant_data": [
+        {
+          "behind": {
+            "id": "barrier",
+            "type": "block",
+            "fill": [-1, 0, 0, 1, 2, 0]
+          }
+        },
+        {
+          "behind": {
+            "id": "barrier",
+            "type": "block",
+            "fill": [-1, 0, 0, 1, 3, 0]
+          }
+        },
+        {
+          "behind": {
+            "id": "barrier",
+            "type": "block",
+            "fill": [-1, 0, 0, 2, 1, 0]
+          },
+          "offset": null
+        },
+        {
+          "behind": {
+            "id": "barrier",
+            "type": "block",
+            "fill": [-1, 0, 0, 2, 2, 0]
+          }
+        },
+        {
+          "behind": {
+            "id": "barrier",
+            "type": "block",
+            "fill": [-1, 0, 0, 2, 3, 0]
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant": [
+            "bouquet",
+            "cavebird",
+            "cotan",
+            "dennis",
+            "endboss",
+            "fern",
+            "owlemons",
+            "sunflowers",
+            "tides"
+          ]
+        },
+        {
+          "variant": [
+            "backyard",
+            "pond"
+          ]
+        },
+        {
+          "variant": [
+            "changing",
+            "fighters",
+            "finding",
+            "lowmist",
+            "passage"
+          ]
+        },
+        {
+          "variant": [
+            "donkey_kong",
+            "skeleton"
+          ]
+        },
+        {
+          "variant": [
+            "burning_skull",
+            "orb",
+            "pigscene",
+            "pointer",
+            "unpacked"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wither",
+      "offset": [0, 0.5, 0],
       "nbt": {
         "Health": 150
       },
@@ -57,8 +172,10 @@
         "equipment": "{feet:{id:\"diamond_boots\"},legs:{id:\"diamond_leggings\"},head:{id:\"diamond_helmet\"},chest:{id:\"diamond_chestplate\"}}",
         "Invisible": 1
       },
-      "variant_nbt": {
-        "Invisible": 1
+      "variant_data": {
+        "nbt": {
+          "Invisible": 1
+        }
       },
       "variants": [
         {
@@ -97,11 +214,7 @@
     },
     {
       "id": "arrow",
-      "offset": [
-        0,
-        0.5,
-        0.725
-      ]
+      "offset": [0, 0.5, 0.725]
     },
     {
       "id": "creeper",
@@ -271,6 +384,83 @@
       }
     },
     {
+      "id": "painting",
+      "behind": {
+        "id": "barrier",
+        "type": "block"
+      },
+      "variant_data": [
+        {},
+        {
+          "behind": {
+            "id": "barrier",
+            "type": "block",
+            "fill": [0, 0, 0, 0, 1, 0]
+          }
+        },
+        {
+          "behind": {
+            "id": "barrier",
+            "type": "block",
+            "fill": [0, 0, 0, 1, 0, 0]
+          }
+        },
+        {
+          "behind": {
+            "id": "barrier",
+            "type": "block",
+            "fill": [0, 0, 0, 1, 1, 0]
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant": [
+            "alban",
+            "aztec",
+            "aztec2",
+            "bomb",
+            "kebab",
+            "meditative",
+            "plant",
+            "wasteland"
+          ]
+        },
+        {
+          "variant": [
+            "graham",
+            "prairie_ride",
+            "wanderer"
+          ]
+        },
+        {
+          "variant": [
+            "courbet",
+            "creebet",
+            "pool",
+            "sea",
+            "sunset"
+          ]
+        },
+        {
+          "variant": [
+            "baroque",
+            "bust",
+            "earth",
+            "fire",
+            "humble",
+            "match",
+            "skull_and_roses",
+            "stage",
+            "void",
+            "water",
+            "wind",
+            "wither"
+          ]
+        }
+      ]
+    },
+    {
       "id": "chest",
       "type": "block",
       "blockstate": {
@@ -285,7 +475,6 @@
         "type": "left"
       },
       "behind": {
-        "id": "chest",
         "blockstate": {
           "facing": "west",
           "type": "right"
@@ -359,18 +548,13 @@
     {
       "id": "squid",
       "baby": true,
-      "offset": [
-        0,
-        0.5,
-        0
-      ]
+      "offset": [0, 0.5, 0]
     },
     {
       "name": "bed",
       "id": "red_bed",
       "type": "block",
       "behind": {
-        "id": "red_bed",
         "blockstate": {
           "part": "head"
         }
@@ -401,10 +585,12 @@
         "Owner": "[I;110787060,1156138790,-1514210135,238594805]",
         "equipment": "{body:{id:wolf_armor}}"
       },
-      "variant_nbt": [
+      "variant_data": [
         {},
         {
-          "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
+          "nbt": {
+            "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
+          }
         }
       ],
       "variants": [
@@ -488,12 +674,16 @@
         "profession": "farmer",
         "level": 5
       },
-      "variant_nbt": [
+      "variant_data": [
         {
-          "level": 5
+          "nbt": {
+            "level": 5
+          }
         },
         {
-          "profession": "farmer"
+          "nbt": {
+            "profession": "farmer"
+          }
         }
       ],
       "variants": [
@@ -541,11 +731,7 @@
     },
     {
       "id": "end_crystal",
-      "offset": [
-        0,
-        1,
-        0
-      ]
+      "offset": [0, 1, 0]
     },
     {
       "id": "ocelot",
@@ -579,12 +765,16 @@
         "profession": "farmer",
         "level": 5
       },
-      "variant_nbt": [
+      "variant_data": [
         {
-          "level": 5
+          "nbt": {
+            "level": 5
+          }
         },
         {
-          "profession": "farmer"
+          "nbt": {
+            "profession": "farmer"
+          }
         }
       ],
       "variants": [
@@ -628,16 +818,14 @@
     },
     {
       "id": "wither_skull",
-      "offset": [
-        0,
-        0.25,
-        0
-      ],
+      "offset": [0, 0.25, 0],
       "nbt": {
         "Motion": "[0d,0d,0.000001d]"
       },
-      "variant_nbt": {
-        "Motion": "[0d,0d,0.000001d]"
+      "variant_data": {
+        "nbt": {
+          "Motion": "[0d,0d,0.000001d]"
+        }
       },
       "variants": {
         "dangerous": [
@@ -686,11 +874,7 @@
     },
     {
       "id": "bat",
-      "offset": [
-        0,
-        0.5,
-        0
-      ]
+      "offset": [0, 0.5, 0]
     },
     {
       "id": "witch"
@@ -710,7 +894,6 @@
         "type": "left"
       },
       "behind": {
-        "id": "trapped_chest",
         "blockstate": {
           "facing": "west",
           "type": "right"
@@ -724,6 +907,18 @@
         "Tame": 1,
         "equipment": "{saddle:{id:\"saddle\"}}",
         "ChestedHorse": 1
+      },
+      "variant_data": {
+        "nbt": {
+          "Tame": 1,
+          "equipment": "{saddle:{id:\"saddle\"}}"
+        }
+      },
+      "variants": {
+        "ChestedHorse": [
+          null,
+          1
+        ]
       }
     },
     {
@@ -733,14 +928,18 @@
         "Tame": 1,
         "equipment": "{saddle:{id:\"saddle\"},body:{id:\"diamond_horse_armor\"}}"
       },
-      "variant_nbt": [
+      "variant_data": [
         {
-          "Tame": 1,
-          "equipment": "{saddle:{id:\"saddle\"}}"
+          "nbt": {
+            "Tame": 1,
+            "equipment": "{saddle:{id:\"saddle\"}}"
+          }
         },
         {
-          "Tame": 1,
-          "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
+          "nbt": {
+            "Tame": 1,
+            "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
+          }
         }
       ],
       "variants": [
@@ -806,6 +1005,18 @@
         "Tame": 1,
         "equipment": "{saddle:{id:\"saddle\"}}",
         "ChestedHorse": 1
+      },
+      "variant_data": {
+        "nbt": {
+          "Tame": 1,
+          "equipment": "{saddle:{id:\"saddle\"}}"
+        }
+      },
+      "variants": {
+        "ChestedHorse": [
+          null,
+          1
+        ]
       }
     },
     {
@@ -829,7 +1040,8 @@
       "id": "endermite"
     },
     {
-      "id": "guardian"
+      "id": "guardian",
+      "offset": [0, 0.5, 0]
     },
     {
       "id": "rabbit",
@@ -936,11 +1148,7 @@
     },
     {
       "id": "spectral_arrow",
-      "offset": [
-        0,
-        0.5,
-        0.725
-      ]
+      "offset": [0, 0.5, 0.725]
     },
     {
       "name": "shield",
@@ -951,16 +1159,8 @@
         "Pose": "{RightArm:[-90f,-90f,0f]}",
         "Invisible": 1
       },
-      "offset": [
-        0.438,
-        -0.4,
-        0.41
-      ],
-      "babyOffset": [
-        0.469,
-        -0.2,
-        0.454
-      ]
+      "offset": [0.438, -0.4, 0.41],
+      "baby_offset": [0.469, -0.2, 0.454]
     },
     {
       "name": "elytra",
@@ -997,15 +1197,18 @@
         "ChestedHorse": 1,
         "equipment": "{body:{id:\"red_carpet\"}}"
       },
-      "variant_nbt": [
+      "variant_data": [
         {
-          "Tame": 1,
-          "ChestedHorse": 1
+          "nbt": {
+            "Tame": 1
+          }
         },
         {
-          "Tame": 1,
-          "ChestedHorse": 1,
-          "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
+          "nbt": {
+            "Tame": 1,
+            "ChestedHorse": 1,
+            "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
+          }
         }
       ],
       "variants": [
@@ -1015,6 +1218,10 @@
             1,
             2,
             3
+          ],
+          "ChestedHorse": [
+            null,
+            1
           ]
         },
         {
@@ -1041,19 +1248,11 @@
     },
     {
       "id": "llama_spit",
-      "offset": [
-        0,
-        0.5,
-        0
-      ]
+      "offset": [0, 0.5, 0]
     },
     {
       "id": "vex",
-      "offset": [
-        0,
-        0.5,
-        0
-      ]
+      "offset": [0, 0.5, 0]
     },
     {
       "id": "vindicator"
@@ -1063,8 +1262,10 @@
       "nbt": {
         "OnGround": 1
       },
-      "variant_nbt": {
-        "OnGround": 1
+      "variant_data": {
+        "nbt": {
+          "OnGround": 1
+        }
       },
       "variants": {
         "Variant": [
@@ -1082,19 +1283,11 @@
     {
       "id": "phantom",
       "burns": true,
-      "offset": [
-        0,
-        0.5,
-        0
-      ]
+      "offset": [0, 0.5, 0]
     },
     {
       "id": "trident",
-      "offset": [
-        0,
-        0.5,
-        1.25
-      ]
+      "offset": [0, 0.5, 1.25]
     },
     {
       "id": "turtle",
@@ -1249,15 +1442,18 @@
         "Tame": 1,
         "ChestedHorse": 1
       },
-      "variant_nbt": [
+      "variant_data": [
         {
-          "Tame": 1,
-          "ChestedHorse": 1
+          "nbt": {
+            "Tame": 1
+          }
         },
         {
-          "Tame": 1,
-          "ChestedHorse": 1,
-          "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
+          "nbt": {
+            "Tame": 1,
+            "ChestedHorse": 1,
+            "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
+          }
         }
       ],
       "variants": [
@@ -1267,6 +1463,10 @@
             1,
             2,
             3
+          ],
+          "ChestedHorse": [
+            null, 
+            1
           ]
         },
         {
@@ -1311,11 +1511,7 @@
     {
       "id": "bee",
       "baby": true,
-      "offset": [
-        0,
-        0.5,
-        0
-      ],
+      "offset": [0, 0.5, 0],
       "variants": {
         "AngerTime": [
           null,
@@ -1383,11 +1579,7 @@
     {
       "id": "glow_squid",
       "baby": true,
-      "offset": [
-        0,
-        0.5,
-        0
-      ]
+      "offset": [0, 0.5, 0]
     },
     {
       "id": "goat",
@@ -1438,11 +1630,7 @@
     },
     {
       "id": "allay",
-      "offset": [
-        0,
-        0.5,
-        0
-      ]
+      "offset": [0, 0.5, 0]
     },
     {
       "id": "camel",
@@ -1632,11 +1820,7 @@
     {
       "name": "wind_charge",
       "id": "wind_charge",
-      "offset": [
-        0,
-        0.5,
-        0
-      ],
+      "offset": [0, 0.5, 0],
       "variants": {
         "id": [
           "wind_charge",
@@ -1656,6 +1840,15 @@
     },
     {
       "id": "creaking"
+    },
+    {
+      "id": "creaking"
+    },
+    {
+      "id": "happy_ghast",
+      "baby": true,
+      "baby_only": true,
+      "offset": [0, 0.5, 0]
     }
   ]
 }
