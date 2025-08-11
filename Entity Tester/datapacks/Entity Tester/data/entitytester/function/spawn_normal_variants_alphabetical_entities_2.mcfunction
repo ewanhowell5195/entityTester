@@ -505,9 +505,9 @@ summon wolf 37 -60 -22 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invuln
 summon wolf 39 -60 -22 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,variant:woods,AngerTime:2147483647}
 summon wolf 41 -60 -22 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,variant:woods,Owner:[I;110787060,1156138790,-1514210135,238594805]}
 summon wolf 43 -60 -22 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor"}}}
-summon wolf 45 -60 -22 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor",components:{damage:20}}}}
-summon wolf 47 -60 -22 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor",components:{damage:44}}}}
-summon wolf -47 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor",components:{damage:60}}}}
+summon wolf 45 -60 -22 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor",components:{damage:19}}}}
+summon wolf 47 -60 -22 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor",components:{damage:20}}}}
+summon wolf -47 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor",components:{damage:44}}}}
 summon zombie_villager -45 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,profession:armorer}}
 summon zombie_villager -43 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,profession:butcher}}
 summon zombie_villager -41 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,profession:cartographer}}

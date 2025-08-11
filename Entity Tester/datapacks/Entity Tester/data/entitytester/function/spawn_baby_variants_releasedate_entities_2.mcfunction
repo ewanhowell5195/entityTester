@@ -78,9 +78,9 @@ summon wolf -15 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invul
 summon wolf -13 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,variant:woods,AngerTime:2147483647}
 summon wolf -11 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,variant:woods,Owner:[I;110787060,1156138790,-1514210135,238594805]}
 summon wolf -9 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor"}}}
-summon wolf -7 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor",components:{damage:20}}}}
-summon wolf -5 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor",components:{damage:44}}}}
-summon wolf -3 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor",components:{damage:60}}}}
+summon wolf -7 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor",components:{damage:19}}}}
+summon wolf -5 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor",components:{damage:20}}}}
+summon wolf -3 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor",components:{damage:44}}}}
 summon mooshroom -1 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon mooshroom 1 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Type:brown}
 summon villager 3 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,profession:none}}

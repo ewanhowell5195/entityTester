@@ -241,9 +241,9 @@ summon wolf 23 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invuln
 summon wolf -12 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,variant:woods,AngerTime:2147483647}
 summon wolf -10 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,variant:woods,Owner:[I;110787060,1156138790,-1514210135,238594805]}
 summon wolf -8 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor"}}}
-summon wolf -6 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor",components:{damage:20}}}}
-summon wolf -4 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor",components:{damage:44}}}}
-summon wolf -2 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor",components:{damage:60}}}}
+summon wolf -6 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor",components:{damage:19}}}}
+summon wolf -4 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor",components:{damage:20}}}}
+summon wolf -2 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"wolf_armor",components:{damage:44}}}}
 summon zombie_villager 0 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,profession:none}}
 summon zombie_villager 2 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:desert,profession:none}}
 summon zombie_villager 4 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:savanna,profession:none}}

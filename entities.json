@@ -618,9 +618,9 @@
         {
           "equipment": [
             "{body:{id:\"wolf_armor\"}}",
+            "{body:{id:\"wolf_armor\",components:{damage:19}}}",
             "{body:{id:\"wolf_armor\",components:{damage:20}}}",
-            "{body:{id:\"wolf_armor\",components:{damage:44}}}",
-            "{body:{id:\"wolf_armor\",components:{damage:60}}}"
+            "{body:{id:\"wolf_armor\",components:{damage:44}}}"
           ]
         }
       ],
