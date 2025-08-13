@@ -260,6 +260,39 @@ function setBlock(commands, block, x, z) {
   }
 }
 
+function makeEntity(entity, baby, isPassenger = false) {
+  let isBaby = false
+  if (baby === true) {
+    isBaby = true
+  } else if (baby === "tag" && entity.baby === true) {
+    isBaby = true
+  }
+
+  let nbt = `{${entity.nbt?.DelayedAI ? "" : "NoAI:1,"}NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1${isBaby ? (entity.id === "armor_stand" ? ",Small:1" : `,Age:-2147483648,IsBaby:1`) : ""}`
+  if (entity.nbt && Object.keys(entity.nbt).length) {
+    if (entity.root) {
+      nbt += `,${entity.root}:{`
+    }
+    const props = []
+    for (const [key, value] of Object.entries(entity.nbt)) {
+      if (key === "DelayedAI") continue
+      props.push(`${key}:${value}`)
+    }
+    if (entity.root) {
+      nbt += props.join() + "}"
+    } else if (props.length) {
+      nbt += "," + props.join()
+    }
+  }
+
+  if (entity.passenger) {
+    nbt += `,Passengers:[${makeEntity(entity.passenger, "tag", true)}]`
+  }
+
+  nbt += `}`
+  return isPassenger ? `{id:"minecraft:${entity.id}",${nbt.slice(1)}` : nbt
+}
+
 const evokerFangs = {}
 function spawnEntity(name, commands, commands2, entity, x, z, baby) {
   if (entity.type === "block") {
@@ -275,30 +308,14 @@ function spawnEntity(name, commands, commands2, entity, x, z, baby) {
     if (entity.burns) {
       commands.push(`setblock ${x} 319 ${z} tinted_glass`)
     }
-    let nbt = `{${entity.nbt?.DelayedAI ? "" : "NoAI:1,"}NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1${baby ? (entity.id === "armor_stand" ? ",Small:1" : `,Age:-2147483648,IsBaby:1`) : ""}`
-    if (entity.nbt && Object.keys(entity.nbt).length) {
-      if (entity.root) {
-        nbt += `,${entity.root}:{`
-      }
-      const properties = []
-      for (const [key, value] of Object.entries(entity.nbt)) {
-        if (key === "DelayedAI") continue
-        properties.push(`${key}:${value}`)
-      }
-      if (entity.root) {
-        nbt += properties.join() + "}"
-      } else {
-        nbt += "," + properties.join()
-      }
-    }
-    nbt += `}`
     let offset = [0, 0, 0]
-    if (baby && entity.baby_offset) {
-      offset = entity.baby_offset
-    } else if (entity.offset) {
+    if (entity.offset) {
       offset = entity.offset
     }
-    commands2.push(`${entity.id === "wither" ? "execute if score global entitytester_wither matches 1 run " : ""}summon ${entity.id} ${x + offset[0]} ${yValue + 1 + offset[1]} ${z + offset[2]} ${nbt}`)
+    const entityData = makeEntity(entity, baby)
+    commands2.push(
+      `${entity.id === "wither" ? "execute if score global entitytester_wither matches 1 run " : ""}summon ${entity.id} ${x + offset[0]} ${yValue + 1 + offset[1]} ${z + offset[2]} ${entityData}`
+    )
   }
   if (entity.behind) {
     const behind = {
@@ -364,10 +381,10 @@ function clearEntities(rectangleWidth, rectangleLength) {
   ].join("\n"))
 }
 
-function toggle(name, regenerate, updateControls = true) {
+function cycle(name, count, regenerate, updateControls = true) {
   const commands = [
     `scoreboard players add global entitytester_${name} 1`,
-    `execute if score global entitytester_${name} matches 2.. run scoreboard players set global entitytester_${name} 0`
+    `execute if score global entitytester_${name} matches ${count}.. run scoreboard players set global entitytester_${name} 0`
   ]
   if (regenerate === "structure") {
     commands.push("function entitytester:create_structure")
@@ -377,13 +394,13 @@ function toggle(name, regenerate, updateControls = true) {
   if (updateControls) {
     commands.push("function entitytester:update_controls")
   }
-  fs.writeFileSync(path.join(functions, `toggle_${name}.mcfunction`), commands.join("\n"))
+  fs.writeFileSync(path.join(functions, `cycle_${name}.mcfunction`), commands.join("\n"))
 }
 
-toggle("mode", "structure", false)
-toggle("sort", "entities")
-toggle("variants", "structure", false)
-toggle("wither", "entities")
+cycle("mode", 3, "structure", false)
+cycle("sort", 2, "entities")
+cycle("variants", 2, "structure", false)
+cycle("wither", 2, "entities")
 
 // Kill Entities
 fs.writeFileSync(path.join(functions, "kill.mcfunction"), [
@@ -398,17 +415,35 @@ fs.writeFileSync(path.join(functions, "delete_structure.mcfunction"), [
 ].join("\n"))
 
 // Spawn Entities
-fs.writeFileSync(path.join(functions, "spawn_entities.mcfunction"), [
-  "execute if score global entitytester_mode matches 0 run execute if score global entitytester_sort matches 0 run execute if score global entitytester_variants matches 0 run function entitytester:spawn_normal_alphabetical_entities",
-  "execute if score global entitytester_mode matches 0 run execute if score global entitytester_sort matches 0 run execute if score global entitytester_variants matches 1 run function entitytester:spawn_normal_variants_alphabetical_entities",
-  "execute if score global entitytester_mode matches 0 run execute if score global entitytester_sort matches 1 run execute if score global entitytester_variants matches 0 run function entitytester:spawn_normal_releasedate_entities",
-  "execute if score global entitytester_mode matches 0 run execute if score global entitytester_sort matches 1 run execute if score global entitytester_variants matches 1 run function entitytester:spawn_normal_variants_releasedate_entities",
-  "execute if score global entitytester_mode matches 1 run execute if score global entitytester_sort matches 0 run execute if score global entitytester_variants matches 0 run function entitytester:spawn_baby_alphabetical_entities",
-  "execute if score global entitytester_mode matches 1 run execute if score global entitytester_sort matches 0 run execute if score global entitytester_variants matches 1 run function entitytester:spawn_baby_variants_alphabetical_entities",
-  "execute if score global entitytester_mode matches 1 run execute if score global entitytester_sort matches 1 run execute if score global entitytester_variants matches 0 run function entitytester:spawn_baby_releasedate_entities",
-  "execute if score global entitytester_mode matches 1 run execute if score global entitytester_sort matches 1 run execute if score global entitytester_variants matches 1 run function entitytester:spawn_baby_variants_releasedate_entities",
-  "scoreboard players set global entitytester_entities_loaded 1"
-].join("\n"))
+{
+  const modes = [
+    { id: 0, key: "normal" },
+    { id: 1, key: "baby" },
+    { id: 2, key: "jockey" }
+  ]
+  const sorts = [
+    { id: 0, key: "alphabetical" },
+    { id: 1, key: "releasedate" }
+  ]
+  const variants = [
+    { id: 0, prefix: "" },
+    { id: 1, prefix: "variants_" }
+  ]
+
+  const lines = []
+  for (const m of modes) {
+    for (const s of sorts) {
+      for (const v of variants) {
+        lines.push(
+          `execute if score global entitytester_mode matches ${m.id} run execute if score global entitytester_sort matches ${s.id} run execute if score global entitytester_variants matches ${v.id} run function entitytester:spawn_${m.key}_${v.prefix}${s.key}_entities`
+        )
+      }
+    }
+  }
+  lines.push("scoreboard players set global entitytester_entities_loaded 1")
+
+  fs.writeFileSync(path.join(functions, "spawn_entities.mcfunction"), lines.join("\n"))
+}
 
 // Create Controls
 {
@@ -434,10 +469,10 @@ fs.writeFileSync(path.join(functions, "spawn_entities.mcfunction"), [
   }
   addControl("spawn_entities", 3)
   addControl("clear_entities", 2)
-  addControl("toggle_mode", 0)
-  addControl("toggle_sort", -1)
-  addControl("toggle_variants", -2)
-  addControl("toggle_wither", -3)
+  addControl("cycle_mode", 0)
+  addControl("cycle_sort", -1)
+  addControl("cycle_variants", -2)
+  addControl("cycle_wither", -3)
 
   fs.writeFileSync(path.join(functions, "create_controls.mcfunction"), commands.join("\n"))
 }
@@ -448,17 +483,29 @@ fs.writeFileSync(path.join(functions, "spawn_entities.mcfunction"), [
 
   const commands = [`fill -3 ${yValue + 1} ${edgeMaxZ} 0 ${yValue + 1} ${edgeMaxZ} air`]
 
-  function addControl(variable, name, option1, option2, x) {
-    commands.push(
-      `execute if score global entitytester_${variable} matches 0 run setblock ${x} ${yValue + 1} ${edgeMaxZ} oak_wall_sign{front_text:{messages:[{"text":"${name}","underlined":true,"bold":true},"",{"text":"${option1}","bold":true,"color":"white"},{"text":"${option2}"}]},is_waxed:true}`,
-      `execute if score global entitytester_${variable} matches 1 run setblock ${x} ${yValue + 1} ${edgeMaxZ} oak_wall_sign{front_text:{messages:[{"text":"${name}","underlined":true,"bold":true},"",{"text":"${option1}"},{"text":"${option2}","bold":true,"color":"white"}]},is_waxed:true}`,
-    )
+  function addControl(variable, name, options, x) {
+    for (let i = 0; i < options.length; i++) {
+      const msgs = [
+        { text: name, underlined: true, bold: true },
+        ...options.map((opt, idx) => ({
+          text: opt,
+          bold: idx === i,
+          color: idx === i ? "white" : undefined
+        }))
+      ]
+      while (msgs.length < 4) {
+        msgs.splice(1, 0, "")
+      }
+      commands.push(
+        `execute if score global entitytester_${variable} matches ${i} run setblock ${x} ${yValue + 1} ${edgeMaxZ} oak_wall_sign{front_text:{messages:${JSON.stringify(msgs)}},is_waxed:true}`
+      )
+    }
   }
 
-  addControl("mode", "Mode", "Normal", "Babies", 0)
-  addControl("sort", "Sort", "Alphabetical", "Release Date", -1)
-  addControl("variants", "Variants", "Off", "On", -2)
-  addControl("wither", "Spawn Wither", "Off", "On", -3)
+  addControl("mode", "Mode", ["Normal", "Babies", "Jockeys"], 0)
+  addControl("sort", "Sort", ["Alphabetical", "Release Date"], -1)
+  addControl("variants", "Variants", ["Off", "On"], -2)
+  addControl("wither", "Spawn Wither", ["Off", "On"], -3)
 
   fs.writeFileSync(path.join(functions, "update_controls.mcfunction"), commands.join("\n"))
 }
@@ -547,27 +594,89 @@ function generateVariants(entity) {
   return combinations
 }
 
+function cartesian(arrays) {
+  let res = [[]]
+  for (const arr of arrays) {
+    const next = []
+    for (const r of res) for (const v of arr) next.push(r.concat([v]))
+    res = next
+  }
+  return res
+}
+
+function passengerVariantList(entity) {
+  if (!entity.variants) return [structuredClone(entity)]
+  if (!Array.isArray(entity.variants)) return generateVariants(entity)
+
+  const list = []
+  for (const [i, v] of entity.variants.entries()) {
+    const e = structuredClone(entity)
+    e.variants = v
+    if (Array.isArray(entity.variant_data)) e.variant_data = entity.variant_data[i]
+    for (const g of generateVariants(e)) list.push(g)
+  }
+  return list
+}
+
+function expandPassengersOnEntity(baseEntity) {
+  if (!baseEntity.passenger) return [baseEntity]
+
+  const passengers = Array.isArray(baseEntity.passenger) ? baseEntity.passenger : [baseEntity.passenger]
+
+  const expandedPerSeat = passengers.map(p => {
+    const baseVariants = passengerVariantList(p)
+    const fullyExpanded = []
+    for (const bv of baseVariants) {
+      for (const pv of expandPassengersOnEntity(bv)) fullyExpanded.push(pv)
+    }
+    return fullyExpanded
+  })
+
+  const combos = cartesian(expandedPerSeat)
+
+  const results = []
+  for (const combo of combos) {
+    const clone = structuredClone(baseEntity)
+    clone.passenger = passengers.length === 1 ? combo[0] : combo
+    results.push(clone)
+  }
+  return results
+}
+
+function anyPassengerHasVariants(p) {
+  if (!p) return false
+  const arr = Array.isArray(p) ? p : [p]
+  for (const e of arr) {
+    if (e.variants) return true
+    if (e.passenger && anyPassengerHasVariants(e.passenger)) return true
+  }
+  return false
+}
+
 function getVariants(entities) {
   const list = []
   for (const entity of entities) {
-    if (!entity.variants) continue
-    const entities = []
+    if (!entity.variants && !anyPassengerHasVariants(entity.passenger)) continue
+    entity.variants ??= {}
+
+    const prepared = []
     if (entity.type === "block" || !Array.isArray(entity.variants)) {
-      entities.push(entity)
+      prepared.push(entity)
     } else {
       for (const [i, v] of entity.variants.entries()) {
-        const newEntity = structuredClone(entity)
-        newEntity.variants = v
-        if (Array.isArray(entity.variant_data)) {
-          newEntity.variant_data = entity.variant_data[i]
-        }
-        entities.push(newEntity)
+        const e = structuredClone(entity)
+        e.variants = v
+        if (Array.isArray(entity.variant_data)) e.variant_data = entity.variant_data[i]
+        prepared.push(e)
       }
     }
-    for (const entity of entities) {
-      const variants = generateVariants(entity)
-      for (const variant of variants) {
-        list.push(variant)
+
+    for (const e of prepared) {
+      const variants = generateVariants(e)
+      for (const v of variants) {
+        for (const withPassengers of expandPassengersOnEntity(v)) {
+          list.push(withPassengers)
+        }
       }
     }
   }
@@ -588,37 +697,37 @@ function addType(type, width, normal, large, baby) {
   clearStructure(normalWidth, normalLength)
   createFloor(width, normalWidth, normalLength, normal, large)
   spawnEntities(`${type}_alphabetical`, width, normalWidth, normalLength, normal.slice().sort((a, b) => (a.name ?? a.id).localeCompare(b.name ?? b.id)), large, baby)
-  spawnEntities(`${type}_releasedate`, width, normalWidth, normalLength, normal, large)
+  spawnEntities(`${type}_releasedate`, width, normalWidth, normalLength, normal, large, baby)
   clearEntities(normalWidth, normalLength)
 
   return [normalWidth, normalLength]
 }
 
 // Normal
-const normal = entities.normal.filter(e => !e.variants_only && !e.baby_only)
-const large = entities.large.filter(e => !e.variants_only && !e.baby_only)
+const normal = entities.normal.filter(e => !e.variants_only)
+const large = entities.large.filter(e => !e.variants_only)
 const [normalWidth, normalLength] = addType("normal", 16, normal, large)
 
 // Baby
-const baby = entities.normal.filter(e => !e.variants_only && e.baby)
-const babyLarge = entities.large.filter(e => !e.variants_only && e.baby)
-const [babyWidth, babyLength] = addType("baby", 10, baby, babyLarge, true)
+const baby = entities.baby.filter(e => !e.variants_only)
+const [babyWidth, babyLength] = addType("baby", 10, baby, [], true)
+
+// Jockey
+const jockey = entities.jockey
+const [jockeyWidth, jockeyLength] = addType("jockey", 9, jockey, [], "tag")
 
 // Normal Variants
-const normalVariants = getVariants(entities.normal.filter(e => !e.baby_only))
-const largeVariants = getVariants(entities.large.filter(e => !e.baby_only))
+const normalVariants = getVariants(entities.normal)
+const largeVariants = getVariants(entities.large)
 const [normalVariantsWidth, normalVariantsLength] = addType("normal_variants", 48, normalVariants, largeVariants)
 
 // Baby Variants
-const babyVariants = getVariants(entities.normal).filter(e => {
-  if (e.root === "VillagerData" && e.nbt.profession !== "none") return
-  return e.baby
-})
-const babyVariantsLarge = getVariants(entities.large).filter(e => {
-  if (e.root === "VillagerData" && e.nbt.profession !== "none") return
-  return e.baby
-})
-const [babyVariantsWidth, babyVariantsLength] = addType("baby_variants", 24, babyVariants, babyVariantsLarge)
+const babyVariants = getVariants(entities.baby)
+const [babyVariantsWidth, babyVariantsLength] = addType("baby_variants", 24, babyVariants, [], true)
+
+// Jockey Variants
+const jockeyVariants = getVariants(entities.jockey)
+const [jockeyVariantsWidth, jockeyVariantsLength] = addType("jockey_variants", 32, jockeyVariants, [], "tag")
 
 // Clear Structure
 {
@@ -686,27 +795,35 @@ fs.writeFileSync(path.join(functions, "create_structure.mcfunction"), [
   `function entitytester:clear_structure`,
   `execute if score global entitytester_mode matches 0 run execute if score global entitytester_variants matches 0 run function entitytester:create_structure_${normalWidth}x${normalLength}`,
   `execute if score global entitytester_mode matches 1 run execute if score global entitytester_variants matches 0 run function entitytester:create_structure_${babyWidth}x${babyLength}`,
+  `execute if score global entitytester_mode matches 2 run execute if score global entitytester_variants matches 0 run function entitytester:create_structure_${jockeyWidth}x${jockeyLength}`,
   `execute if score global entitytester_mode matches 0 run execute if score global entitytester_variants matches 1 run function entitytester:create_structure_${normalVariantsWidth}x${normalVariantsLength}`,
   `execute if score global entitytester_mode matches 1 run execute if score global entitytester_variants matches 1 run function entitytester:create_structure_${babyVariantsWidth}x${babyVariantsLength}`,
+  `execute if score global entitytester_mode matches 2 run execute if score global entitytester_variants matches 1 run function entitytester:create_structure_${jockeyVariantsWidth}x${jockeyVariantsLength}`,
   `function entitytester:paste_floor_customisation`,
   "function entitytester:create_floor"
 ].join("\n"))
 
+
 // Create Floor
 fs.writeFileSync(path.join(functions, "create_floor.mcfunction"), [
   `execute if score global entitytester_mode matches 0 run execute if score global entitytester_variants matches 0 run function entitytester:create_floor_${normalWidth}x${normalLength}_${normal.length}_${large.length}`,
-  `execute if score global entitytester_mode matches 1 run execute if score global entitytester_variants matches 0 run function entitytester:create_floor_${babyWidth}x${babyLength}_${baby.length}_${babyLarge.length}`,
+  `execute if score global entitytester_mode matches 1 run execute if score global entitytester_variants matches 0 run function entitytester:create_floor_${babyWidth}x${babyLength}_${baby.length}_0`,
+  `execute if score global entitytester_mode matches 2 run execute if score global entitytester_variants matches 0 run function entitytester:create_floor_${jockeyWidth}x${jockeyLength}_${jockey.length}_0`,
   `execute if score global entitytester_mode matches 0 run execute if score global entitytester_variants matches 1 run function entitytester:create_floor_${normalVariantsWidth}x${normalVariantsLength}_${normalVariants.length}_${largeVariants.length}`,
-  `execute if score global entitytester_mode matches 1 run execute if score global entitytester_variants matches 1 run function entitytester:create_floor_${babyVariantsWidth}x${babyVariantsLength}_${babyVariants.length}_${babyVariantsLarge.length}`,
+  `execute if score global entitytester_mode matches 1 run execute if score global entitytester_variants matches 1 run function entitytester:create_floor_${babyVariantsWidth}x${babyVariantsLength}_${babyVariants.length}_0`,
+  `execute if score global entitytester_mode matches 2 run execute if score global entitytester_variants matches 1 run function entitytester:create_floor_${jockeyVariantsWidth}x${jockeyVariantsLength}_${jockeyVariants.length}_0`,
   "function entitytester:spawn_entities"
 ].join("\n"))
+
 
 // Reset Floor
 fs.writeFileSync(path.join(functions, "reset_floor.mcfunction"), [
   `execute if score global entitytester_mode matches 0 run execute if score global entitytester_variants matches 0 run place template entitytester:floor_blocks -4 ${yValue + 1} ${-normalLength - 5}`,
   `execute if score global entitytester_mode matches 1 run execute if score global entitytester_variants matches 0 run place template entitytester:floor_blocks -4 ${yValue + 1} ${-babyLength - 5}`,
+  `execute if score global entitytester_mode matches 2 run execute if score global entitytester_variants matches 0 run place template entitytester:floor_blocks -4 ${yValue + 1} ${-jockeyLength - 5}`,
   `execute if score global entitytester_mode matches 0 run execute if score global entitytester_variants matches 1 run place template entitytester:floor_blocks -4 ${yValue + 1} ${-normalVariantsLength - 5}`,
   `execute if score global entitytester_mode matches 1 run execute if score global entitytester_variants matches 1 run place template entitytester:floor_blocks -4 ${yValue + 1} ${-babyVariantsLength - 5}`,
+  `execute if score global entitytester_mode matches 2 run execute if score global entitytester_variants matches 1 run place template entitytester:floor_blocks -4 ${yValue + 1} ${-jockeyVariantsLength - 5}`,
   "function entitytester:create_floor"
 ].join("\n"))
 
@@ -721,7 +838,7 @@ fs.writeFileSync(path.join(functions, "load.mcfunction"), [
   'scoreboard objectives add entitytester_variants dummy "Entity Tester Variants"',
   'scoreboard objectives add entitytester_wither dummy "Entity Tester Wither"',
   "scoreboard players set global entitytester_temp 0",
-  "execute if score global entitytester_mode matches 0..1 run scoreboard players set global entitytester_temp 1",
+  "execute if score global entitytester_mode matches 0..2 run scoreboard players set global entitytester_temp 1",
   "execute if score global entitytester_temp matches 0 run scoreboard players set global entitytester_mode 0",
   "scoreboard players set global entitytester_temp 0",
   "execute if score global entitytester_sort matches 0..1 run scoreboard players set global entitytester_temp 1",

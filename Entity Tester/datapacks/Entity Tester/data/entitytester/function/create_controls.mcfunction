@@ -14,13 +14,13 @@ setblock 2 -59 5 stone_button
 setblock 2 -59 7 command_block{Command:"function entitytester:clear_entities"}
 setblock 0 -59 6 spruce_log[axis=z]
 setblock 0 -59 5 stone_button
-setblock 0 -59 7 command_block{Command:"function entitytester:toggle_mode"}
+setblock 0 -59 7 command_block{Command:"function entitytester:cycle_mode"}
 setblock -1 -59 6 spruce_log[axis=z]
 setblock -1 -59 5 stone_button
-setblock -1 -59 7 command_block{Command:"function entitytester:toggle_sort"}
+setblock -1 -59 7 command_block{Command:"function entitytester:cycle_sort"}
 setblock -2 -59 6 spruce_log[axis=z]
 setblock -2 -59 5 stone_button
-setblock -2 -59 7 command_block{Command:"function entitytester:toggle_variants"}
+setblock -2 -59 7 command_block{Command:"function entitytester:cycle_variants"}
 setblock -3 -59 6 spruce_log[axis=z]
 setblock -3 -59 5 stone_button
-setblock -3 -59 7 command_block{Command:"function entitytester:toggle_wither"}
+setblock -3 -59 7 command_block{Command:"function entitytester:cycle_wither"}

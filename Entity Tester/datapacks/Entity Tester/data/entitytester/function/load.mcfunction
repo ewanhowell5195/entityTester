@@ -7,7 +7,7 @@ scoreboard objectives add entitytester_sort dummy "Entity Tester Sort"
 scoreboard objectives add entitytester_variants dummy "Entity Tester Variants"
 scoreboard objectives add entitytester_wither dummy "Entity Tester Wither"
 scoreboard players set global entitytester_temp 0
-execute if score global entitytester_mode matches 0..1 run scoreboard players set global entitytester_temp 1
+execute if score global entitytester_mode matches 0..2 run scoreboard players set global entitytester_temp 1
 execute if score global entitytester_temp matches 0 run scoreboard players set global entitytester_mode 0
 scoreboard players set global entitytester_temp 0
 execute if score global entitytester_sort matches 0..1 run scoreboard players set global entitytester_temp 1

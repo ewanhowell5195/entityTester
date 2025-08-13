@@ -167,7 +167,6 @@
   "normal": [
     {
       "id": "armor_stand",
-      "baby": true,
       "nbt": {
         "equipment": "{feet:{id:\"diamond_boots\"},legs:{id:\"diamond_leggings\"},head:{id:\"diamond_helmet\"},chest:{id:\"diamond_chestplate\"}}",
         "Invisible": 1
@@ -230,7 +229,6 @@
     },
     {
       "id": "pig",
-      "baby": true,
       "nbt": {
         "equipment": "{saddle:{id:\"saddle\"}}"
       },
@@ -353,7 +351,6 @@
     },
     {
       "id": "zombie",
-      "baby": true,
       "burns": true
     },
     {
@@ -361,7 +358,6 @@
     },
     {
       "id": "sheep",
-      "baby": true,
       "variants": {
         "Color": [
           null,
@@ -498,7 +494,6 @@
     },
     {
       "id": "cow",
-      "baby": true,
       "variants": {
         "variant": [
           "temperate",
@@ -536,7 +531,6 @@
     },
     {
       "id": "chicken",
-      "baby": true,
       "variants": {
         "variant": [
           "temperate",
@@ -546,8 +540,10 @@
       }
     },
     {
+      "id": "zombified_piglin"
+    },
+    {
       "id": "squid",
-      "baby": true,
       "offset": [0, 0.5, 0]
     },
     {
@@ -580,7 +576,6 @@
     },
     {
       "id": "wolf",
-      "baby": true,
       "nbt": {
         "Owner": "[I;110787060,1156138790,-1514210135,238594805]",
         "equipment": "{body:{id:wolf_armor}}"
@@ -648,7 +643,6 @@
     },
     {
       "id": "mooshroom",
-      "baby": true,
       "variants": {
         "Type": [
           null,
@@ -667,10 +661,8 @@
     },
     {
       "id": "villager",
-      "baby": true,
       "root": "VillagerData",
       "nbt": {
-        "type": "plains",
         "profession": "farmer",
         "level": 5
       },
@@ -734,8 +726,7 @@
       "offset": [0, 1, 0]
     },
     {
-      "id": "ocelot",
-      "baby": true
+      "id": "ocelot"
     },
     {
       "id": "iron_golem",
@@ -757,11 +748,9 @@
     },
     {
       "id": "zombie_villager",
-      "baby": true,
       "burns": true,
       "root": "VillagerData",
       "nbt": {
-        "type": "plains",
         "profession": "farmer",
         "level": 5
       },
@@ -902,7 +891,6 @@
     },
     {
       "id": "donkey",
-      "baby": true,
       "nbt": {
         "Tame": 1,
         "equipment": "{saddle:{id:\"saddle\"}}",
@@ -923,7 +911,6 @@
     },
     {
       "id": "horse",
-      "baby": true,
       "nbt": {
         "Tame": 1,
         "equipment": "{saddle:{id:\"saddle\"},body:{id:\"diamond_horse_armor\"}}"
@@ -1000,7 +987,6 @@
     },
     {
       "id": "mule",
-      "baby": true,
       "nbt": {
         "Tame": 1,
         "equipment": "{saddle:{id:\"saddle\"}}",
@@ -1021,7 +1007,6 @@
     },
     {
       "id": "skeleton_horse",
-      "baby": true,
       "nbt": {
         "Tame": 1,
         "equipment": "{saddle:{id:\"saddle\"}}"
@@ -1029,13 +1014,11 @@
     },
     {
       "id": "zombie_horse",
-      "baby": true,
       "nbt": {
         "Tame": 1,
         "equipment": "{saddle:{id:\"saddle\"}}"
       }
     },
-
     {
       "id": "endermite"
     },
@@ -1045,7 +1028,6 @@
     },
     {
       "id": "rabbit",
-      "baby": true,
       "variants": {
         "RabbitType": [
           null,
@@ -1085,8 +1067,7 @@
       "id": "armor_stand",
       "nbt": {
         "ShowArms": 1
-      },
-      "baby": true
+      }
     },
     {
       "id": "dragon_head",
@@ -1153,31 +1134,26 @@
     {
       "name": "shield",
       "id": "armor_stand",
-      "baby": true,
       "nbt": {
         "equipment": "{mainhand:{id:\"shield\"}}",
         "Pose": "{RightArm:[-90f,-90f,0f]}",
         "Invisible": 1
       },
-      "offset": [0.438, -0.4, 0.41],
-      "baby_offset": [0.469, -0.2, 0.454]
+      "offset": [0.438, -0.4, 0.41]
     },
     {
       "name": "elytra",
       "id": "armor_stand",
-      "baby": true,
       "nbt": {
         "equipment": "{chest:{id:\"elytra\"}}",
         "Invisible": 1
       }
     },
     {
-      "id": "husk",
-      "baby": true
+      "id": "husk"
     },
     {
-      "id": "polar_bear",
-      "baby": true
+      "id": "polar_bear"
     },
     {
       "id": "stray",
@@ -1191,7 +1167,6 @@
     },
     {
       "id": "llama",
-      "baby": true,
       "nbt": {
         "Tame": 1,
         "ChestedHorse": 1,
@@ -1206,7 +1181,6 @@
         {
           "nbt": {
             "Tame": 1,
-            "ChestedHorse": 1,
             "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
           }
         }
@@ -1290,8 +1264,7 @@
       "offset": [0, 0.5, 1.25]
     },
     {
-      "id": "turtle",
-      "baby": true
+      "id": "turtle"
     },
     {
       "id": "cod"
@@ -1362,8 +1335,7 @@
     },
     {
       "id": "drowned",
-      "burns": true,
-      "baby": true
+      "burns": true
     },
     {
       "id": "conduit",
@@ -1373,12 +1345,10 @@
       }
     },
     {
-      "id": "dolphin",
-      "baby": true
+      "id": "dolphin"
     },
     {
       "id": "panda",
-      "baby": true,
       "variants": {
         "MainGene": [
           null,
@@ -1403,7 +1373,6 @@
     },
     {
       "id": "cat",
-      "baby": true,
       "nbt": {
         "Owner": "[I;110787060,1156138790,-1514210135,238594805]"
       },
@@ -1437,7 +1406,6 @@
     },
     {
       "id": "trader_llama",
-      "baby": true,
       "nbt": {
         "Tame": 1,
         "ChestedHorse": 1
@@ -1451,7 +1419,6 @@
         {
           "nbt": {
             "Tame": 1,
-            "ChestedHorse": 1,
             "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
           }
         }
@@ -1496,7 +1463,6 @@
     },
     {
       "id": "fox",
-      "baby": true,
       "variants": {
         "Type": [
           null,
@@ -1510,7 +1476,6 @@
     },
     {
       "id": "bee",
-      "baby": true,
       "offset": [0, 0.5, 0],
       "variants": {
         "AngerTime": [
@@ -1528,20 +1493,13 @@
       }
     },
     {
-      "id": "hoglin",
-      "baby": true
+      "id": "hoglin"
     },
     {
-      "id": "piglin",
-      "baby": true
-    },
-    {
-      "id": "zombified_piglin",
-      "baby": true
+      "id": "piglin"
     },
     {
       "id": "strider",
-      "baby": true,
       "nbt": {
         "Saddle": 1
       },
@@ -1557,15 +1515,13 @@
       }
     },
     {
-      "id": "zoglin",
-      "baby": true
+      "id": "zoglin"
     },
     {
       "id": "piglin_brute"
     },
     {
       "id": "axolotl",
-      "baby": true,
       "variants": {
         "Variant": [
           null,
@@ -1578,12 +1534,10 @@
     },
     {
       "id": "glow_squid",
-      "baby": true,
       "offset": [0, 0.5, 0]
     },
     {
       "id": "goat",
-      "baby": true,
       "variants": {
         "HasLeftHorn": [
           0,
@@ -1634,7 +1588,6 @@
     },
     {
       "id": "camel",
-      "baby": true,
       "nbt": {
         "equipment": "{saddle:{id:\"saddle\"}}"
       }
@@ -1801,12 +1754,10 @@
       }
     },
     {
-      "id": "sniffer",
-      "baby": true
+      "id": "sniffer"
     },
     {
       "id": "armadillo",
-      "baby": true,
       "variants": {
         "state": [
           null,
@@ -1840,15 +1791,992 @@
     },
     {
       "id": "creaking"
+    }
+  ],
+  "baby": [
+    {
+      "id": "pig",
+      "nbt": {
+        "equipment": "{saddle:{id:\"saddle\"}}"
+      },
+      "variants": {
+        "variant": [
+          "temperate",
+          "warm",
+          "cold"
+        ],
+        "equipment": [
+          null,
+          "{saddle:{id:\"saddle\"}}"
+        ]
+      }
     },
     {
-      "id": "creaking"
+      "id": "cow",
+      "variants": {
+        "variant": [
+          "temperate",
+          "warm",
+          "cold"
+        ]
+      }
+    },
+    {
+      "id": "sheep",
+      "variants": {
+        "Color": [
+          null,
+          8,
+          7,
+          15,
+          12,
+          14,
+          1,
+          4,
+          5,
+          13,
+          9,
+          3,
+          11,
+          10,
+          2,
+          6
+        ]
+      }
+    },
+    {
+      "id": "chicken",
+      "variants": {
+        "variant": [
+          "temperate",
+          "warm",
+          "cold"
+        ]
+      }
+    },
+    {
+      "id": "wolf",
+      "nbt": {
+        "Owner": "[I;110787060,1156138790,-1514210135,238594805]",
+        "equipment": "{body:{id:wolf_armor}}"
+      },
+      "variant_data": [
+        {},
+        {
+          "nbt": {
+            "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
+          }
+        }
+      ],
+      "variants": [
+        {
+          "variant": [
+            "ashen",
+            "black",
+            "chestnut",
+            null,
+            "rusty",
+            "snowy",
+            "spotted",
+            "striped",
+            "woods"
+          ],
+          "Owner": [
+            null,
+            "[I;110787060,1156138790,-1514210135,238594805]"
+          ],
+          "AngerTime": [
+            null,
+            2147483647
+          ]
+        },
+        {
+          "equipment": [
+            "{body:{id:\"wolf_armor\"}}",
+            "{body:{id:\"wolf_armor\",components:{damage:19}}}",
+            "{body:{id:\"wolf_armor\",components:{damage:20}}}",
+            "{body:{id:\"wolf_armor\",components:{damage:44}}}"
+          ]
+        }
+      ],
+      "constraints": [
+        {
+          "AngerTime": 2147483647,
+          "Owner": "[I;110787060,1156138790,-1514210135,238594805]"
+        }
+      ]
+    },
+    {
+      "id": "mooshroom",
+      "variants": {
+        "Type": [
+          null,
+          "brown"
+        ]
+      }
+    },
+    {
+      "id": "ocelot"
+    },
+    {
+      "id": "villager",
+      "root": "VillagerData",
+      "variants": {
+        "type": [
+          null,
+          "desert",
+          "savanna",
+          "taiga",
+          "snow",
+          "jungle",
+          "swamp"
+        ]
+      }
+    },
+    {
+      "id": "armor_stand",
+      "nbt": {
+        "equipment": "{feet:{id:\"diamond_boots\"},legs:{id:\"diamond_leggings\"},head:{id:\"diamond_helmet\"},chest:{id:\"diamond_chestplate\"}}",
+        "Invisible": 1
+      },
+      "variant_data": {
+        "nbt": {
+          "Invisible": 1
+        }
+      },
+      "variants": [
+        {
+          "equipment": [
+            "{feet:{id:\"leather_boots\"},legs:{id:\"leather_leggings\"},chest:{id:\"leather_chestplate\"},head:{id:\"leather_helmet\"}}",
+            "{feet:{id:\"chainmail_boots\"},legs:{id:\"chainmail_leggings\"},chest:{id:\"chainmail_chestplate\"},head:{id:\"chainmail_helmet\"}}",
+            "{feet:{id:\"iron_boots\"},legs:{id:\"iron_leggings\"},chest:{id:\"iron_chestplate\"},head:{id:\"iron_helmet\"}}",
+            "{feet:{id:\"golden_boots\"},legs:{id:\"golden_leggings\"},chest:{id:\"golden_chestplate\"},head:{id:\"golden_helmet\"}}",
+            "{feet:{id:\"diamond_boots\"},legs:{id:\"diamond_leggings\"},chest:{id:\"diamond_chestplate\"},head:{id:\"diamond_helmet\"}}",
+            "{feet:{id:\"netherite_boots\"},legs:{id:\"netherite_leggings\"},chest:{id:\"netherite_chestplate\"},head:{id:\"netherite_helmet\"}}"
+          ]
+        },
+        {
+          "equipment": [
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"bolt\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"bolt\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"bolt\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"bolt\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"coast\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"coast\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"coast\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"coast\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"dune\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"dune\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"dune\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"dune\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"eye\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"eye\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"eye\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"eye\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"flow\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"flow\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"flow\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"flow\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"host\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"host\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"host\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"host\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"raiser\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"raiser\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"raiser\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"raiser\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"rib\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"rib\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"rib\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"rib\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"sentry\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"sentry\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"sentry\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"sentry\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"shaper\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"shaper\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"shaper\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"shaper\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"silence\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"silence\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"silence\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"silence\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"snout\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"snout\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"snout\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"snout\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"spire\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"spire\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"spire\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"spire\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"tide\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"tide\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"tide\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"tide\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"vex\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"vex\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"vex\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"vex\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"ward\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"ward\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"ward\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"ward\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"wayfinder\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"wayfinder\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"wayfinder\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"wayfinder\"}}}}",
+            "{feet:{id:\"diamond_boots\",components:{trim:{material:\"redstone\",pattern:\"wild\"}}},legs:{id:\"diamond_leggings\",components:{trim:{material:\"redstone\",pattern:\"wild\"}}},chest:{id:\"diamond_chestplate\",components:{trim:{material:\"redstone\",pattern:\"wild\"}}},head:{id:\"diamond_helmet\",components:{trim:{material:\"redstone\",pattern:\"wild\"}}}}"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "zombie",
+      "burns": true
+    },
+    {
+      "id": "zombie_villager",
+      "burns": true,
+      "root": "VillagerData",
+      "variants": {
+        "type": [
+          null,
+          "desert",
+          "savanna",
+          "taiga",
+          "snow",
+          "jungle",
+          "swamp"
+        ]
+      }
+    },
+    {
+      "id": "zombified_piglin"
+    },
+    {
+      "id": "donkey",
+      "nbt": {
+        "Tame": 1,
+        "equipment": "{saddle:{id:\"saddle\"}}",
+        "ChestedHorse": 1
+      },
+      "variant_data": {
+        "nbt": {
+          "Tame": 1,
+          "equipment": "{saddle:{id:\"saddle\"}}"
+        }
+      },
+      "variants": {
+        "ChestedHorse": [
+          null,
+          1
+        ]
+      }
+    },
+    {
+      "id": "horse",
+      "nbt": {
+        "Tame": 1,
+        "equipment": "{saddle:{id:\"saddle\"},body:{id:\"diamond_horse_armor\"}}"
+      },
+      "variant_data": [
+        {
+          "nbt": {
+            "Tame": 1,
+            "equipment": "{saddle:{id:\"saddle\"}}"
+          }
+        },
+        {
+          "nbt": {
+            "Tame": 1,
+            "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
+          }
+        }
+      ],
+      "variants": [
+        {
+          "Variant": [
+            null,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            256,
+            257,
+            258,
+            259,
+            260,
+            261,
+            262,
+            512,
+            513,
+            514,
+            515,
+            516,
+            517,
+            518,
+            768,
+            769,
+            770,
+            771,
+            772,
+            773,
+            774,
+            1024,
+            1025,
+            1026,
+            1027,
+            1028,
+            1029,
+            1030
+          ]
+        },
+        {
+          "equipment": [
+            "{body:{id:\"leather_horse_armor\"}}",
+            "{body:{id:\"iron_horse_armor\"}}",
+            "{body:{id:\"golden_horse_armor\"}}",
+            "{body:{id:\"diamond_horse_armor\"}}"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mule",
+      "nbt": {
+        "Tame": 1,
+        "equipment": "{saddle:{id:\"saddle\"}}",
+        "ChestedHorse": 1
+      },
+      "variant_data": {
+        "nbt": {
+          "Tame": 1,
+          "equipment": "{saddle:{id:\"saddle\"}}"
+        }
+      },
+      "variants": {
+        "ChestedHorse": [
+          null,
+          1
+        ]
+      }
+    },
+    {
+      "id": "skeleton_horse",
+      "nbt": {
+        "Tame": 1,
+        "equipment": "{saddle:{id:\"saddle\"}}"
+      }
+    },
+    {
+      "id": "zombie_horse",
+      "nbt": {
+        "Tame": 1,
+        "equipment": "{saddle:{id:\"saddle\"}}"
+      }
+    },
+    {
+      "id": "rabbit",
+      "variants": {
+        "RabbitType": [
+          null,
+          1,
+          2,
+          3,
+          4,
+          5,
+          99
+        ]
+      }
+    },
+    {
+      "id": "armor_stand",
+      "nbt": {
+        "ShowArms": 1
+      }
+    },
+    {
+      "name": "shield",
+      "id": "armor_stand",
+      "nbt": {
+        "equipment": "{mainhand:{id:\"shield\"}}",
+        "Pose": "{RightArm:[-90f,-90f,0f]}",
+        "Invisible": 1
+      },
+      "offset": [0.469, -0.2, 0.454]
+    },
+    {
+      "name": "elytra",
+      "id": "armor_stand",
+      "nbt": {
+        "equipment": "{chest:{id:\"elytra\"}}",
+        "Invisible": 1
+      }
+    },
+    {
+      "id": "husk"
+    },
+    {
+      "id": "polar_bear"
+    },
+    {
+      "id": "llama",
+      "nbt": {
+        "Tame": 1,
+        "equipment": "{body:{id:\"red_carpet\"}}"
+      },
+      "variant_data": [
+        {
+          "nbt": {
+            "Tame": 1
+          }
+        },
+        {
+          "nbt": {
+            "Tame": 1,
+            "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
+          }
+        }
+      ],
+      "variants": [
+        {
+          "Variant": [
+            null,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "equipment": [
+            "{body:{id:\"white_carpet\"}}",
+            "{body:{id:\"light_gray_carpet\"}}",
+            "{body:{id:\"gray_carpet\"}}",
+            "{body:{id:\"black_carpet\"}}",
+            "{body:{id:\"brown_carpet\"}}",
+            "{body:{id:\"red_carpet\"}}",
+            "{body:{id:\"orange_carpet\"}}",
+            "{body:{id:\"yellow_carpet\"}}",
+            "{body:{id:\"lime_carpet\"}}",
+            "{body:{id:\"green_carpet\"}}",
+            "{body:{id:\"cyan_carpet\"}}",
+            "{body:{id:\"light_blue_carpet\"}}",
+            "{body:{id:\"blue_carpet\"}}",
+            "{body:{id:\"purple_carpet\"}}",
+            "{body:{id:\"magenta_carpet\"}}",
+            "{body:{id:\"pink_carpet\"}}"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "turtle"
+    },
+    {
+      "id": "drowned",
+      "burns": true
+    },
+    {
+      "id": "dolphin"
+    },
+    {
+      "id": "panda",
+      "variants": {
+        "MainGene": [
+          null,
+          "aggressive",
+          "brown",
+          "lazy",
+          "playful",
+          "weak",
+          "worried"
+        ]
+      }
+    },
+    {
+      "id": "cat",
+      "nbt": {
+        "Owner": "[I;110787060,1156138790,-1514210135,238594805]"
+      },
+      "variants": {
+        "variant": [
+          "all_black",
+          null,
+          "british_shorthair",
+          "calico",
+          "jellie",
+          "persian",
+          "ragdoll",
+          "red",
+          "siamese",
+          "tabby",
+          "white"
+        ],
+        "Owner": [
+          null,
+          "[I;110787060,1156138790,-1514210135,238594805]"
+        ]
+      }
+    },
+    {
+      "id": "trader_llama",
+      "nbt": {
+        "Tame": 1
+      },
+      "variant_data": [
+        {
+          "nbt": {
+            "Tame": 1
+          }
+        },
+        {
+          "nbt": {
+            "Tame": 1,
+            "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
+          }
+        }
+      ],
+      "variants": [
+        {
+          "Variant": [
+            null,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "equipment": [
+            "{body:{id:\"white_carpet\"}}",
+            "{body:{id:\"light_gray_carpet\"}}",
+            "{body:{id:\"gray_carpet\"}}",
+            "{body:{id:\"black_carpet\"}}",
+            "{body:{id:\"brown_carpet\"}}",
+            "{body:{id:\"red_carpet\"}}",
+            "{body:{id:\"orange_carpet\"}}",
+            "{body:{id:\"yellow_carpet\"}}",
+            "{body:{id:\"lime_carpet\"}}",
+            "{body:{id:\"green_carpet\"}}",
+            "{body:{id:\"cyan_carpet\"}}",
+            "{body:{id:\"light_blue_carpet\"}}",
+            "{body:{id:\"blue_carpet\"}}",
+            "{body:{id:\"purple_carpet\"}}",
+            "{body:{id:\"magenta_carpet\"}}",
+            "{body:{id:\"pink_carpet\"}}"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fox",
+      "variants": {
+        "Type": [
+          null,
+          "snow"
+        ],
+        "Sleeping": [
+          null,
+          1
+        ]
+      }
+    },
+    {
+      "id": "bee",
+      "offset": [0, 0.5, 0],
+      "variants": {
+        "AngerTime": [
+          null,
+          2147483647
+        ],
+        "HasNectar": [
+          null,
+          1
+        ],
+        "HasStung": [
+          null,
+          1
+        ]
+      }
+    },
+    {
+      "id": "hoglin"
+    },
+    {
+      "id": "piglin"
+    },
+    {
+      "id": "strider",
+      "nbt": {
+        "Saddle": 1
+      },
+      "variants": {
+        "DelayedAI": [
+          null,
+          true
+        ]
+      }
+    },
+    {
+      "id": "zoglin"
+    },
+    {
+      "id": "axolotl",
+      "variants": {
+        "Variant": [
+          null,
+          1,
+          2,
+          3,
+          4
+        ]
+      }
+    },
+    {
+      "id": "goat",
+      "variants": {
+        "HasLeftHorn": [
+          0,
+          null
+        ],
+        "HasRightHorn": [
+          0,
+          null
+        ]
+      }
+    },
+    {
+      "id": "camel",
+      "nbt": {
+        "equipment": "{saddle:{id:\"saddle\"}}"
+      }
+    },
+    {
+      "id": "sniffer"
+    },
+    {
+      "id": "armadillo",
+      "variants": {
+        "state": [
+          null,
+          "scared"
+        ]
+      }
+    },
+    {
+      "id": "squid",
+      "offset": [0, 0.5, 0]
+    },
+    {
+      "id": "glow_squid",
+      "offset": [0, 0.5, 0]
     },
     {
       "id": "happy_ghast",
-      "baby": true,
-      "baby_only": true,
       "offset": [0, 0.5, 0]
+    }
+  ],
+  "jockey": [
+    {
+      "id": "spider",
+      "passenger": {
+        "id": "skeleton"
+      },
+      "burns": true
+    },
+    {
+      "id": "spider",
+      "passenger": {
+        "id": "wither_skeleton"
+      }
+    },
+    {
+      "id": "chicken",
+      "passenger": {
+        "id": "zombie",
+        "baby": true
+      },
+      "burns": true
+    },
+    {
+      "id": "chicken",
+      "passenger": {
+        "id": "zombie_villager",
+        "baby": true,
+        "root": "VillagerData",
+        "variants": {
+          "type": [
+            null,
+            "desert",
+            "savanna",
+            "taiga",
+            "snow",
+            "jungle",
+            "swamp"
+          ]
+        }
+      },
+      "burns": true
+    },
+    {
+      "id": "chicken",
+      "passenger": {
+        "id": "zombie_villager",
+        "root": "VillagerData",
+        "variant_data": [
+          {
+            "nbt": {
+              "level": 5
+            }
+          },
+          {
+            "nbt": {
+              "profession": "farmer"
+            }
+          }
+        ],
+        "variants": [
+          {
+            "type": [
+              null,
+              "desert",
+              "savanna",
+              "taiga",
+              "snow",
+              "jungle",
+              "swamp"
+            ],
+            "profession": [
+              "armorer",
+              "butcher",
+              "cartographer",
+              "cleric",
+              "farmer",
+              "fisherman",
+              "fletcher",
+              "leatherworker",
+              "librarian",
+              "nitwit",
+              "none",
+              "mason",
+              "shepherd",
+              "toolsmith",
+              "weaponwmith"
+            ]
+          },
+          {
+            "level": [
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      "burns": true
+    },
+    {
+      "id": "chicken",
+      "passenger": {
+        "id": "villager",
+        "baby": true,
+        "root": "VillagerData",
+        "variants": {
+          "type": [
+            null,
+            "desert",
+            "savanna",
+            "taiga",
+            "snow",
+            "jungle",
+            "swamp"
+          ]
+        }
+      }
+    },
+    {
+      "id": "chicken",
+      "passenger": {
+        "id": "villager",
+        "root": "VillagerData",
+        "variant_data": [
+          {
+            "nbt": {
+              "level": 5
+            }
+          },
+          {
+            "nbt": {
+              "profession": "farmer"
+            }
+          }
+        ],
+        "variants": [
+          {
+            "type": [
+              null,
+              "desert",
+              "savanna",
+              "taiga",
+              "snow",
+              "jungle",
+              "swamp"
+            ],
+            "profession": [
+              "armorer",
+              "butcher",
+              "cartographer",
+              "cleric",
+              "farmer",
+              "fisherman",
+              "fletcher",
+              "leatherworker",
+              "librarian",
+              "nitwit",
+              "none",
+              "mason",
+              "shepherd",
+              "toolsmith",
+              "weaponwmith"
+            ]
+          },
+          {
+            "level": [
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "chicken",
+      "passenger": {
+        "id": "witch"
+      },
+      "burns": true
+    },
+    {
+      "id": "chicken",
+      "passenger": {
+        "id": "zombified_piglin",
+        "baby": true
+      },
+      "burns": true
+    },
+    {
+      "id": "skeleton_horse",
+      "passenger": {
+        "id": "skeleton"
+      },
+      "burns": true
+    },
+    {
+      "id": "chicken",
+      "passenger": {
+        "id": "husk",
+        "baby": true
+      },
+      "burns": true
+    },
+    {
+      "id": "chicken",
+      "passenger": {
+        "id": "drowned",
+        "baby": true
+      },
+      "burns": true
+    },
+    {
+      "id": "skeleton_horse",
+      "passenger": {
+        "id": "stray"
+      },
+      "burns": true
+    },
+    {
+      "id": "spider",
+      "passenger": {
+        "id": "stray"
+      },
+      "burns": true
+    },
+    {
+      "id": "ravager",
+      "passenger": {
+        "id": "evoker"
+      }
+    },
+    {
+      "id": "ravager",
+      "passenger": {
+        "id": "vindicator"
+      }
+    },
+    {
+      "id": "ravager",
+      "passenger": {
+        "id": "pillager"
+      }
+    },
+    {
+      "id": "hoglin",
+      "baby": true,
+      "passenger": {
+        "id": "piglin",
+        "baby": true
+      }
+    },
+    {
+      "id": "hoglin",
+      "baby": true,
+      "passenger": {
+        "id": "piglin",
+        "baby": true,
+        "passenger": {
+          "id": "piglin",
+          "baby": true
+        }
+      }
+    },
+    {
+      "id": "hoglin",
+      "baby": true,
+      "passenger": {
+        "id": "piglin",
+        "baby": true,
+        "passenger": {
+          "id": "piglin",
+          "baby": true,
+          "passenger": {
+            "id": "piglin",
+            "baby": true
+          }
+        }
+      }
+    },
+    {
+      "id": "strider",
+      "passenger": {
+        "id": "strider",
+        "baby": true,
+        "variants": {
+          "DelayedAI": [
+            null,
+            true
+          ]
+        }
+      },
+      "variants": {
+        "DelayedAI": [
+          null,
+          true
+        ]
+      }
+    },
+    {
+      "id": "strider",
+      "passenger": {
+        "id": "strider",
+        "variants": {
+          "DelayedAI": [
+            null,
+            true
+          ]
+        }
+      },
+      "variants": {
+        "DelayedAI": [
+          null,
+          true
+        ]
+      }
+    },
+    {
+      "id": "strider",
+      "nbt": {
+        "Saddle": 1
+      },
+      "passenger": {
+        "id": "zombified_piglin"
+      },
+      "burns": true,
+      "variants": {
+        "DelayedAI": [
+          null,
+          true
+        ]
+      }
+    },
+    {
+      "id": "strider",
+      "nbt": {
+        "Saddle": 1
+      },
+      "passenger": {
+        "id": "zombified_piglin",
+        "baby": true
+      },
+      "burns": true,
+      "variants": {
+        "DelayedAI": [
+          null,
+          true
+        ]
+      }
     }
   ]
 }
