@@ -192,7 +192,7 @@ summon villager 37 -60 -70 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,In
 summon villager 39 -60 -70 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,profession:mason}}
 summon villager 41 -60 -70 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,profession:shepherd}}
 summon villager 43 -60 -70 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,profession:toolsmith}}
-summon villager 45 -60 -70 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,profession:weaponwmith}}
+summon villager 45 -60 -70 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,profession:weaponsmith}}
 summon villager 47 -60 -70 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:desert,profession:armorer}}
 summon villager -47 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:desert,profession:butcher}}
 summon villager -45 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:desert,profession:cartographer}}
@@ -207,7 +207,7 @@ summon villager -29 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,I
 summon villager -27 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:desert,profession:mason}}
 summon villager -25 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:desert,profession:shepherd}}
 summon villager -23 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:desert,profession:toolsmith}}
-summon villager -21 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:desert,profession:weaponwmith}}
+summon villager -21 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:desert,profession:weaponsmith}}
 summon villager -19 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:savanna,profession:armorer}}
 summon villager -17 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:savanna,profession:butcher}}
 summon villager -15 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:savanna,profession:cartographer}}
@@ -222,7 +222,7 @@ summon villager 1 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Inv
 summon villager 3 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:savanna,profession:mason}}
 summon villager 5 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:savanna,profession:shepherd}}
 summon villager 7 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:savanna,profession:toolsmith}}
-summon villager 9 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:savanna,profession:weaponwmith}}
+summon villager 9 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:savanna,profession:weaponsmith}}
 summon villager 11 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:taiga,profession:armorer}}
 summon villager 13 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:taiga,profession:butcher}}
 summon villager 15 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:taiga,profession:cartographer}}
@@ -237,7 +237,7 @@ summon villager 31 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,In
 summon villager 33 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:taiga,profession:mason}}
 summon villager 35 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:taiga,profession:shepherd}}
 summon villager 37 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:taiga,profession:toolsmith}}
-summon villager 39 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:taiga,profession:weaponwmith}}
+summon villager 39 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:taiga,profession:weaponsmith}}
 summon villager 41 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:snow,profession:armorer}}
 summon villager 43 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:snow,profession:butcher}}
 summon villager 45 -60 -64 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:snow,profession:cartographer}}
@@ -252,7 +252,7 @@ summon villager -35 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,I
 summon villager -33 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:snow,profession:mason}}
 summon villager -31 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:snow,profession:shepherd}}
 summon villager -29 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:snow,profession:toolsmith}}
-summon villager -27 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:snow,profession:weaponwmith}}
+summon villager -27 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:snow,profession:weaponsmith}}
 summon villager -25 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:jungle,profession:armorer}}
 summon villager -23 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:jungle,profession:butcher}}
 summon villager -21 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:jungle,profession:cartographer}}
@@ -267,7 +267,7 @@ summon villager -5 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,In
 summon villager -3 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:jungle,profession:mason}}
 summon villager -1 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:jungle,profession:shepherd}}
 summon villager 1 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:jungle,profession:toolsmith}}
-summon villager 3 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:jungle,profession:weaponwmith}}
+summon villager 3 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:jungle,profession:weaponsmith}}
 summon villager 5 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:swamp,profession:armorer}}
 summon villager 7 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:swamp,profession:butcher}}
 summon villager 9 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:swamp,profession:cartographer}}
@@ -282,7 +282,7 @@ summon villager 25 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,In
 summon villager 27 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:swamp,profession:mason}}
 summon villager 29 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:swamp,profession:shepherd}}
 summon villager 31 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:swamp,profession:toolsmith}}
-summon villager 33 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:swamp,profession:weaponwmith}}
+summon villager 33 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:swamp,profession:weaponsmith}}
 summon villager 35 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{profession:farmer,level:1}}
 summon villager 37 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{profession:farmer,level:2}}
 summon villager 39 -60 -58 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{profession:farmer,level:3}}
@@ -305,7 +305,7 @@ summon zombie_villager -25 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequi
 summon zombie_villager -23 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,profession:mason}}
 summon zombie_villager -21 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,profession:shepherd}}
 summon zombie_villager -19 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,profession:toolsmith}}
-summon zombie_villager -17 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,profession:weaponwmith}}
+summon zombie_villager -17 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,profession:weaponsmith}}
 summon zombie_villager -15 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:desert,profession:armorer}}
 summon zombie_villager -13 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:desert,profession:butcher}}
 summon zombie_villager -11 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:desert,profession:cartographer}}
@@ -320,7 +320,7 @@ summon zombie_villager 5 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequire
 summon zombie_villager 7 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:desert,profession:mason}}
 summon zombie_villager 9 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:desert,profession:shepherd}}
 summon zombie_villager 11 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:desert,profession:toolsmith}}
-summon zombie_villager 13 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:desert,profession:weaponwmith}}
+summon zombie_villager 13 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:desert,profession:weaponsmith}}
 summon zombie_villager 15 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:savanna,profession:armorer}}
 summon zombie_villager 17 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:savanna,profession:butcher}}
 summon zombie_villager 19 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:savanna,profession:cartographer}}
@@ -335,7 +335,7 @@ summon zombie_villager 35 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequir
 summon zombie_villager 37 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:savanna,profession:mason}}
 summon zombie_villager 39 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:savanna,profession:shepherd}}
 summon zombie_villager 41 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:savanna,profession:toolsmith}}
-summon zombie_villager 43 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:savanna,profession:weaponwmith}}
+summon zombie_villager 43 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:savanna,profession:weaponsmith}}
 summon zombie_villager 45 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:taiga,profession:armorer}}
 summon zombie_villager 47 -60 -52 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:taiga,profession:butcher}}
 summon zombie_villager -47 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:taiga,profession:cartographer}}
@@ -350,7 +350,7 @@ summon zombie_villager -31 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequi
 summon zombie_villager -29 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:taiga,profession:mason}}
 summon zombie_villager -27 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:taiga,profession:shepherd}}
 summon zombie_villager -25 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:taiga,profession:toolsmith}}
-summon zombie_villager -23 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:taiga,profession:weaponwmith}}
+summon zombie_villager -23 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:taiga,profession:weaponsmith}}
 summon zombie_villager -21 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:snow,profession:armorer}}
 summon zombie_villager -19 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:snow,profession:butcher}}
 summon zombie_villager -17 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:snow,profession:cartographer}}
@@ -365,7 +365,7 @@ summon zombie_villager -1 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequir
 summon zombie_villager 1 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:snow,profession:mason}}
 summon zombie_villager 3 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:snow,profession:shepherd}}
 summon zombie_villager 5 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:snow,profession:toolsmith}}
-summon zombie_villager 7 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:snow,profession:weaponwmith}}
+summon zombie_villager 7 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:snow,profession:weaponsmith}}
 summon zombie_villager 9 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:jungle,profession:armorer}}
 summon zombie_villager 11 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:jungle,profession:butcher}}
 summon zombie_villager 13 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:jungle,profession:cartographer}}
@@ -380,7 +380,7 @@ summon zombie_villager 29 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequir
 summon zombie_villager 31 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:jungle,profession:mason}}
 summon zombie_villager 33 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:jungle,profession:shepherd}}
 summon zombie_villager 35 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:jungle,profession:toolsmith}}
-summon zombie_villager 37 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:jungle,profession:weaponwmith}}
+summon zombie_villager 37 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:jungle,profession:weaponsmith}}
 summon zombie_villager 39 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:swamp,profession:armorer}}
 summon zombie_villager 41 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:swamp,profession:butcher}}
 summon zombie_villager 43 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:swamp,profession:cartographer}}
@@ -395,7 +395,7 @@ summon zombie_villager -37 -60 -40 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequi
 summon zombie_villager -35 -60 -40 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:swamp,profession:mason}}
 summon zombie_villager -33 -60 -40 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:swamp,profession:shepherd}}
 summon zombie_villager -31 -60 -40 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:swamp,profession:toolsmith}}
-summon zombie_villager -29 -60 -40 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:swamp,profession:weaponwmith}}
+summon zombie_villager -29 -60 -40 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{level:5,type:swamp,profession:weaponsmith}}
 summon zombie_villager -27 -60 -40 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{profession:farmer,level:1}}
 summon zombie_villager -25 -60 -40 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{profession:farmer,level:2}}
 summon zombie_villager -23 -60 -40 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,VillagerData:{profession:farmer,level:3}}
