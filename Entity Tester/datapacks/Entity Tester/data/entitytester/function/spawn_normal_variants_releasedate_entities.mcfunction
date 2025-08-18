@@ -1,6 +1,4 @@
 function entitytester:clear_entities_103x127
-fill -40 -60 -109 -38 -58 -109 barrier
-fill -34 -60 -109 -32 -58 -109 barrier
 fill -28 -60 -109 -26 -58 -109 barrier
 fill -22 -60 -109 -20 -58 -109 barrier
 fill -16 -60 -109 -14 -58 -109 barrier
@@ -8,20 +6,22 @@ fill -10 -60 -109 -8 -58 -109 barrier
 fill -4 -60 -109 -2 -58 -109 barrier
 fill 2 -60 -109 4 -58 -109 barrier
 fill 8 -60 -109 10 -58 -109 barrier
-fill 14 -60 -109 16 -57 -109 barrier
-fill 20 -60 -109 22 -57 -109 barrier
-fill 26 -60 -109 29 -59 -109 barrier
-fill 32 -60 -109 35 -59 -109 barrier
+fill 14 -60 -109 16 -58 -109 barrier
+fill 20 -60 -109 22 -58 -109 barrier
+fill 26 -60 -109 28 -57 -109 barrier
+fill 32 -60 -109 34 -57 -109 barrier
 fill 38 -60 -109 41 -59 -109 barrier
 fill 44 -60 -109 47 -59 -109 barrier
+fill -34 -60 -98 -31 -59 -98 barrier
 fill -28 -60 -98 -25 -59 -98 barrier
-fill -22 -60 -98 -19 -58 -98 barrier
+fill -22 -60 -98 -19 -59 -98 barrier
 fill -16 -60 -98 -13 -58 -98 barrier
-fill -10 -60 -98 -7 -57 -98 barrier
+fill -10 -60 -98 -7 -58 -98 barrier
 fill -4 -60 -98 -1 -57 -98 barrier
 fill 2 -60 -98 5 -57 -98 barrier
 fill 8 -60 -98 11 -57 -98 barrier
 fill 14 -60 -98 17 -57 -98 barrier
+fill 20 -60 -98 23 -57 -98 barrier
 setblock 17 -60 -88 oak_sign
 setblock 19 -60 -88 spruce_sign
 setblock 21 -60 -88 birch_sign

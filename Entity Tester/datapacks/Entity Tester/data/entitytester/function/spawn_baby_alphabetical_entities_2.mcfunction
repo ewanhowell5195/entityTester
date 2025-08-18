@@ -32,7 +32,7 @@ summon armor_stand -8.531 -60.2 -9.546 {NoAI:1,NoGravity:1,Silent:1,PersistenceR
 summon skeleton_horse -7 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,Tame:1,equipment:{saddle:{id:"saddle"}}}
 summon sniffer -5 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
 summon squid -3 -59.5 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
-summon strider -1 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,Saddle:1}
+summon strider -1 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,equipment:{saddle:{id:"saddle"}}}
 summon trader_llama 1 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,Tame:1}
 summon turtle 3 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
 summon villager 5 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}

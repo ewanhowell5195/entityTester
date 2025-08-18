@@ -32,7 +32,7 @@ summon fox -9 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulne
 summon bee -7 -59.5 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
 summon hoglin -5 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
 summon piglin -3 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
-summon strider -1 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,Saddle:1}
+summon strider -1 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,equipment:{saddle:{id:"saddle"}}}
 summon zoglin 1 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
 summon axolotl 3 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
 summon goat 5 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}

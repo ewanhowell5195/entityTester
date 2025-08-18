@@ -3,4 +3,4 @@ execute if score global entitytester_loaded matches 1 run execute if score globa
 execute if score global entitytester_loaded matches 1 run execute if score global entitytester_last_structure matches 25621 run clone -4 -60 -25 4 -60 -25 -4 0 0
 execute if score global entitytester_loaded matches 1 run execute if score global entitytester_last_structure matches 105599 run clone -4 -60 -131 4 -60 -131 -4 0 0
 execute if score global entitytester_loaded matches 1 run execute if score global entitytester_last_structure matches 56389 run clone -4 -60 -73 4 -60 -73 -4 0 0
-execute if score global entitytester_loaded matches 1 run execute if score global entitytester_last_structure matches 72755 run clone -4 -60 -55 4 -60 -55 -4 0 0
+execute if score global entitytester_loaded matches 1 run execute if score global entitytester_last_structure matches 72761 run clone -4 -60 -61 4 -60 -61 -4 0 0

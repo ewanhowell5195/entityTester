@@ -3,6 +3,8 @@ summon ghast -9 -49.5 -55 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Inv
 summon giant 0 -60 -55 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon ender_dragon 0 -45 -56 {NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Rotation:[180f,0f]}
 summon happy_ghast 9 -49.75 -55 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,equipment:{body:{id:"blue_harness"}}}
+summon oak_boat 9 -54.1 -55
+execute positioned 9 -49.75 -55 run data modify entity @n[type=oak_boat] leash.UUID set from entity @n[type=happy_ghast] UUID
 execute if score global entitytester_wither matches 1 run summon wither 12 -59.5 -55 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Health:150}
 summon allay -15 -59.5 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon armadillo -13 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
@@ -82,7 +84,7 @@ summon spectral_arrow 13 -59.5 -15.275 {NoAI:1,NoGravity:1,Silent:1,PersistenceR
 summon spider 15 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon squid -15 -59.5 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon stray -13 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
-summon strider -11 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Saddle:1}
+summon strider -11 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,equipment:{saddle:{id:"saddle"}}}
 summon tadpole -9 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon trader_llama -7 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Tame:1,ChestedHorse:1}
 summon trident -1 -59.5 -8.75 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}

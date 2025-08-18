@@ -84,7 +84,7 @@ summon fox -13 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invuln
 summon bee -11 -59.5 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon hoglin -9 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon piglin -7 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
-summon strider -5 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Saddle:1}
+summon strider -5 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,equipment:{saddle:{id:"saddle"}}}
 summon zoglin -3 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon piglin_brute -1 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon axolotl 1 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}

@@ -312,10 +312,17 @@ function spawnEntity(name, commands, commands2, entity, x, z, baby) {
     if (entity.offset) {
       offset = entity.offset
     }
+    let ghastRopes
+    if (entity.id === "happy_ghast" && entity.nbt?.equipment?.includes("_with_ropes")) {
+      ghastRopes = true
+      entity.nbt.equipment = entity.nbt.equipment.replace("_with_ropes", "")
+    }
     const entityData = makeEntity(entity, baby)
-    commands2.push(
-      `${entity.id === "wither" ? "execute if score global entitytester_wither matches 1 run " : ""}summon ${entity.id} ${x + offset[0]} ${yValue + 1 + offset[1]} ${z + offset[2]} ${entityData}`
-    )
+    commands2.push(`${entity.id === "wither" ? "execute if score global entitytester_wither matches 1 run " : ""}summon ${entity.id} ${x + offset[0]} ${yValue + 1 + offset[1]} ${z + offset[2]} ${entityData}`)
+    if (ghastRopes) {
+      commands2.push(`summon oak_boat ${x + offset[0]} ${yValue + 1 + offset[1] - 4.35} ${z + offset[2]}`)
+      commands2.push(`execute positioned ${x + offset[0]} ${yValue + 1 + offset[1]} ${z + offset[2]} run data modify entity @n[type=oak_boat] leash.UUID set from entity @n[type=happy_ghast] UUID`)
+    }
   }
   if (entity.behind) {
     const behind = {

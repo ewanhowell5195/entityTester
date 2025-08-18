@@ -23,14 +23,14 @@
       "id": "happy_ghast",
       "offset": [3, 10.25, 0],
       "nbt": {
-        "equipment": "{body:{id:\"blue_harness\"}}"
+        "equipment": "{body:{id:\"blue_harness_with_ropes\"}}"
       },
       "variant_data": [
         {
-          "offset": [0, 1.5, 0]
+          "offset": [0, 5, 0]
         },
         {
-          "offset": [0, 1.5, 0],
+          "offset": [0, 0, 0],
           "nbt": {
             "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
           }
@@ -38,7 +38,11 @@
       ],
       "variants": [
         {
-          "equipment": [null]
+          "equipment": [
+            null,
+            "{body:{id:\"blue_harness\"}}",
+            "{body:{id:\"blue_harness_with_ropes\"}}"
+          ]
         },
         {
           "equipment": [
@@ -1501,16 +1505,16 @@
     {
       "id": "strider",
       "nbt": {
-        "Saddle": 1
+        "equipment": "{saddle:{id:\"saddle\"}}"
       },
       "variants": {
         "DelayedAI": [
           null,
           true
         ],
-        "Saddle": [
+        "equipment": [
           null,
-          1
+          "{saddle:{id:\"saddle\"}}"
         ]
       }
     },
@@ -2358,12 +2362,16 @@
     {
       "id": "strider",
       "nbt": {
-        "Saddle": 1
+        "equipment": "{saddle:{id:\"saddle\"}}"
       },
       "variants": {
         "DelayedAI": [
           null,
           true
+        ],
+        "equipment": [
+          null,
+          "{saddle:{id:\"saddle\"}}"
         ]
       }
     },
@@ -2717,6 +2725,10 @@
           "DelayedAI": [
             null,
             true
+          ],
+          "equipment": [
+            null,
+            "{saddle:{id:\"saddle\"}}"
           ]
         }
       },
@@ -2724,6 +2736,10 @@
         "DelayedAI": [
           null,
           true
+        ],
+        "equipment": [
+          null,
+          "{saddle:{id:\"saddle\"}}"
         ]
       }
     },
@@ -2735,6 +2751,10 @@
           "DelayedAI": [
             null,
             true
+          ],
+          "equipment": [
+            null,
+            "{saddle:{id:\"saddle\"}}"
           ]
         }
       },
@@ -2742,13 +2762,17 @@
         "DelayedAI": [
           null,
           true
+        ],
+        "equipment": [
+          null,
+          "{saddle:{id:\"saddle\"}}"
         ]
       }
     },
     {
       "id": "strider",
       "nbt": {
-        "Saddle": 1
+        "equipment": "{saddle:{id:\"saddle\"}}"
       },
       "passenger": {
         "id": "zombified_piglin"
@@ -2758,13 +2782,17 @@
         "DelayedAI": [
           null,
           true
+        ],
+        "equipment": [
+          null,
+          "{saddle:{id:\"saddle\"}}"
         ]
       }
     },
     {
       "id": "strider",
       "nbt": {
-        "Saddle": 1
+        "equipment": "{saddle:{id:\"saddle\"}}"
       },
       "passenger": {
         "id": "zombified_piglin",
@@ -2775,6 +2803,10 @@
         "DelayedAI": [
           null,
           true
+        ],
+        "equipment": [
+          null,
+          "{saddle:{id:\"saddle\"}}"
         ]
       }
     }
