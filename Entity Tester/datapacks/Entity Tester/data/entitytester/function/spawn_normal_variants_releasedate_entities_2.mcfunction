@@ -1,6 +1,6 @@
-summon happy_ghast -45 -55 -119 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
-summon happy_ghast -39 -55 -119 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,equipment:{body:{id:"blue_harness"}}}
-summon happy_ghast -33 -55 -119 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,equipment:{body:{id:"blue_harness"}}}
+summon happy_ghast -45 -55.5 -119 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
+summon happy_ghast -39 -55.5 -119 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,equipment:{body:{id:"blue_harness"}}}
+summon happy_ghast -33 -55.5 -119 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,equipment:{body:{id:"blue_harness"}}}
 summon happy_ghast -27 -60 -119 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"white_harness"}}}
 summon happy_ghast -21 -60 -119 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"light_gray_harness"}}}
 summon happy_ghast -15 -60 -119 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,active_effects:[{duration:-1,id:invisibility,show_particles:0}],equipment:{body:{id:"gray_harness"}}}

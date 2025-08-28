@@ -27,7 +27,7 @@
       },
       "variant_data": [
         {
-          "offset": [0, 5, 0]
+          "offset": [0, 4.5, 0]
         },
         {
           "offset": [0, 0, 0],
@@ -2439,7 +2439,26 @@
     },
     {
       "id": "happy_ghast",
-      "offset": [0, 0.5, 0]
+      "offset": [0, 0.5, 0],
+      "variant_data": [
+        {
+          "offset": [0, 5, 0]
+        },
+        {
+          "offset": [0, 0, 0],
+          "nbt": {
+            "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
+          }
+        }
+      ],
+      "variants": [
+        {
+          "equipment": [
+            null,
+            "{body:{id:\"blue_harness_with_ropes\"}}"
+          ]
+        }
+      ]
     }
   ],
   "jockey": [
