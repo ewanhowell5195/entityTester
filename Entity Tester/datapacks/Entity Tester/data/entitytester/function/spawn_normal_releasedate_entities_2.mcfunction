@@ -95,13 +95,15 @@ summon frog 9 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulne
 summon tadpole 11 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon oak_chest_boat 13 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon allay 15 -59.5 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
-summon camel -11 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,equipment:{saddle:{id:"saddle"}}}
-summon bamboo_raft -9 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
-summon bamboo_chest_raft -7 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
-summon sniffer 1 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
-summon armadillo 3 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
-summon breeze 5 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
-summon wind_charge 7 -59.5 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
-summon bogged 9 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
-summon creaking 11 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
+summon camel -14 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,equipment:{saddle:{id:"saddle"}}}
+summon bamboo_raft -12 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
+summon bamboo_chest_raft -10 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
+summon sniffer -2 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
+summon armadillo 0 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
+summon breeze 2 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
+summon wind_charge 4 -59.5 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
+summon bogged 6 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
+summon creaking 8 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
+summon copper_golem 10 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,next_weather_age:-2}
+summon mannequin 14 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/steve",model:"wide"}}
 schedule function entitytester:update_delayed_ai 4t

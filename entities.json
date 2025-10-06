@@ -1799,6 +1799,67 @@
     },
     {
       "id": "creaking"
+    },
+    {
+      "id": "copper_golem",
+      "nbt": {
+        "next_weather_age": -2
+      },
+      "variant_data": {
+        "nbt": {
+          "next_weather_age": -2
+        }
+      },
+      "variants": {
+        "weather_state": [
+          null,
+          "exposed",
+          "weathered",
+          "oxidized"
+        ]
+      }
+    },
+    {
+      "id": "waxed_copper_golem_statue",
+      "name": "copper_golem_statue",
+      "type": "block",
+      "blockstate": {
+        "facing": "south"
+      },
+      "variants": [
+        "waxed_copper_golem_statue",
+        "waxed_exposed_copper_golem_statue",
+        "waxed_weathered_copper_golem_statue",
+        "waxed_oxidized_copper_golem_statue"
+      ]
+    },
+    {
+      "id": "mannequin",
+      "nbt": {
+        "profile": "{texture:\"entity/player/wide/steve\",model:\"wide\"}"
+      },
+      "variants": {
+        "profile": [
+          "{texture:\"entity/player/wide/alex\",model:\"wide\"}",
+          "{texture:\"entity/player/wide/ari\",model:\"wide\"}",
+          "{texture:\"entity/player/wide/efe\",model:\"wide\"}",
+          "{texture:\"entity/player/wide/kai\",model:\"wide\"}",
+          "{texture:\"entity/player/wide/makena\",model:\"wide\"}",
+          "{texture:\"entity/player/wide/noor\",model:\"wide\"}",
+          "{texture:\"entity/player/wide/steve\",model:\"wide\"}",
+          "{texture:\"entity/player/wide/sunny\",model:\"wide\"}",
+          "{texture:\"entity/player/wide/zuri\",model:\"wide\"}",
+          "{texture:\"entity/player/wide/alex\"}",
+          "{texture:\"entity/player/wide/ari\"}",
+          "{texture:\"entity/player/wide/efe\"}",
+          "{texture:\"entity/player/wide/kai\"}",
+          "{texture:\"entity/player/wide/makena\"}",
+          "{texture:\"entity/player/wide/noor\"}",
+          "{texture:\"entity/player/wide/steve\"}",
+          "{texture:\"entity/player/wide/sunny\"}",
+          "{texture:\"entity/player/wide/zuri\"}"
+        ]
+      }
     }
   ],
   "baby": [

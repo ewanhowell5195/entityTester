@@ -30,8 +30,9 @@ setblock -3 319 -16 tinted_glass
 setblock -1 -60 -16 conduit[waterlogged=false]
 setblock 9 -60 -16 bell
 setblock 13 -60 -16 lectern[facing=south,has_book=true]
-setblock -5 -60 -4 decorated_pot
-setblock -3 -60 -4 oak_wall_hanging_sign[facing=south]
-setblock -1 -60 -4 piglin_head[rotation=8]
-setblock 9 319 -4 tinted_glass
+setblock -8 -60 -4 decorated_pot
+setblock -6 -60 -4 oak_wall_hanging_sign[facing=south]
+setblock -4 -60 -4 piglin_head[rotation=8]
+setblock 6 319 -4 tinted_glass
+setblock 12 -60 -4 waxed_copper_golem_statue[facing=south]
 schedule function entitytester:spawn_normal_releasedate_entities_2 1t
