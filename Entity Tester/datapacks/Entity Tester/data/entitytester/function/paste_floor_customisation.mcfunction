@@ -1,4 +1,4 @@
-execute if score global entitytester_loaded matches 1 run execute if score global entitytester_last_structure matches 39999 run clone -4 0 0 4 0 0 -4 -60 -67
+execute if score global entitytester_loaded matches 1 run execute if score global entitytester_last_structure matches 44095 run clone -4 0 0 4 0 0 -4 -60 -67
 execute if score global entitytester_loaded matches 1 run execute if score global entitytester_last_structure matches 27681 run clone -4 0 0 4 0 0 -4 -60 -37
 execute if score global entitytester_loaded matches 1 run execute if score global entitytester_last_structure matches 25621 run clone -4 0 0 4 0 0 -4 -60 -25
 execute if score global entitytester_loaded matches 1 run execute if score global entitytester_last_structure matches 105605 run clone -4 0 0 4 0 0 -4 -60 -137

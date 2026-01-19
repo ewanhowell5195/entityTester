@@ -713,7 +713,7 @@ function addType(type, width, normal, large, baby) {
 // Normal
 const normal = entities.normal.filter(e => !e.variants_only)
 const large = entities.large.filter(e => !e.variants_only)
-const [normalWidth, normalLength] = addType("normal", 16, normal, large)
+const [normalWidth, normalLength] = addType("normal", 18, normal, large)
 
 // Baby
 const baby = entities.baby.filter(e => !e.variants_only)

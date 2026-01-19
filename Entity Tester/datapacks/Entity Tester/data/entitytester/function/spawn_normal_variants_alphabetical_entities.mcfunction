@@ -282,6 +282,7 @@ setblock 41 319 -10 tinted_glass
 setblock 43 319 -10 tinted_glass
 setblock 45 319 -10 tinted_glass
 setblock 47 319 -10 tinted_glass
+setblock -9 319 -4 tinted_glass
 setblock -7 319 -4 tinted_glass
 setblock -5 319 -4 tinted_glass
 setblock -3 319 -4 tinted_glass
@@ -290,4 +291,5 @@ setblock 1 319 -4 tinted_glass
 setblock 3 319 -4 tinted_glass
 setblock 5 319 -4 tinted_glass
 setblock 7 319 -4 tinted_glass
+setblock 9 319 -4 tinted_glass
 schedule function entitytester:spawn_normal_variants_alphabetical_entities_2 1t

@@ -649,12 +649,14 @@ summon mannequin 41 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,I
 summon mannequin 43 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/sunny",model:"wide"}}
 summon mannequin 45 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/zuri",model:"wide"}}
 summon mannequin 47 -60 -10 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/alex"}}
-summon mannequin -7 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/ari"}}
-summon mannequin -5 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/efe"}}
-summon mannequin -3 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/kai"}}
-summon mannequin -1 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/makena"}}
-summon mannequin 1 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/noor"}}
-summon mannequin 3 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/steve"}}
-summon mannequin 5 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/sunny"}}
-summon mannequin 7 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/zuri"}}
+summon mannequin -9 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/ari"}}
+summon mannequin -7 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/efe"}}
+summon mannequin -5 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/kai"}}
+summon mannequin -3 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/makena"}}
+summon mannequin -1 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/noor"}}
+summon mannequin 1 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/steve"}}
+summon mannequin 3 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/sunny"}}
+summon mannequin 5 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,profile:{texture:"entity/player/wide/zuri"}}
+summon zombie_nautilus 7 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
+summon zombie_nautilus 9 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,variant:warm}
 schedule function entitytester:update_delayed_ai 4t

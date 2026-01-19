@@ -290,4 +290,6 @@ setblock 21 -60 -10 waxed_copper_golem_statue[facing=south]
 setblock 23 -60 -10 waxed_exposed_copper_golem_statue[facing=south]
 setblock 25 -60 -10 waxed_weathered_copper_golem_statue[facing=south]
 setblock 27 -60 -10 waxed_oxidized_copper_golem_statue[facing=south]
+setblock 7 319 -4 tinted_glass
+setblock 9 319 -4 tinted_glass
 schedule function entitytester:spawn_normal_variants_releasedate_entities_2 1t
