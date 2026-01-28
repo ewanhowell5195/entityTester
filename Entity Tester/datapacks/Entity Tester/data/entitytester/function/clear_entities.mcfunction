@@ -3,5 +3,5 @@ execute if score global entitytester_last_structure matches 44095 run function e
 execute if score global entitytester_last_structure matches 27681 run function entitytester:clear_entities_27x33
 execute if score global entitytester_last_structure matches 25621 run function entitytester:clear_entities_25x21
 execute if score global entitytester_last_structure matches 105605 run function entitytester:clear_entities_103x133
-execute if score global entitytester_last_structure matches 56389 run function entitytester:clear_entities_55x69
+execute if score global entitytester_last_structure matches 56395 run function entitytester:clear_entities_55x75
 execute if score global entitytester_last_structure matches 72761 run function entitytester:clear_entities_71x57

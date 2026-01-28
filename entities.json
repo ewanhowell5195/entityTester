@@ -2238,6 +2238,20 @@
       "nbt": {
         "Tame": 1,
         "equipment": "{saddle:{id:\"saddle\"}}"
+      },
+      "variant_data": {
+        "nbt": {
+          "Tame": 1,
+          "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
+        }
+      },
+      "variants": {
+        "equipment": [
+          "{body:{id:\"leather_horse_armor\"}}",
+          "{body:{id:\"iron_horse_armor\"}}",
+          "{body:{id:\"golden_horse_armor\"}}",
+          "{body:{id:\"diamond_horse_armor\"}}"
+        ]
       }
     },
     {
@@ -2246,6 +2260,20 @@
       "nbt": {
         "Tame": 1,
         "equipment": "{saddle:{id:\"saddle\"}}"
+      },
+      "variant_data": {
+        "nbt": {
+          "Tame": 1,
+          "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
+        }
+      },
+      "variants": {
+        "equipment": [
+          "{body:{id:\"leather_horse_armor\"}}",
+          "{body:{id:\"iron_horse_armor\"}}",
+          "{body:{id:\"golden_horse_armor\"}}",
+          "{body:{id:\"diamond_horse_armor\"}}"
+        ]
       }
     },
     {
