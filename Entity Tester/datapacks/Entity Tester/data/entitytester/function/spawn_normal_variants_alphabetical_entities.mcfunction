@@ -181,10 +181,6 @@ setblock 17 -60 -46 pale_oak_wall_sign[facing=south]
 setblock 19 -60 -46 bamboo_wall_sign[facing=south]
 setblock 21 -60 -46 crimson_wall_sign[facing=south]
 setblock 23 -60 -46 warped_wall_sign[facing=south]
-setblock 39 319 -22 tinted_glass
-setblock 41 319 -22 tinted_glass
-setblock 43 319 -22 tinted_glass
-setblock 45 319 -22 tinted_glass
 setblock 47 319 -22 tinted_glass
 setblock -47 319 -16 tinted_glass
 setblock -45 319 -16 tinted_glass
@@ -282,6 +278,10 @@ setblock 41 319 -10 tinted_glass
 setblock 43 319 -10 tinted_glass
 setblock 45 319 -10 tinted_glass
 setblock 47 319 -10 tinted_glass
+setblock -17 319 -4 tinted_glass
+setblock -15 319 -4 tinted_glass
+setblock -13 319 -4 tinted_glass
+setblock -11 319 -4 tinted_glass
 setblock -9 319 -4 tinted_glass
 setblock -7 319 -4 tinted_glass
 setblock -5 319 -4 tinted_glass
@@ -292,4 +292,8 @@ setblock 3 319 -4 tinted_glass
 setblock 5 319 -4 tinted_glass
 setblock 7 319 -4 tinted_glass
 setblock 9 319 -4 tinted_glass
+setblock 11 319 -4 tinted_glass
+setblock 13 319 -4 tinted_glass
+setblock 15 319 -4 tinted_glass
+setblock 17 319 -4 tinted_glass
 schedule function entitytester:spawn_normal_variants_alphabetical_entities_2 1t
