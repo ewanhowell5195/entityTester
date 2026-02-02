@@ -109,5 +109,5 @@ summon mannequin -4 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,In
 summon nautilus -2 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon zombie_nautilus 0 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon parched 2 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
-summon camel_husk 4 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
+summon camel_husk 4 -60 -4 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,equipment:{saddle:{id:"saddle"}}}
 schedule function entitytester:update_delayed_ai 4t

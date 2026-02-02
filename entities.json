@@ -1907,7 +1907,10 @@
       "id": "parched"
     },
     {
-      "id": "camel_husk"
+      "id": "camel_husk",
+      "nbt": {
+        "equipment": "{saddle:{id:\"saddle\"}}"
+      }
     }
   ],
   "baby": [

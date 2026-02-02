@@ -19,7 +19,7 @@ summon oak_boat 7 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Inv
 summon bogged 9 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon breeze 11 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon camel 13 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,equipment:{saddle:{id:"saddle"}}}
-summon camel_husk 15 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
+summon camel_husk 15 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,equipment:{saddle:{id:"saddle"}}}
 summon cat 17 -60 -46 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Owner:[I;110787060,1156138790,-1514210135,238594805]}
 summon cave_spider -17 -60 -40 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
 summon oak_chest_boat -11 -60 -40 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1}
