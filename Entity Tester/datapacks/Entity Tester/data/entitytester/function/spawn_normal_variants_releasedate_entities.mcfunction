@@ -291,9 +291,21 @@ setblock 15 -60 -10 warped_hanging_sign[attached=true]
 setblock 25 319 -10 tinted_glass
 setblock 27 319 -10 tinted_glass
 setblock 37 -60 -10 waxed_copper_golem_statue[facing=south]
-setblock 39 -60 -10 waxed_exposed_copper_golem_statue[facing=south]
-setblock 41 -60 -10 waxed_weathered_copper_golem_statue[facing=south]
-setblock 43 -60 -10 waxed_oxidized_copper_golem_statue[facing=south]
-setblock 15 319 -4 tinted_glass
-setblock 17 319 -4 tinted_glass
+setblock 39 -60 -10 waxed_copper_golem_statue[facing=south,copper_golem_pose=sitting]
+setblock 41 -60 -10 waxed_copper_golem_statue[facing=south,copper_golem_pose=running]
+setblock 43 -60 -10 waxed_copper_golem_statue[facing=south,copper_golem_pose=star]
+setblock 45 -60 -10 waxed_exposed_copper_golem_statue[facing=south]
+setblock 47 -60 -10 waxed_exposed_copper_golem_statue[facing=south,copper_golem_pose=sitting]
+setblock -29 -60 -4 waxed_exposed_copper_golem_statue[facing=south,copper_golem_pose=running]
+setblock -27 -60 -4 waxed_exposed_copper_golem_statue[facing=south,copper_golem_pose=star]
+setblock -25 -60 -4 waxed_weathered_copper_golem_statue[facing=south]
+setblock -23 -60 -4 waxed_weathered_copper_golem_statue[facing=south,copper_golem_pose=sitting]
+setblock -21 -60 -4 waxed_weathered_copper_golem_statue[facing=south,copper_golem_pose=running]
+setblock -19 -60 -4 waxed_weathered_copper_golem_statue[facing=south,copper_golem_pose=star]
+setblock -17 -60 -4 waxed_oxidized_copper_golem_statue[facing=south]
+setblock -15 -60 -4 waxed_oxidized_copper_golem_statue[facing=south,copper_golem_pose=sitting]
+setblock -13 -60 -4 waxed_oxidized_copper_golem_statue[facing=south,copper_golem_pose=running]
+setblock -11 -60 -4 waxed_oxidized_copper_golem_statue[facing=south,copper_golem_pose=star]
+setblock 27 319 -4 tinted_glass
+setblock 29 319 -4 tinted_glass
 schedule function entitytester:spawn_normal_variants_releasedate_entities_2 1t

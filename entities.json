@@ -1857,9 +1857,93 @@
       },
       "variants": [
         "waxed_copper_golem_statue",
+        {
+          "id": "waxed_copper_golem_statue",
+          "blockstate": {
+            "facing": "south",
+            "copper_golem_pose": "sitting"
+          }
+        },
+        {
+          "id": "waxed_copper_golem_statue",
+          "blockstate": {
+            "facing": "south",
+            "copper_golem_pose": "running"
+          }
+        },
+        {
+          "id": "waxed_copper_golem_statue",
+          "blockstate": {
+            "facing": "south",
+            "copper_golem_pose": "star"
+          }
+        },
         "waxed_exposed_copper_golem_statue",
+        {
+          "id": "waxed_exposed_copper_golem_statue",
+          "blockstate": {
+            "facing": "south",
+            "copper_golem_pose": "sitting"
+          }
+        },
+        {
+          "id": "waxed_exposed_copper_golem_statue",
+          "blockstate": {
+            "facing": "south",
+            "copper_golem_pose": "running"
+          }
+        },
+        {
+          "id": "waxed_exposed_copper_golem_statue",
+          "blockstate": {
+            "facing": "south",
+            "copper_golem_pose": "star"
+          }
+        },
         "waxed_weathered_copper_golem_statue",
-        "waxed_oxidized_copper_golem_statue"
+        {
+          "id": "waxed_weathered_copper_golem_statue",
+          "blockstate": {
+            "facing": "south",
+            "copper_golem_pose": "sitting"
+          }
+        },
+        {
+          "id": "waxed_weathered_copper_golem_statue",
+          "blockstate": {
+            "facing": "south",
+            "copper_golem_pose": "running"
+          }
+        },
+        {
+          "id": "waxed_weathered_copper_golem_statue",
+          "blockstate": {
+            "facing": "south",
+            "copper_golem_pose": "star"
+          }
+        },
+        "waxed_oxidized_copper_golem_statue",
+        {
+          "id": "waxed_oxidized_copper_golem_statue",
+          "blockstate": {
+            "facing": "south",
+            "copper_golem_pose": "sitting"
+          }
+        },
+        {
+          "id": "waxed_oxidized_copper_golem_statue",
+          "blockstate": {
+            "facing": "south",
+            "copper_golem_pose": "running"
+          }
+        },
+        {
+          "id": "waxed_oxidized_copper_golem_statue",
+          "blockstate": {
+            "facing": "south",
+            "copper_golem_pose": "star"
+          }
+        }
       ]
     },
     {
