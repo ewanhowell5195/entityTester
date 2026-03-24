@@ -980,9 +980,11 @@
         {
           "equipment": [
             "{body:{id:\"leather_horse_armor\"}}",
+            "{body:{id:\"copper_horse_armor\"}}",
             "{body:{id:\"iron_horse_armor\"}}",
             "{body:{id:\"golden_horse_armor\"}}",
-            "{body:{id:\"diamond_horse_armor\"}}"
+            "{body:{id:\"diamond_horse_armor\"}}",
+            "{body:{id:\"netherite_horse_armor\"}}"
           ]
         }
       ]
@@ -1028,9 +1030,11 @@
       "variants": {
         "equipment": [
           "{body:{id:\"leather_horse_armor\"}}",
+          "{body:{id:\"copper_horse_armor\"}}",
           "{body:{id:\"iron_horse_armor\"}}",
           "{body:{id:\"golden_horse_armor\"}}",
-          "{body:{id:\"diamond_horse_armor\"}}"
+          "{body:{id:\"diamond_horse_armor\"}}",
+          "{body:{id:\"netherite_horse_armor\"}}"
         ]
       }
     },
@@ -1050,9 +1054,11 @@
       "variants": {
         "equipment": [
           "{body:{id:\"leather_horse_armor\"}}",
+          "{body:{id:\"copper_horse_armor\"}}",
           "{body:{id:\"iron_horse_armor\"}}",
           "{body:{id:\"golden_horse_armor\"}}",
-          "{body:{id:\"diamond_horse_armor\"}}"
+          "{body:{id:\"diamond_horse_armor\"}}",
+          "{body:{id:\"netherite_horse_armor\"}}"
         ]
       }
     },
@@ -2293,9 +2299,11 @@
         {
           "equipment": [
             "{body:{id:\"leather_horse_armor\"}}",
+            "{body:{id:\"copper_horse_armor\"}}",
             "{body:{id:\"iron_horse_armor\"}}",
             "{body:{id:\"golden_horse_armor\"}}",
-            "{body:{id:\"diamond_horse_armor\"}}"
+            "{body:{id:\"diamond_horse_armor\"}}",
+            "{body:{id:\"netherite_horse_armor\"}}"
           ]
         }
       ]
@@ -2335,9 +2343,11 @@
       "variants": {
         "equipment": [
           "{body:{id:\"leather_horse_armor\"}}",
+          "{body:{id:\"copper_horse_armor\"}}",
           "{body:{id:\"iron_horse_armor\"}}",
           "{body:{id:\"golden_horse_armor\"}}",
-          "{body:{id:\"diamond_horse_armor\"}}"
+          "{body:{id:\"diamond_horse_armor\"}}",
+          "{body:{id:\"netherite_horse_armor\"}}"
         ]
       }
     },
@@ -2357,9 +2367,11 @@
       "variants": {
         "equipment": [
           "{body:{id:\"leather_horse_armor\"}}",
+          "{body:{id:\"copper_horse_armor\"}}",
           "{body:{id:\"iron_horse_armor\"}}",
           "{body:{id:\"golden_horse_armor\"}}",
-          "{body:{id:\"diamond_horse_armor\"}}"
+          "{body:{id:\"diamond_horse_armor\"}}",
+          "{body:{id:\"netherite_horse_armor\"}}"
         ]
       }
     },
