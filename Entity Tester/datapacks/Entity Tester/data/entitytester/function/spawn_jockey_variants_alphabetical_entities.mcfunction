@@ -115,12 +115,12 @@ setblock 1 319 -34 tinted_glass
 setblock 3 319 -34 tinted_glass
 setblock 5 319 -34 tinted_glass
 setblock 7 319 -34 tinted_glass
+setblock 21 319 -10 tinted_glass
+setblock 23 319 -10 tinted_glass
+setblock 25 319 -10 tinted_glass
+setblock 27 319 -10 tinted_glass
+setblock 29 319 -10 tinted_glass
+setblock 31 319 -10 tinted_glass
+setblock -1 319 -4 tinted_glass
 setblock 1 319 -4 tinted_glass
-setblock 3 319 -4 tinted_glass
-setblock 5 319 -4 tinted_glass
-setblock 7 319 -4 tinted_glass
-setblock 9 319 -4 tinted_glass
-setblock 11 319 -4 tinted_glass
-setblock 13 319 -4 tinted_glass
-setblock 15 319 -4 tinted_glass
 schedule function entitytester:spawn_jockey_variants_alphabetical_entities_2 1t

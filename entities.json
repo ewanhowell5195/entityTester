@@ -2606,17 +2606,10 @@
     },
     {
       "id": "strider",
-      "nbt": {
-        "equipment": "{saddle:{id:\"saddle\"}}"
-      },
       "variants": {
         "DelayedAI": [
           null,
           true
-        ],
-        "equipment": [
-          null,
-          "{saddle:{id:\"saddle\"}}"
         ]
       }
     },
@@ -2990,54 +2983,107 @@
       "id": "strider",
       "passenger": {
         "id": "strider",
-        "baby": true,
-        "variants": {
-          "DelayedAI": [
+        "baby": true
+      },
+      "variant_data": [
+        {},
+        {
+          "nbt": {
+            "DelayedAI": true
+          }
+        },
+        {
+          "nbt": {
+            "DelayedAI": true
+          },
+          "passenger": {
+            "id": "strider",
+            "baby": true,
+            "nbt": {
+              "DelayedAI": true
+            }
+          }
+        }
+      ],
+      "variants": [
+        {
+          "equipment": [
             null,
-            true
-          ],
+            "{saddle:{id:\"saddle\"}}"
+          ]
+        },
+        {
+          "equipment": [
+            null,
+            "{saddle:{id:\"saddle\"}}"
+          ]
+        },
+        {
           "equipment": [
             null,
             "{saddle:{id:\"saddle\"}}"
           ]
         }
-      },
-      "variants": {
-        "DelayedAI": [
-          null,
-          true
-        ],
-        "equipment": [
-          null,
-          "{saddle:{id:\"saddle\"}}"
-        ]
-      }
+      ]
     },
     {
       "id": "strider",
       "passenger": {
         "id": "strider",
         "variants": {
-          "DelayedAI": [
-            null,
-            true
-          ],
           "equipment": [
             null,
             "{saddle:{id:\"saddle\"}}"
           ]
         }
       },
-      "variants": {
-        "DelayedAI": [
-          null,
-          true
-        ],
-        "equipment": [
-          null,
-          "{saddle:{id:\"saddle\"}}"
-        ]
-      }
+      "variant_data": [
+        {},
+        {
+          "nbt": {
+            "DelayedAI": true
+          }
+        },
+        {
+          "nbt": {
+            "DelayedAI": true
+          },
+          "passenger": {
+            "id": "strider",
+            "variant_data": {
+              "nbt": {
+                "DelayedAI": true
+              }
+            },
+            "variants": {
+              "equipment": [
+                null,
+                "{saddle:{id:\"saddle\"}}"
+              ]
+            }
+          }
+        }
+      ],
+      "variants": [
+        {
+          "equipment": [
+            null,
+            "{saddle:{id:\"saddle\"}}"
+          ]
+        },
+        {
+          "equipment": [
+            null,
+            "{saddle:{id:\"saddle\"}}"
+          ]
+        },
+        {
+          "equipment": [
+            null,
+            "{saddle:{id:\"saddle\"}}"
+          ]
+        }
+      ]
     },
     {
       "id": "strider",
