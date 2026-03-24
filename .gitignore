@@ -1,6 +1,7 @@
 Entity Tester/players/
 Entity Tester/data/minecraft/*
 !Entity Tester/data/minecraft/scoreboard.dat
+!Entity Tester/data/minecraft/world_gen_settings.dat
 Entity Tester/dimensions/minecraft/*
 !Entity Tester/dimensions/minecraft/overworld
 Entity Tester/dimensions/minecraft/overworld/data/
@@ -17,3 +18,5 @@ Entity Tester/dimensions/minecraft/overworld/entities/*
 !Entity Tester/dimensions/minecraft/overworld/entities/r.-1.-1.mca
 Entity Tester/level.dat_old
 Entity Tester/session.lock
+Entity Tester.zip
+zip.bat
