@@ -2006,18 +2006,11 @@
   "baby": [
     {
       "id": "pig",
-      "nbt": {
-        "equipment": "{saddle:{id:\"saddle\"}}"
-      },
       "variants": {
         "variant": [
           "temperate",
           "warm",
           "cold"
-        ],
-        "equipment": [
-          null,
-          "{saddle:{id:\"saddle\"}}"
         ]
       }
     },
@@ -2071,8 +2064,7 @@
     {
       "id": "wolf",
       "nbt": {
-        "Owner": "[I;110787060,1156138790,-1514210135,238594805]",
-        "equipment": "{body:{id:wolf_armor}}"
+        "Owner": "[I;110787060,1156138790,-1514210135,238594805]"
       },
       "variant_data": [
         {},
@@ -2102,14 +2094,6 @@
           "AngerTime": [
             null,
             2147483647
-          ]
-        },
-        {
-          "equipment": [
-            "{body:{id:\"wolf_armor\"}}",
-            "{body:{id:\"wolf_armor\",components:{damage:19}}}",
-            "{body:{id:\"wolf_armor\",components:{damage:20}}}",
-            "{body:{id:\"wolf_armor\",components:{damage:44}}}"
           ]
         }
       ],
@@ -2220,13 +2204,11 @@
       "id": "donkey",
       "nbt": {
         "Tame": 1,
-        "equipment": "{saddle:{id:\"saddle\"}}",
         "ChestedHorse": 1
       },
       "variant_data": {
         "nbt": {
-          "Tame": 1,
-          "equipment": "{saddle:{id:\"saddle\"}}"
+          "Tame": 1
         }
       },
       "variants": {
@@ -2239,14 +2221,12 @@
     {
       "id": "horse",
       "nbt": {
-        "Tame": 1,
-        "equipment": "{saddle:{id:\"saddle\"},body:{id:\"diamond_horse_armor\"}}"
+        "Tame": 1
       },
       "variant_data": [
         {
           "nbt": {
-            "Tame": 1,
-            "equipment": "{saddle:{id:\"saddle\"}}"
+            "Tame": 1
           }
         },
         {
@@ -2295,16 +2275,6 @@
             1029,
             1030
           ]
-        },
-        {
-          "equipment": [
-            "{body:{id:\"leather_horse_armor\"}}",
-            "{body:{id:\"copper_horse_armor\"}}",
-            "{body:{id:\"iron_horse_armor\"}}",
-            "{body:{id:\"golden_horse_armor\"}}",
-            "{body:{id:\"diamond_horse_armor\"}}",
-            "{body:{id:\"netherite_horse_armor\"}}"
-          ]
         }
       ]
     },
@@ -2312,13 +2282,11 @@
       "id": "mule",
       "nbt": {
         "Tame": 1,
-        "equipment": "{saddle:{id:\"saddle\"}}",
         "ChestedHorse": 1
       },
       "variant_data": {
         "nbt": {
-          "Tame": 1,
-          "equipment": "{saddle:{id:\"saddle\"}}"
+          "Tame": 1
         }
       },
       "variants": {
@@ -2331,48 +2299,26 @@
     {
       "id": "skeleton_horse",
       "nbt": {
-        "Tame": 1,
-        "equipment": "{saddle:{id:\"saddle\"}}"
+        "Tame": 1
       },
       "variant_data": {
         "nbt": {
           "Tame": 1,
           "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
         }
-      },
-      "variants": {
-        "equipment": [
-          "{body:{id:\"leather_horse_armor\"}}",
-          "{body:{id:\"copper_horse_armor\"}}",
-          "{body:{id:\"iron_horse_armor\"}}",
-          "{body:{id:\"golden_horse_armor\"}}",
-          "{body:{id:\"diamond_horse_armor\"}}",
-          "{body:{id:\"netherite_horse_armor\"}}"
-        ]
       }
     },
     {
       "id": "zombie_horse",
       "burns": true,
       "nbt": {
-        "Tame": 1,
-        "equipment": "{saddle:{id:\"saddle\"}}"
+        "Tame": 1
       },
       "variant_data": {
         "nbt": {
           "Tame": 1,
           "active_effects": "[{duration:-1,id:invisibility,show_particles:0}]"
         }
-      },
-      "variants": {
-        "equipment": [
-          "{body:{id:\"leather_horse_armor\"}}",
-          "{body:{id:\"copper_horse_armor\"}}",
-          "{body:{id:\"iron_horse_armor\"}}",
-          "{body:{id:\"golden_horse_armor\"}}",
-          "{body:{id:\"diamond_horse_armor\"}}",
-          "{body:{id:\"netherite_horse_armor\"}}"
-        ]
       }
     },
     {
@@ -2422,8 +2368,7 @@
     {
       "id": "llama",
       "nbt": {
-        "Tame": 1,
-        "equipment": "{body:{id:\"red_carpet\"}}"
+        "Tame": 1
       },
       "variant_data": [
         {
@@ -2445,26 +2390,6 @@
             1,
             2,
             3
-          ]
-        },
-        {
-          "equipment": [
-            "{body:{id:\"white_carpet\"}}",
-            "{body:{id:\"light_gray_carpet\"}}",
-            "{body:{id:\"gray_carpet\"}}",
-            "{body:{id:\"black_carpet\"}}",
-            "{body:{id:\"brown_carpet\"}}",
-            "{body:{id:\"red_carpet\"}}",
-            "{body:{id:\"orange_carpet\"}}",
-            "{body:{id:\"yellow_carpet\"}}",
-            "{body:{id:\"lime_carpet\"}}",
-            "{body:{id:\"green_carpet\"}}",
-            "{body:{id:\"cyan_carpet\"}}",
-            "{body:{id:\"light_blue_carpet\"}}",
-            "{body:{id:\"blue_carpet\"}}",
-            "{body:{id:\"purple_carpet\"}}",
-            "{body:{id:\"magenta_carpet\"}}",
-            "{body:{id:\"pink_carpet\"}}"
           ]
         }
       ]
@@ -2544,26 +2469,6 @@
             2,
             3
           ]
-        },
-        {
-          "equipment": [
-            "{body:{id:\"white_carpet\"}}",
-            "{body:{id:\"light_gray_carpet\"}}",
-            "{body:{id:\"gray_carpet\"}}",
-            "{body:{id:\"black_carpet\"}}",
-            "{body:{id:\"brown_carpet\"}}",
-            "{body:{id:\"red_carpet\"}}",
-            "{body:{id:\"orange_carpet\"}}",
-            "{body:{id:\"yellow_carpet\"}}",
-            "{body:{id:\"lime_carpet\"}}",
-            "{body:{id:\"green_carpet\"}}",
-            "{body:{id:\"cyan_carpet\"}}",
-            "{body:{id:\"light_blue_carpet\"}}",
-            "{body:{id:\"blue_carpet\"}}",
-            "{body:{id:\"purple_carpet\"}}",
-            "{body:{id:\"magenta_carpet\"}}",
-            "{body:{id:\"pink_carpet\"}}"
-          ]
         }
       ]
     },
@@ -2642,10 +2547,7 @@
       }
     },
     {
-      "id": "camel",
-      "nbt": {
-        "equipment": "{saddle:{id:\"saddle\"}}"
-      }
+      "id": "camel"
     },
     {
       "id": "sniffer"
