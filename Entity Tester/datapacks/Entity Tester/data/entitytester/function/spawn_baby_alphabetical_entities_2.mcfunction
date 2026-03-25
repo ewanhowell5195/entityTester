@@ -8,7 +8,7 @@ summon cat 3 -60 -28 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulner
 summon chicken 5 -60 -28 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
 summon cow 7 -60 -28 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
 summon dolphin 9 -60 -28 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
-summon donkey -9 -60 -22 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,Tame:1,ChestedHorse:1}
+summon donkey -9 -60 -22 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
 summon drowned -7 -60 -22 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
 summon armor_stand -5 -60 -22 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Small:1,equipment:{chest:{id:"elytra"}},Invisible:1}
 summon fox -3 -60 -22 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
@@ -20,7 +20,7 @@ summon horse 7 -60 -22 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invuln
 summon husk 9 -60 -22 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
 summon llama -9 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,Tame:1}
 summon mooshroom -7 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
-summon mule -5 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1,Tame:1,ChestedHorse:1}
+summon mule -5 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
 summon nautilus -3 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
 summon ocelot -1 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}
 summon panda 1 -60 -16 {NoAI:1,NoGravity:1,Silent:1,PersistenceRequired:1,Invulnerable:1,Age:-2147483648,IsBaby:1}

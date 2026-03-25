@@ -2201,22 +2201,7 @@
       "id": "zombified_piglin"
     },
     {
-      "id": "donkey",
-      "nbt": {
-        "Tame": 1,
-        "ChestedHorse": 1
-      },
-      "variant_data": {
-        "nbt": {
-          "Tame": 1
-        }
-      },
-      "variants": {
-        "ChestedHorse": [
-          null,
-          1
-        ]
-      }
+      "id": "donkey"
     },
     {
       "id": "horse",
@@ -2279,22 +2264,7 @@
       ]
     },
     {
-      "id": "mule",
-      "nbt": {
-        "Tame": 1,
-        "ChestedHorse": 1
-      },
-      "variant_data": {
-        "nbt": {
-          "Tame": 1
-        }
-      },
-      "variants": {
-        "ChestedHorse": [
-          null,
-          1
-        ]
-      }
+      "id": "mule"
     },
     {
       "id": "skeleton_horse",
