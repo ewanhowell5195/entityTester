@@ -249,107 +249,6 @@
       }
     },
     {
-      "name": "sign",
-      "id": "oak_sign",
-      "type": "block",
-      "variants": [
-        "oak_sign",
-        "spruce_sign",
-        "birch_sign",
-        "jungle_sign",
-        "acacia_sign",
-        "dark_oak_sign",
-        "mangrove_sign",
-        "cherry_sign",
-        "pale_oak_sign",
-        "bamboo_sign",
-        "crimson_sign",
-        "warped_sign"
-      ]
-    },
-    {
-      "name": "sign",
-      "id": "oak_wall_sign",
-      "type": "block",
-      "blockstate": {
-        "facing": "south"
-      },
-      "variants": [
-        {
-          "id": "oak_wall_sign",
-          "blockstate": {
-            "facing": "south"
-          }
-        },
-        {
-          "id": "spruce_wall_sign",
-          "blockstate": {
-            "facing": "south"
-          }
-        },
-        {
-          "id": "birch_wall_sign",
-          "blockstate": {
-            "facing": "south"
-          }
-        },
-        {
-          "id": "jungle_wall_sign",
-          "blockstate": {
-            "facing": "south"
-          }
-        },
-        {
-          "id": "acacia_wall_sign",
-          "blockstate": {
-            "facing": "south"
-          }
-        },
-        {
-          "id": "dark_oak_wall_sign",
-          "blockstate": {
-            "facing": "south"
-          }
-        },
-        {
-          "id": "mangrove_wall_sign",
-          "blockstate": {
-            "facing": "south"
-          }
-        },
-        {
-          "id": "cherry_wall_sign",
-          "blockstate": {
-            "facing": "south"
-          }
-        },
-        {
-          "id": "pale_oak_wall_sign",
-          "blockstate": {
-            "facing": "south"
-          }
-        },
-        {
-          "id": "bamboo_wall_sign",
-          "blockstate": {
-            "facing": "south"
-          }
-        },
-        {
-          "id": "crimson_wall_sign",
-          "blockstate": {
-            "facing": "south"
-          }
-        },
-        {
-          "id": "warped_wall_sign",
-          "blockstate": {
-            "facing": "south"
-          }
-        }
-      ]
-    },
-    {
       "id": "skeleton",
       "burns": true
     },
@@ -553,34 +452,6 @@
     {
       "id": "squid",
       "offset": [0, 0.5, 0]
-    },
-    {
-      "name": "bed",
-      "id": "red_bed",
-      "type": "block",
-      "behind": {
-        "blockstate": {
-          "part": "head"
-        }
-      },
-      "variants": [
-        "white_bed",
-        "light_gray_bed",
-        "gray_bed",
-        "black_bed",
-        "brown_bed",
-        "red_bed",
-        "orange_bed",
-        "yellow_bed",
-        "lime_bed",
-        "green_bed",
-        "cyan_bed",
-        "light_blue_bed",
-        "blue_bed",
-        "purple_bed",
-        "magenta_bed",
-        "pink_bed"
-      ]
     },
     {
       "id": "wolf",
@@ -1648,148 +1519,6 @@
       "type": "block"
     },
     {
-      "name": "hanging_sign",
-      "id": "oak_wall_hanging_sign",
-      "type": "block",
-      "blockstate": {
-        "facing": "south"
-      },
-      "variants": [
-        "oak_wall_hanging_sign",
-        {
-          "id": "oak_hanging_sign",
-          "blockstate": {}
-        },
-        {
-          "id": "oak_hanging_sign",
-          "blockstate": {
-            "attached": true
-          }
-        },
-        "spruce_wall_hanging_sign",
-        {
-          "id": "spruce_hanging_sign",
-          "blockstate": {}
-        },
-        {
-          "id": "spruce_hanging_sign",
-          "blockstate": {
-            "attached": true
-          }
-        },
-        "birch_wall_hanging_sign",
-        {
-          "id": "birch_hanging_sign",
-          "blockstate": {}
-        },
-        {
-          "id": "birch_hanging_sign",
-          "blockstate": {
-            "attached": true
-          }
-        },
-        "jungle_wall_hanging_sign",
-        {
-          "id": "jungle_hanging_sign",
-          "blockstate": {}
-        },
-        {
-          "id": "jungle_hanging_sign",
-          "blockstate": {
-            "attached": true
-          }
-        },
-        "acacia_wall_hanging_sign",
-        {
-          "id": "acacia_hanging_sign",
-          "blockstate": {}
-        },
-        {
-          "id": "acacia_hanging_sign",
-          "blockstate": {
-            "attached": true
-          }
-        },
-        "dark_oak_wall_hanging_sign",
-        {
-          "id": "dark_oak_hanging_sign",
-          "blockstate": {}
-        },
-        {
-          "id": "dark_oak_hanging_sign",
-          "blockstate": {
-            "attached": true
-          }
-        },
-        "mangrove_wall_hanging_sign",
-        {
-          "id": "mangrove_hanging_sign",
-          "blockstate": {}
-        },
-        {
-          "id": "mangrove_hanging_sign",
-          "blockstate": {
-            "attached": true
-          }
-        },
-        "cherry_wall_hanging_sign",
-        {
-          "id": "cherry_hanging_sign",
-          "blockstate": {}
-        },
-        {
-          "id": "cherry_hanging_sign",
-          "blockstate": {
-            "attached": true
-          }
-        },
-        "pale_oak_wall_hanging_sign",
-        {
-          "id": "pale_oak_hanging_sign",
-          "blockstate": {}
-        },
-        {
-          "id": "pale_oak_hanging_sign",
-          "blockstate": {
-            "attached": true
-          }
-        },
-        "bamboo_wall_hanging_sign",
-        {
-          "id": "bamboo_hanging_sign",
-          "blockstate": {}
-        },
-        {
-          "id": "bamboo_hanging_sign",
-          "blockstate": {
-            "attached": true
-          }
-        },
-        "crimson_wall_hanging_sign",
-        {
-          "id": "crimson_hanging_sign",
-          "blockstate": {}
-        },
-        {
-          "id": "crimson_hanging_sign",
-          "blockstate": {
-            "attached": true
-          }
-        },
-        "warped_wall_hanging_sign",
-        {
-          "id": "warped_hanging_sign",
-          "blockstate": {}
-        },
-        {
-          "id": "warped_hanging_sign",
-          "blockstate": {
-            "attached": true
-          }
-        }
-      ]
-    },
-    {
       "id": "piglin_head",
       "type": "block",
       "blockstate": {
@@ -2000,6 +1729,35 @@
       "id": "camel_husk",
       "nbt": {
         "equipment": "{saddle:{id:\"saddle\"}}"
+      }
+    },
+    {
+      "id": "sulfur_cube",
+      "nbt": {
+        "Size": 1
+      },
+      "variant_data": {
+        "nbt": {
+          "Size": 1
+        }
+      },
+      "variants": {
+        "equipment": [
+          null,
+          "{body:{id:\"barrier\"}}",
+          "{body:{id:\"oak_planks\"}}",
+          "{body:{id:\"tnt\"}}",
+          "{body:{id:\"sponge\"}}",
+          "{body:{id:\"packed_ice\"}}",
+          "{body:{id:\"soul_sand\"}}",
+          "{body:{id:\"magma_block\"}}",
+          "{body:{id:\"white_wool\"}}",
+          "{body:{id:\"stone\"}}",
+          "{body:{id:\"iron_block\"}}",
+          "{body:{id:\"brown_mushroom_block\"}}",
+          "{body:{id:\"honeycomb_block\"}}",
+          "{body:{id:\"dirt\"}}"
+        ]
       }
     }
   ],
@@ -2564,6 +2322,27 @@
     },
     {
       "id": "nautilus"
+    },
+    {
+      "id": "sulfur_cube",
+      "variants": {
+        "equipment": [
+          null,
+          "{body:{id:\"barrier\"}}",
+          "{body:{id:\"oak_planks\"}}",
+          "{body:{id:\"tnt\"}}",
+          "{body:{id:\"sponge\"}}",
+          "{body:{id:\"packed_ice\"}}",
+          "{body:{id:\"soul_sand\"}}",
+          "{body:{id:\"magma_block\"}}",
+          "{body:{id:\"white_wool\"}}",
+          "{body:{id:\"stone\"}}",
+          "{body:{id:\"iron_block\"}}",
+          "{body:{id:\"brown_mushroom_block\"}}",
+          "{body:{id:\"honeycomb_block\"}}",
+          "{body:{id:\"dirt\"}}"
+        ]
+      }
     }
   ],
   "jockey": [
